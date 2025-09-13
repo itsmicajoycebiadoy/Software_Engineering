@@ -4,31 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter1</title>
+    <link rel="stylesheet" href="Chapter1.css">
 </head>
 <body>
     <header>
-        <img src="template/Header.PNG" alt="Header Image">
-        <h1>1 Introduction</h1>
-
-        <section>
-            <h3>Objectives</h3>
-            <p>The objectives of this chapter are to introduce software engineering and to provide a framework for understanding the rest of the book. When you have read this chapter you will:</p>
-            <ul>
-                <li>understand what software engineering is and why it is important;</li>
-                <li>understand that the development of different types of software systems may require different software engineering techniques;</li>
-                <li>understand some ethical and professional issues that are important for software engineers;</li>
-                <li>have been introduced to three systems, of different types, that will be used as examples throughout the book. </li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Contents</h3>
-            <ul>
-                <li>1.1 Professional software development</li>
-                <li>1.2 Software engineering ethics</li>
-                <li>1.3 Case studies</li>
-            </ul>
-        </section>
+        <article class="header-center">
+            
+            <article>
+                <h2>1 Introduction</h2>
+                <section>
+                    <h3>Objectives</h3>
+                    <p>The objectives of this chapter are to introduce software engineering and to provide a framework for understanding the rest of the book. When you have read this chapter you will:</p>
+                    <ul>
+                        <li>understand what software engineering is and why it is important;</li>
+                        <li>understand that the development of different types of software systems may require different software engineering techniques;</li>
+                        <li>understand some ethical and professional issues that are important for software engineers;</li>
+                        <li>have been introduced to three systems, of different types, that will be used as examples throughout the book. </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Contents</h3>
+                    <ul>
+                        <li>1.1 Professional software development</li>
+                        <li>1.2 Software engineering ethics</li>
+                        <li>1.3 Case studies</li>
+                    </ul>
+                </section>
+            </article>
+        </article>
     </header>
 
     <main>
@@ -73,7 +76,6 @@
 
         </section>
         <section>
-            <h3>1.1 ■ Professional software development</h3>
 
             <p><b>History of software engineering</b></p>
 
@@ -91,7 +93,8 @@
         </section>
 
         <section>
-            <h3>1.1 Professional software development</h3>
+            <h2 class = "bodytext-header">1.1 Professional software development</h2>
+
             <p>Lots of people write programs. People in business write spreadsheet programs to
             simplify their jobs, scientists and engineers write programs to process their experimental data, and hobbyists write programs for their own interest and enjoyment.
             However, the vast majority of software development is a professional activity where
@@ -121,7 +124,7 @@
         </section>
         <br>
         <section>
-            <table border="1" style="background-color: aqua;">
+            <table border="3" style="background-color: transparent;">
                 <tr>
                     <th>Questions</th>
                     <th>Answer</th>
@@ -244,7 +247,7 @@
         </section>
         
         <section>
-            <table border="1" style="background-color: aqua;">
+            <table border="3" style="background-color:transparent">
                 <tr>
                     <th>Attribute</th>
                     <th>Description</th>
@@ -534,7 +537,7 @@
         </section>
 
         <section>
-            <h3>1.2 Software engineering ethics</h3>
+            <h2 class = "bodytext-header">1.2 Software engineering ethics</h2>
 
             <p>Like other engineering disciplines, software engineering is carried out within a
             social and legal framework that limits the freedom of people working in that area. As
@@ -556,7 +559,7 @@
         </section>
         <br>
         <section>
-            <article>
+            <article class="image-container">
                 <img src="template/Capture1.PNG" alt="fig1.3">
                 <p>Figure 1.3 The ACM/IEEE Code of Ethics (© IEEE/ACM 1999)</p>
             </article>
@@ -641,7 +644,7 @@
         </section>
         <br>
         <section>
-            <h3>1.3 Case studies</h3>
+            <h2 class = "bodytext-header">1.3 Case studies</h2>
 
             <p>To illustrate software engineering concepts, I use examples from three different
             types of systems throughout the book. The reason why I have not used a single case
@@ -704,11 +707,11 @@
         </section>
 
         <section>
-            <article>
+            <article class="image-container">
                 <img src="template/Capture2.PNG" alt="fig1.4">
                 <p>Figure 1.4 Insulin pump hardware</p>
-            </article>
-            <article>
+            </article> 
+            <article class="image-container">
                 <img src="template/Capture3.PNG" alt="fig1.5">
                 <p>Figure 1.5 Activity model of the insulin pump</p>
             </article>
@@ -733,7 +736,7 @@
         </section>
 
         <section>
-            <article>
+            <article class="image-container">
                 <img src="template/Capture4.PNG" alt="fig1.6">
                 <p>Figure 1.6 The organization of the MHC-PMS</p>
             </article>
@@ -810,10 +813,12 @@
         </section>
 
         <section>
-            <article>
+            <article class="image-container">
                 <img src="template/Capture5.PNG" alt="fig1.7">
-                
+
                 <p>Figure 1.7 The weather station’s environment system. Some mental illnesses cause patients to become suicidal or a danger to other people. Wherever possible, the system should warn medical staff about potentially suicidal or dangerous patients.</p>
+
+            </article>
                 
                 <p>The overall design of the system has to take into account privacy and safety
                 requirements. The system must be available when needed otherwise safety may be

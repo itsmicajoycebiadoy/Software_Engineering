@@ -5,22 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-initial-scale=1.0">
     <title> Software testing</title> <!--Website Title-->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!--Website Header-->
-    <header>
-        <hr>
+    <header style=background-color:aquamarine;>
+        
         <center><h1>CHAPTER 8: Software testing</h1></center>
-        <hr>
+        
     </header>
     <!--Website Header-->
 
     <!--Website Main-->
-<main>
+<main style=background-color:aquamarine;>
     <section>
-
         <h2>Objectives</h2>
+        <hr>
         <p> The objective of this chapter is to introduce software testing and software testing processes. When you have read the chapter, you will:</p>
 
         <ul>
@@ -29,9 +30,9 @@
             <li> understand test-first development, where you design tests before  writing code and run these tests automatically;</li>
             <li> know the important differences between component, system,and release testing and be aware of user testing processes andtechniques.</li>
         </ul>
-
+        <hr>
         <h2>Contents</h2>
-        
+        <hr>
         <p>8.1 Development testing</a></p>
         <p>8.2 Test-driven development</a></p>
         <p>8.3 Release testing</a></p>
@@ -68,7 +69,7 @@
         <p> 1. During testing, errors can mask (hide) other errors. When an error leads tounexpected outputs, you can never be sure if later output anomalies are due toa new error or are side effects of the original error.
              Because inspection is astatic process, you don’t have to be concerned with interactions betweenerrors. Consequently, a single inspection session can discover many errors in asystem</p>
         
-        <p><b>Test Planning</b></p>
+        <p style ="text-align: center;"><b>Test Planning</b></p>
         <p> Test planning is concerned with scheduling and resourcing all of the activities in the testing process. It involves
             defining the testing process, taking into account the people and the time available. Usually, a test plan will be
             created, which defines what is to be tested, the predicted testing schedule, and how tests will be recorded. For
@@ -88,8 +89,8 @@
             <p> 1. Development testing, where the system is tested during development to discoverbugs and defects. System designers and programmers are likely to be involved in the testing process.</p>
             <p> 2. Release testing, where a separate testing team tests a complete version of thesystem before it is released to users. The aim of release testing is to check that the system meets the requirements of system stakeholders.</p>
             <p> 3. User testing, where users or potential users of a system test the system in theirown environment. For software products, the ‘user’ may be an internal marketing group who decide if the software can be marketed, released, and sold.Acceptance testing is one type of user testing where the customer formally testsa system to decide if it should be accepted from the system supplier or if further development is required.</p>
-
-        <h2>8.1 Development testing</h2>
+        <hr>
+        <h2 style ="text-align: center;">8.1 Development testing</h2>
         <hr>
             <p> Development testing includes all testing activities that are carried out by the teamdeveloping the system. The tester of the software is usually the programmer whodeveloped that software, although this is not always the case. Some development processes use programmer/tester pairs (Cusamano and Selby, 1998) where each</p>
             
@@ -101,7 +102,7 @@
             <p> 2. Component testing, where several individual units are integrated to create composite components. Component testing should focus on testing component interfaces.</p>
             <p>3. System testing, where some or all of the components in a system are integrated and the system is tested as a whole. System testing should focus on testing component interactions.</p>
             <p>Development testing is primarily a defect testing process, where the aim of testing is to discover bugs in the software. It is therefore usually interleaved with debugging—the process of locating problems with the code and changing the program to fix these problems</p>
-
+            <hr>
             <h3> 8.1.1 Unit testing</h3>
             <hr>
             <p> Unit testing is the process of testing program components, such as methods or object classes. Individual functions or methods are the simplest type of component. Your tests should be calls to these routines with different input parameters. You can use the approaches to test case design discussed in Section 8.1.2, to design the function or method tests.</p>
@@ -123,7 +124,7 @@
             <p>2. A call part, where you call the object or method to be tested.</p>
             <p> 3. An assertion part where you compare the result of the call with the expected result. If the assertion evaluates to true, the test has been successful; if false, then it has failed</p>
             <p>Sometimes the object that you are testing has dependencies on other objects that may not have been written or which slow down the testing process if they are used. For example, if your object calls a database, this may involve a slow setup process before it can be used. In these cases, you may decide to use mock objects. Mock objects are objects with the same interface as the external objects being used that simulate its functionality. Therefore, a mock object simulating a database may have only a few data items that are organized in an array. </p>
-            
+            <hr>
             <h3> 8.1.2 Choosing unit test cases</h3>
             <hr>
             <p> Testing is expensive and time consuming, so it is important that you choose effective unit test cases. Effectiveness, in this case, means two things:</p>
@@ -159,8 +160,8 @@
                 <li> Force computation results to be too large or too small.</li>
             </ul>
             <p> As you gain experience with testing, you can develop your own guidelines about how to choose effective test cases. I give more examples of testing guidelines in the next section of this chapter</p>
-            
-            <h3> 8.1.3 Component testing</h3>
+            <hr>
+            <h3 style ="text-align: center;"> 8.1.3 Component testing</h3>
             <hr>
             <p> Software components are often composite components that are made up of several interacting objects. For example, in the weather station system, the reconfiguration component includes objects that deal with each aspect of the reconfiguration. You access the functionality of these objects through the defined component interface. Testing composite components should therefore focus on showing that the component interface behaves according to its specification. </p>
             <ol>
@@ -188,8 +189,8 @@
             <p><b>Incremental integration and testing</b></p>
             <p> System testing involves integrating different components then testing the integrated system that you have created. You should always use an incremental approach to integration and testing (i.e., you should integrate a component, test the system, integrate another component, test again, and so on). This means that if problems occur, it is probably due to interactions with the most recently integrated component. Incremental integration and testing is fundamental to agile methods such as XP, where regression tests (see Section 8.2) are run every time a new increment is integrated.</p>
             <a href=" http://www.SoftwareEngineering-9.com/Web/Testing/Integration.html"> http://www.SoftwareEngineering-9.com/Web/Testing/Integration.html</a>
-            
-            <h3> 8.1.4 System testing</h3>
+            <hr>
+            <h3 style ="text-align: center;"> 8.1.4 System testing</h3>
             <hr>
             <p> System testing during development involves integrating components to create a version of the system and then testing the integrated system. System testing checks that components are compatible, interact correctly and transfer the right data at the right time across their interfaces. It obviously overlaps with component testing but there are two important differences</p>
             <ol>
@@ -212,8 +213,8 @@
                 <li> Where user input is provided, all functions must be tested with both correct and incorrect input.</li>
             </ol>
             <p> It is clear from experience with major software products such as word processors or spreadsheets that similar guidelines are normally used during product testing. When features of the software are used in isolation, they normally work. Problems arise, as Whittaker (2002) explains, when combinations of less commonly used features have not been tested together. He gives the example of how, in a commonly used word processor, using footnotes with a multicolumn layout causes incorrect layout of the text.</p>
-            
-            <h3> 8.2 Test-driven development</h3>
+            <hr>
+            <h3 style ="text-align: center;"> 8.2 Test-driven development</h3>
             <hr>
             <p>Test-driven development (TDD) is an approach to program development in which you interleave testing and code development (Beck, 2002; Jeffries and Melnik, 2007). Essentially, you develop the code incrementally, along with a test for that increment. You don’t move on to the next increment until the code that you have developed passes its test. Test-driven development was introduced as part of agile methods such as Extreme Programming. However, it can also be used in plan-driven development processes</p>
             <center><img src="image/image9.png"></center>
@@ -277,8 +278,8 @@
                         only be determined by studying its inputs and the related outputs. Another name for
                         this is ‘functional testing’, so-called because the tester is only concerned with func
                         tionality and not the implementation of the software.<br></p>
-                    
-                    <h2> 8.3.1 Requirements-based testing</h2>
+                    <hr>
+                    <h2 style ="text-align: center;"> 8.3.1 Requirements-based testing</h2>
                     <hr>
                     <p> A general principle of good requirements engineering practice is that requirements
                         should be testable; that is, the requirement should be written so that a test can be
@@ -308,8 +309,8 @@
                         </ol>
                     <p>You can see from this that testing a requirement does not mean just writing a single test. You normally have to write several tests to ensure that you have coverage of the requirement. You should also maintain traceability records of your requirements
                         based testing, which link the tests to the specific requirements that are being tested.</p>
-
-                    <h2> 8.3.2 Scenario testing</h2>
+                    <hr>
+                    <h2 style ="text-align: center;"> 8.3.2 Scenario testing</h2>
                     <hr>
                     <p> Scenario testing is an approach to release testing where you devise typical scenarios
                         of use and use these to develop test cases for the system. A scenario is a story that
@@ -348,8 +349,8 @@
                         <br>When you use a scenario-based approach, you are normally testing several require
                         ments within the same scenario. Therefore, as well as checking individual requirements,
                         you are also checking that combinations of requirements do not cause problems.<br></p>
-
-                    <h2>8.3.3 Performance testing</h2>
+                    <hr>
+                    <h2 style ="text-align: center;">8.3.3 Performance testing</h2>
                     <hr>
                     <p> Once a system has been completely integrated, it is possible to test for emergent prop
                         erties, such as performance and reliability. Performance tests have to be designed to
@@ -391,8 +392,8 @@
                         processes must exchange. The processes become slower and slower as they wait for
                         the required data from other processes. Stress testing helps you discover when the
                         degradation begins so that you can add checks to the system to reject transactionsbeyond this point</p>
-
-                    <h2> 8.4 User testing</h2>
+                    <hr>
+                    <h2 style ="text-align: center;"> 8.4 User testing</h2>
                     <hr>
                     <p> User or customer testing is a stage in the testing process in which users or customers
                         provide input and advice on system testing. This may involve formally testing a sys
@@ -538,7 +539,7 @@
                         <li> Acceptance testing is a user testing process where the aim is to decide if the software is good
                             enough to be deployed and used in its operational environment.</li>
                     </ol>
-
+                    <hr>
                     <h2>FURTHER READING</h2>
                     <hr>
                     <p> ‘How to design practical test cases’. A how-to article on test case design by an author from a
@@ -553,7 +554,7 @@
                     <p>‘Test-driven development’. This special issue on test-driven development includes a good general
                         overview of TDD as well as experience papers on how TDD has been used for different types of
                         software. (IEEE Software, 24 (3) May/June 2007.)</p>
-
+                    <hr>
                     <h2> EXERCISES</h2>
                     <hr>
                     
@@ -585,5 +586,9 @@
         </section>
 </main>
 <!--Website Main-->
+<footer style ="text-align: center;">
+    <p>Developed by:</p>
+    <p><b>Ma. Erica Z. Vidal</b></p>
+</footer>
 
 </body>

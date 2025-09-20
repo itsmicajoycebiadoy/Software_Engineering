@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter1</title>
     <link rel="stylesheet" href="Chapter1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <article class="header-center">
-            
-            <article>
-                <h2>1 Introduction</h2>
-                <section>
+        <article>
+                <h1>Chapter 1: Introduction</h1>
+                <section class="links-section">
+                    <article><b>
+                        <a class = "links" href="#section-1.1">1.1 Professional software development</a>
+                        <a class = "links" href="#section-1.2">1.2 Software engineering ethics</a>
+                        <a class = "links" href="#section-1.3">1.3 Case studies</a></b>
+                    </article>
+                </section>
+        </article>
+    </header>
+
+    <main>
+        <section>
+             <section>
                     <h3>Objectives</h3>
                     <p>The objectives of this chapter are to introduce software engineering and to provide a framework for understanding the rest of the book. When you have read this chapter you will:</p>
                     <ul>
@@ -22,21 +33,7 @@
                         <li>have been introduced to three systems, of different types, that will be used as examples throughout the book. </li>
                     </ul>
                 </section>
-                <section>
-                    <h3>Contents</h3>
-                    <ul>
-                        <li>1.1 Professional software development</li>
-                        <li>1.2 Software engineering ethics</li>
-                        <li>1.3 Case studies</li>
-                    </ul>
-                </section>
-            </article>
-        </article>
-    </header>
 
-    <main>
-        <section>
-            <h3>Chapter 1 Introduction</h3>
             <p>We can’t run the modern world without software. National infrastructures and utilities are controlled by computer-based systems and most electrical products include a computer and controlling software. Industrial manufacturing and distribution is completely computerized, as is the financial system. Entertainment, including the music industry, computer games, and film and television, is software intensive. Therefore, software engineering is essential for the functioning of national and international societies.</p>
 
             <p>We can’t run the modern world without software. National infrastructures and utilities are controlled by computer-based systems and most electrical products include a
@@ -93,7 +90,7 @@
         </section>
 
         <section>
-            <h2 class = "bodytext-header">1.1 Professional software development</h2>
+            <h2 class = "bodytext-header" id = "section-1.1">1.1 Professional software development</h2>
 
             <p>Lots of people write programs. People in business write spreadsheet programs to
             simplify their jobs, scientists and engineers write programs to process their experimental data, and hobbyists write programs for their own interest and enjoyment.
@@ -124,7 +121,7 @@
         </section>
         <br>
         <section>
-            <table border="3" style="background-color: transparent;">
+            <table class = "table-main">
                 <tr>
                     <th>Questions</th>
                     <th>Answer</th>
@@ -193,12 +190,10 @@
                     in programming languages and software reuse.</td>
                 </tr>
             </table>
+             <p class="image-container">Figure 1.1 Frequently  asked questions about software</p>
         </section>
 
         <section>
-            <p>Figure 1.1 Frequently  asked questions about software</p>
-
-    
             <p>1. Generic products These are stand-alone systems that are produced by a development organization and sold on the open market to any customer who is able to buy them. Examples of this type of product include software for PCs such as
             databases, word processors, drawing packages, and project-management tools.
             It also includes so-called vertical applications designed for some specific purpose such as library information systems, accounting systems, or systems for
@@ -247,7 +242,7 @@
         </section>
         
         <section>
-            <table border="3" style="background-color:transparent">
+            <table class = "table-main" >
                 <tr>
                     <th>Attribute</th>
                     <th>Description</th>
@@ -283,7 +278,7 @@
                     </td>
                 </tr>
             </table>
-            <p>Figure 1.2 Essential attributes of good software and always try to discover solutions to problems even when there are no applicable theories and methods. Engineers also recognize that they must work to organizational and financial constraints so they look for solutions within these constraints.</p>
+            <p class="image-container">Figure 1.2 Essential attributes of good software and always try to discover solutions to problems even when there are no applicable theories and methods. Engineers also recognize that they must work to organizational and financial constraints so they look for solutions within these constraints.</p>
         </section>
 
         <section>
@@ -537,7 +532,7 @@
         </section>
 
         <section>
-            <h2 class = "bodytext-header">1.2 Software engineering ethics</h2>
+            <h2 class = "bodytext-header" id = "section-1.2">1.2 Software engineering ethics</h2>
 
             <p>Like other engineering disciplines, software engineering is carried out within a
             social and legal framework that limits the freedom of people working in that area. As
@@ -644,7 +639,7 @@
         </section>
         <br>
         <section>
-            <h2 class = "bodytext-header">1.3 Case studies</h2>
+            <h2 class = "bodytext-header" id = "section-1.3">1.3 Case studies</h2>
 
             <p>To illustrate software engineering concepts, I use examples from three different
             types of systems throughout the book. The reason why I have not used a single case
@@ -740,7 +735,6 @@
                 <img src="template/Capture4.PNG" alt="fig1.6">
                 <p>Figure 1.6 The organization of the MHC-PMS</p>
             </article>
-            <p>The system must therefore be designed and implemented to ensure that the system always meets these requirements. More detailed requirements and discussions of how to ensure that the system is safe are discussed in later chapters.</p>
         </section>
 
         <section>
@@ -896,7 +890,7 @@
     </main>
 
     <footer>
-        <h4>KEY POINTS</h4>
+        <h1 class = "footer-h1">KEY POINTS</h1>
         <ul>
             <li>Software engineering is an engineering discipline that is concerned with all aspects of software production.</li>
             <li>Software is not just a program or programs but also includes documentation. Essential software product attributes are maintainability, dependability, security, efficiency, and acceptability</li>
@@ -907,6 +901,8 @@
             <li>Software engineers have responsibilities to the engineering profession and society. They should not simply be concerned with technical issues.</li>
             <li>Professional societies publish codes of conduct that set out the standards of behavior expected of their members. </li>
         </ul>
+        <br>
+        <p class = "footer-authored">Created by: Jhon Jerick Guyala</p>
     </footer>
 </body>
 </html>

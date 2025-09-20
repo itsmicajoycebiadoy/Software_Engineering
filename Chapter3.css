@@ -8,6 +8,11 @@ header{
    color: #9A3F3F;
    margin-top: 20px;
 }
+header:hover{
+   width: auto;
+   background-color: #ffc2c2;
+   cursor: pointer;
+}
 
 .lists{
    padding: 10px 10px;
@@ -20,6 +25,8 @@ header{
    text-decoration: solid;
    font-weight: bold;
    box-shadow: rgb(47, 46, 46) 1px 1px 5px;
+   cursor: pointer;
+   width: auto;
  }
 
  .lists:active{
@@ -53,6 +60,10 @@ main{
    border-radius: 40px;
    padding: 20px 20px;
    border: #50015357 solid 5px;
+}
+main:hover{
+   cursor: pointer;
+   background: #ffc2c2;
 }
 
 .title{

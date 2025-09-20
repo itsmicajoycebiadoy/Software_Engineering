@@ -4,26 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter1</title>
-    <link href="Chapter1.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Chapter1.css">
 </head>
 <body>
-    <header class="sticky-header">
-        <article>
-                <h1>Chapter 1: Introduction</h1>
-                <section class="links-section">
-                    <article><b>
-                        <a class = "links" href="#section-1.1">1.1 Professional software development</a>
-                        <a class = "links" href="#section-1.2">1.2 Software engineering ethics</a>
-                        <a class = "links" href="#section-1.3">1.3 Case studies</a></b>
-                    </article>
-                </section>
-        </article>
-    </header>
-
-    <main>
-        <section>
-            <section>
+    <header>
+        <article class="header-center">
+            
+            <article>
+                <h2>1 Introduction</h2>
+                <section>
                     <h3>Objectives</h3>
                     <p>The objectives of this chapter are to introduce software engineering and to provide a framework for understanding the rest of the book. When you have read this chapter you will:</p>
                     <ul>
@@ -32,7 +21,22 @@
                         <li>understand some ethical and professional issues that are important for software engineers;</li>
                         <li>have been introduced to three systems, of different types, that will be used as examples throughout the book. </li>
                     </ul>
-            </section>
+                </section>
+                <section>
+                    <h3>Contents</h3>
+                    <ul>
+                        <li>1.1 Professional software development</li>
+                        <li>1.2 Software engineering ethics</li>
+                        <li>1.3 Case studies</li>
+                    </ul>
+                </section>
+            </article>
+        </article>
+    </header>
+
+    <main>
+        <section>
+            <h3>Chapter 1 Introduction</h3>
             <p>We can’t run the modern world without software. National infrastructures and utilities are controlled by computer-based systems and most electrical products include a computer and controlling software. Industrial manufacturing and distribution is completely computerized, as is the financial system. Entertainment, including the music industry, computer games, and film and television, is software intensive. Therefore, software engineering is essential for the functioning of national and international societies.</p>
 
             <p>We can’t run the modern world without software. National infrastructures and utilities are controlled by computer-based systems and most electrical products include a
@@ -86,10 +90,10 @@
             standard notations were developed and are now extensively used</p>
 
             <a href="">http://www.SoftwareEngineering-9.com/Web/History/</a>
-        
         </section>
+
         <section>
-            <h2 class = "bodytext-header" id = "section-1.1">1.1 Professional software development</h2>
+            <h2 class = "bodytext-header">1.1 Professional software development</h2>
 
             <p>Lots of people write programs. People in business write spreadsheet programs to
             simplify their jobs, scientists and engineers write programs to process their experimental data, and hobbyists write programs for their own interest and enjoyment.
@@ -120,7 +124,7 @@
         </section>
         <br>
         <section>
-            <table class = "table-main">
+            <table border="3" style="background-color: transparent;">
                 <tr>
                     <th>Questions</th>
                     <th>Answer</th>
@@ -243,7 +247,7 @@
         </section>
         
         <section>
-            <table class = "table-main">
+            <table border="3" style="background-color:transparent">
                 <tr>
                     <th>Attribute</th>
                     <th>Description</th>
@@ -533,7 +537,7 @@
         </section>
 
         <section>
-            <h2 class = "bodytext-header" id = "section-1.2">1.2 Software engineering ethics</h2>
+            <h2 class = "bodytext-header">1.2 Software engineering ethics</h2>
 
             <p>Like other engineering disciplines, software engineering is carried out within a
             social and legal framework that limits the freedom of people working in that area. As
@@ -640,7 +644,7 @@
         </section>
         <br>
         <section>
-            <h2 class = "bodytext-header" id = "section-1.3">1.3 Case studies</h2>
+            <h2 class = "bodytext-header">1.3 Case studies</h2>
 
             <p>To illustrate software engineering concepts, I use examples from three different
             types of systems throughout the book. The reason why I have not used a single case
@@ -736,6 +740,7 @@
                 <img src="template/Capture4.PNG" alt="fig1.6">
                 <p>Figure 1.6 The organization of the MHC-PMS</p>
             </article>
+            <p>The system must therefore be designed and implemented to ensure that the system always meets these requirements. More detailed requirements and discussions of how to ensure that the system is safe are discussed in later chapters.</p>
         </section>
 
         <section>
@@ -891,21 +896,17 @@
     </main>
 
     <footer>
-        <article class="footer-content">
-            <h1 class = "h1-footer">KEY POINTS</h1>
-                <ul>
-                    <li>Software engineering is an engineering discipline that is concerned with all aspects of software production.</li>
-                    <li>Software is not just a program or programs but also includes documentation. Essential software product attributes are maintainability, dependability, security, efficiency, and acceptability</li>
-                    <li>The software process includes all of the activities involved in software development. The highlevel activities of specification, development, validation, and evolution are part of all software processes. </li>
-                    <li>The fundamental notions of software engineering are universally applicable to all types of system development. These fundamentals include software processes, dependability, security, requirements, and reuse.</li>
-                    <li>There are many different types of systems and each requires appropriate software engineering tools and techniques for their development. There are few, if any, specific design and implementation techniques that are applicable to all kinds of systems.</li>
-                    <li>The fundamental ideas of software engineering are applicable to all types of software systems.These fundamentals include managed software processes, software dependability and security, requirements engineering, and software reuse.</li>
-                    <li>Software engineers have responsibilities to the engineering profession and society. They should not simply be concerned with technical issues.</li>
-                    <li>Professional societies publish codes of conduct that set out the standards of behavior expected of their members. </li>
-                </ul>
-        </article>
-        <br>
-        <p class="footer-authored"><b>Created by: Jhon Jerick Guyala</b></p>
+        <h4>KEY POINTS</h4>
+        <ul>
+            <li>Software engineering is an engineering discipline that is concerned with all aspects of software production.</li>
+            <li>Software is not just a program or programs but also includes documentation. Essential software product attributes are maintainability, dependability, security, efficiency, and acceptability</li>
+            <li>The software process includes all of the activities involved in software development. The highlevel activities of specification, development, validation, and evolution are part of all software processes. </li>
+            <li>The fundamental notions of software engineering are universally applicable to all types of system development. These fundamentals include software processes, dependability, security, requirements, and reuse.</li>
+            <li>There are many different types of systems and each requires appropriate software engineering tools and techniques for their development. There are few, if any, specific design and implementation techniques that are applicable to all kinds of systems.</li>
+            <li>The fundamental ideas of software engineering are applicable to all types of software systems.These fundamentals include managed software processes, software dependability and security, requirements engineering, and software reuse.</li>
+            <li>Software engineers have responsibilities to the engineering profession and society. They should not simply be concerned with technical issues.</li>
+            <li>Professional societies publish codes of conduct that set out the standards of behavior expected of their members. </li>
+        </ul>
     </footer>
 </body>
 </html>

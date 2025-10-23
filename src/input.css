@@ -1,23 +1,29 @@
 @import "tailwindcss";
 
-@import "tailwindcss";
+@font-face {
+  font-family: 'Poppins';
+  src: url('https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJA.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
-/* 🎨 Define your theme (available in all files) */
 @theme {
   --font-family-base: 'Poppins', sans-serif;
-  --color-primary: #92400e;   /* amber-800 */
-  --color-secondary: #fbbf24; /* amber-400 */
-  --color-accent: #78350f;    /* amber-900 */
-  --color-bg: #fff7ed;        /* amber-50 */
-  --color-text: #374151;      /* gray-700 */
+  --color-primary: #92400e;   
+  --color-secondary: #fbbf24; 
+  --color-accent: #78350f;    
+  --color-bg: #fff7ed;        
+  --color-text: #374151;     
 }
 
-/* 🌐 Global styles (auto-applied in all HTML files) */
+
 body {
-  @apply font-sans text-[var(--color-text)] bg-[var(--color-bg)] leading-relaxed;
+  font-family: var(--font-family-base);
+  @apply text-[var(--color-text)] bg-[var(--color-bg)] leading-relaxed;
 }
 
-/* 📘 Cards and sections */
+ /*Index.html*/
 .foot-card {
   @apply bg-white rounded-2xl overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-xl border border-amber-200 hover:border-[var(--color-secondary)];
 }

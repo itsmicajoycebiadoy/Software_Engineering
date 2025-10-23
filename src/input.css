@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@import "tailwindcss";
+
+/* 🎨 Define your theme (available in all files) */
+@theme {
+  --font-family-base: 'Poppins', sans-serif;
+  --color-primary: #92400e;   /* amber-800 */
+  --color-secondary: #fbbf24; /* amber-400 */
+  --color-accent: #78350f;    /* amber-900 */
+  --color-bg: #fff7ed;        /* amber-50 */
+  --color-text: #374151;      /* gray-700 */
+}
+
+/* 🌐 Global styles (auto-applied in all HTML files) */
+body {
+  @apply font-sans text-[var(--color-text)] bg-[var(--color-bg)] leading-relaxed;
+}
+
+/* 📘 Cards and sections */
+.foot-card {
+  @apply bg-white rounded-2xl overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-xl border border-amber-200 hover:border-[var(--color-secondary)];
+}
+
+.main-card{
+  @apply block bg-white rounded-2xl overflow-hidden shadow-md transform transition duration-300 hover:scale-105 hover:shadow-xl;
+}
+
+.main-card-num{
+  @apply w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold mr-3;
+}
+
+.main-card-header{
+  @apply text-lg sm:text-xl font-semibold text-[var(--color-primary)] group-hover:text-[var(--color-secondary)];
+}

@@ -422,13 +422,6 @@
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-  .group-hover\:text-\[var\(--color-secondary\)\] {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        color: var(--color-secondary);
-      }
-    }
-  }
   .sm\:mb-0 {
     @media (width >= 40rem) {
       margin-bottom: calc(var(--spacing) * 0);

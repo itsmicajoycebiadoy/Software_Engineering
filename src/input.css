@@ -1,22 +1,21 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJA.woff2') format('woff2');
+  font-family: 'Nunito';
+  src: url('./fonts/Nunito-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @theme {
-  --font-family-base: 'Poppins', sans-serif;
-  --color-primary: #92400e;   
-  --color-secondary: #fbbf24; 
-  --color-accent: #78350f;    
-  --color-bg: #fff7ed;        
-  --color-text: #374151;     
+  --font-family-base: 'Nunito', sans-serif;
+  --color-primary: #92400e;
+  --color-secondary: #fbbf24;
+  --color-accent: #78350f;
+  --color-bg: #fff7ed;
+  --color-text: #374151;
 }
-
 
 body {
   font-family: var(--font-family-base);
@@ -27,6 +26,8 @@ body {
 .foot-card {
   @apply bg-white rounded-2xl overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-xl border border-amber-200 hover:border-[var(--color-secondary)];
 }
+
+
 
 .main-card{
   @apply block bg-white rounded-2xl overflow-hidden shadow-md transform transition duration-300 hover:scale-105 hover:shadow-xl;

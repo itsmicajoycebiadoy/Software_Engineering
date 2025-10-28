@@ -46,7 +46,7 @@ body {
 
 
 .chap-link {
-  @apply text-amber-950 hover:text-yellow-500 font-semibold text-xs transition px-2 sm:px-3 whitespace-nowrap;
+  @apply text-amber-950 hover:text-yellow-500 font-semibold text-xs transition px-2 sm:px-3 whitespace-nowrap ;
 }
 
 
@@ -63,7 +63,7 @@ body {
 }
 
 .image {
-  @apply rounded-lg shadow-md max-w-full h-auto;
+  @apply rounded-lg shadow-md h-80 ;
 }
 
 .div-img {

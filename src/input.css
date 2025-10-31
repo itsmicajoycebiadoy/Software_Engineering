@@ -39,6 +39,170 @@ body {
   @apply text-lg sm:text-xl font-semibold text-[var(--color-primary)] group-hover:text-[var(--color-secondary)];
 }
 
+/* chapter 3 */
+
+ @font-face {
+  font-family: 'Poppins';
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+  @theme {
+  --font-poppins: 'Poppins', sans-serif;
+  --color-brown: #92400e;
+  --color-mustard: #fbbf24;
+  --color-darkbrown: #78350f;
+  --color-cream: #fff7ed;
+  --color-darkblue: #374151;
+}
+
+ .text-shadow {
+  text-shadow: 2px 2px 4px rgba(29, 29, 29, 0.5);
+}
+
+/* === NAVIGATION === */
+.nav-links {
+  @apply inline-grid grid-cols-6 gap-2 font-normal border-t-2 border-[var(--color-darkbrown)];
+}
+
+.lists {
+  @apply flex justify-center items-center mx-5 px-5 py-5 text-center text-3xl text-[var(--color-cream)]
+         transition duration-300 hover:animate-bounce hover:shadow-lg hover:text-amber-100 
+         hover:border-b-2 hover:border-[var(--color-cream)] hover:bg-amber-800 
+         font-['MyPoppins'] hover:cursor-pointer ;
+}
+
+.logo {
+  @apply flex my-5 mt-5 animate-bounce text-5xl font-extrabold text-transparent 
+         bg-gradient-to-r from-[var(--color-cream)] to-[var(--color-darkbrown)]
+         bg-clip-text font-['MyPoppins'];
+}
+
+.logo-container {
+  @apply bg-[var(--color-darkbrown)] h-62;
+}
+
+.logo-gradient {
+  @apply bg-[var(--color-darkbrown)] mx-2 p-5 transition-colors duration-500 
+         hover:from-[var(--color-darkbrown)] hover:to-[var(--color-cream)];
+}
+
+/* === MAIN SECTION === */
+.main {
+  font-family: 'Poppins';
+  @apply m-2 md:ml-5 md:mx-10 lg:w-250 lg:h-auto xl:mx-50 xl:grid xl:grid-cols-2;
+}
+
+.title {
+  @apply flex items-center gap-10 p-5 rounded-t-2xl border-t-2 border-b-2 border-amber-50 
+         text-[30px] text-[var(--color-cream)] font-bold font-['MyPoppins']
+         bg-gradient-to-l from-amber-700 to-[var(--color-brown)] shadow-lg;
+}
+
+.body-bg {
+  @apply bg-amber-100;
+}
+
+/* === IMAGES === */
+.box-imgcontainer {
+  @apply container mx-auto px-4 flex justify-center w-full h-130;
+}
+
+.box-image {
+  @apply max-w-full h-auto m-5  sm:w-full sm:max-w-full;
+}
+
+.box-imgcontainer-2 {
+  @apply container mx-auto px-4 flex justify-center w-full h-150;
+}
+
+/* === CONTENT BOXES === */
+.objectives-box,
+.intro-box,
+.threewan-box,
+.threewan-principles-box,
+.PLAN-DRIVEN-box,
+.Figure-PLAN-DRIVEN-box,
+.Xtreme-box,
+.Xtreme-figure-box,
+.XPPractices-box,
+.Figures-Prescribing-box,
+.Figures-examples-box,
+.Testing-box,
+.TestingDescription-box,
+.Pair-programming,
+.Agile-project,
+.Scrum-process,
+.Agile-methods,
+.several-differences {
+  @apply bg-[var(--color-cream)] rounded-2xl shadow-md mx-10 my-15 pb-10 font-['MyPoppins']
+         hover:shadow-[var(--color-cream)] hover:border-2 hover:border-amber-900 hover:cursor-pointer
+         sm:m-0 sm:mb-5 md:m-5 lg:ml-20;
+}
+
+/* === INDIVIDUAL BOX SETTINGS === */
+.objectives-box { @apply xl:h-130 xl:w-400 pb-5 hover:scale-105 ; }
+.intro-box { @apply xl:h-430 xl:w-400 pb-5 hover:scale-103; }
+.threewan-box { @apply xl:h-800 xl:w-400 pb-5 hover:scale-102; }
+.threewan-principles-box { @apply xl:h-680 xl:w-400 pb-5 hover:scale-102; }
+.PLAN-DRIVEN-box { @apply xl:h-140 xl:w-400 pb-5 hover:scale-102; }
+.Figure-PLAN-DRIVEN-box { @apply xl:h-670 xl:w-400 pb-5 hover:scale-102; }
+.Xtreme-box { @apply xl:h-100 xl:w-400 pb-5 hover:scale-105; }
+.Xtreme-figure-box { @apply xl:h-430 xl:w-400 pb-5 hover:scale-102; }
+.XPPractices-box { @apply xl:h-300 xl:w-400 pb-5 hover:scale-102; }
+.Figures-Prescribing-box { @apply xl:h-390 xl:w-400 pb-5 hover:scale-102; }
+.Figures-examples-box { @apply xl:h-390 xl:w-400 pb-5 hover:scale-102; }
+.Testing-box { @apply xl:h-360 xl:w-400 pb-5 hover:scale-102; }
+.TestingDescription-box { @apply xl:h-330 xl:w-400 pb-5 hover:scale-105; }
+.Pair-programming { @apply xl:h-190 xl:w-400 pb-5 hover:scale-105; }
+.Agile-project { @apply xl:h-130 xl:w-400 pb-5 hover:scale-105; }
+.Scrum-process { @apply xl:h-160 xl:w-400 pb-5 hover:scale-105; }
+.Agile-methods { @apply xl:h-150 xl:w-400 pb-5 hover:scale-105; }
+.several-differences { @apply xl:h-300 xl:w-400 pb-5 hover:scale-102; }
+
+/* === CONTENT SIDE BAR === */
+.content {
+  @apply fixed right-10 top-67 w-64 m-0 pb-5 bg-[var(--color-cream)] 
+         flex justify-baseline xl:h-205 xl:w-200 sm:hidden lg:hidden xl:block ;
+}
+
+/* === CONTENT  === */
+.content-btn {
+  @apply border-2 border-amber-200 rounded-md py-10 mx-10 my-5 
+         hover:bg-[var(--color-cream)] hover:border-amber-600;
+}
+
+.content-num {
+  @apply bg-amber-800 text-[var(--color-cream)] rounded-md p-5;
+}
+
+.title-num {
+  @apply bg-amber-700 text-[var(--color-cream)] p-3 rounded-2xl;
+}
+
+/* === PARAGRAPHS === */
+.f-paragraph {
+  @apply mt-5 pl-20 px-5 text-[30px] text-[var(--color-darkbrown)] font-['Poppins'];
+}
+
+.s-paragraph {
+  @apply pl-20 pr-20 px-5 text-3xl text-[var(--color-darkbrown)] font-['Poppins'];
+}
+
+/* === OTHER STYLES === */
+.center-fig {
+  @apply justify-center mb-3;
+}
+
+.listnum {
+  @apply m-5 px-5 py-3 space-x-5 text-[var(--color-cream)] bg-[var(--color-mustard)] rounded-full;
+}
+
+.footer {
+  @apply text-center text-2xl text-[var(--color-darkbrown)] bg-[var(--color-cream)] p-5;
+}
+
 /* chapter 14 */
 .chap-h2{
   @apply text-2xl md:text-3xl font-bold text-amber-50 mb-4 bg-amber-900 rounded-2xl p-1 text-center;

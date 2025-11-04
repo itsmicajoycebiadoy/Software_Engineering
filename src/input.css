@@ -103,7 +103,7 @@ body {
 }
 
 .main-sec4 {
-  @apply scroll-mt-24 font-poppins text-amber-900 transition-all duration-700 ease-out animate-fade-in-up;
+  @apply scroll-mt-24 text-amber-900 transition-all duration-700 ease-out;
 }
 
 .main-con {

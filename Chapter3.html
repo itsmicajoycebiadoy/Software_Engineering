@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter-3 Agile Software Development</title>
     <link rel="stylesheet" href="./src/output.css">
-    <link rel="icon" href="Chapter3-Images/icon num 3.webp" type="image/x-icon">
+    <link rel="icon" href="index_images/image.png" type="image/x-icon">
 </head>
+<!-- nav & chapter -->
 <body class="body-bg">
     <header  class="logo-container  logo-gradient sticky top-0  z-10 m-0">
-    <h1 class="logo text-shadow-xl text-shadow " >CHAPTER 3:<br>
+    <h1 class="logo text-shadow-xl" >CHAPTER 3:<br>
          AGILE SOFTWARE DEVELOPMENT</h1><span id="objectives"></span>
-        <nav class=" border-t-2 border-amber-800 drop-shadow-2xl ">
-            <ul class="nav-links text-md bg-nav ">
+        <nav class=" border-t-2 border-amber-800 ">
+            <ul class="inline-grid grid-cols-5 gap-2 font-normal text-md  ">
                 <li><a class="lists " href="index.html"> Home </a></li>
                 <li><a class="lists " href="Chapter1.html"> Chapter1  </a></li>
                 <li><a class="lists " href="Chapter2.html"> Chapter2 </a></li>
@@ -22,47 +23,49 @@
         </nav>
     </header >
          
-    <main  class="main ">
-     <div class="content ">
+    <!-- side right -->
+    <main  class="">
+     <div class="content-boxes content">
                   <h2 class="title"><img src="Chapter3-Images/icons8-content-48.png">CONTENTS:</h2>
              <ol>
                 <div class=" content-btn ">
-                <li  class="s-paragraph "><a href="#3.1"><span class="content-num">3.1</span> Agile methods</a></li>
+                <li  class=" "><a href="#3.1"><span class="content-num">3.1</span> Agile methods</a></li>
                 </div>
                 <div class="content-btn"> 
-                <li class="s-paragraph"><a href="#3.2"><span class="content-num">3.2</span> Plan-driven and Agile Dev</a></li>
+                <li class=""><a href="#3.2"><span class="content-num">3.2</span> Plan-driven and Agile Dev</a></li>
                 </div>
                 <div class="content-btn">
-                <li class="s-paragraph"><a href="#3.3"><span class="content-num">3.3</span> Extreme programming</a></li>
+                <li class=""><a href="#3.3"><span class="content-num">3.3</span> Extreme programming</a></li>
                 </div>
                 <div class="content-btn">
-                <li class="s-paragraph"><a href="#3.4"><span class="content-num">3.4</span> Agile project management</a></li>
+                <li class=""><a href="#3.4"><span class="content-num">3.4</span> Agile project management</a></li>
                 </div>
                 <div  class="content-btn">
-                <li class="s-paragraph"><a href="#3.5"><span class="content-num">3.5</span> Scaling agile methods</a></li>
+                <li class=""><a href="#3.5"><span class="content-num">3.5</span> Scaling agile methods</a></li>
                 </div>
              </ol>
             </div>
 
+            <!-- content-boxes -->
       <section >
         <article>
-          <div  class="objectives-box "> 
+          <div  class="content-boxes xl:h-110 xl:w-200 pb-5 hover:scale-102 "> 
             <h2 class="title " ><img src="Chapter3-Images/icons8-pain-point-50 (2).png">OBJECTIVES:</h2>
-            <p class="f-paragraph" id="#1.1"> The objective of this chapter is to introduce you to agile software
+            <p class="text-[20px] text-[var(--color-accent)]  mx-5 mt-2" id="#1.1"> The objective of this chapter is to introduce you to agile software
              development methods. When you have read the chapter, you will:</p><br>
              <ol >
-                <li class="s-paragraph tracking-wider"><span class="listnum  ">1</span> Learn the purpose and principles of agile development.</li><br>
-                <li class="s-paragraph tracking-wider"> <span class="listnum">2</span> Understand key practices in Extreme Programming.</li><br>
-                <li class="s-paragraph tracking-wider"> <span class="listnum">3</span> Explore the Scrum approach to project management.</li><br>
-                <li class="s-paragraph tracking-wider" > <span class="listnum">4</span> Recognize challenges in scaling agile methods for large systems.</li><br>
+                <li class=" text-[var(--color-accent)] mx-5 tracking-wider"><span class="listnum hidden sm:block ">1</span> Learn the purpose and principles of agile development.</li><br>
+                <li class=" text-[var(--color-accent)]  mx-5 tracking-wider"> <span class="listnum hidden sm:block">2</span> Understand key practices in Extreme Programming.</li><br>
+                <li class=" text-[var(--color-accent)]  mx-5 tracking-wider"> <span class="listnum hidden sm:block">3</span> Explore the Scrum approach to project management.</li><br>
+                <li class=" text-[var(--color-accent)]  mx-5 tracking-wider" > <span class="listnum hidden sm:block">4</span> Recognize challenges in scaling agile methods for large systems.</li><br>
              </ol>
             </div>
             
             
 
-            <div class="intro-box ">
-                    <h2 class="title"><img src="Chapter3-Images/icons8-flip-chart-50.png">INTRODUCTION</h2>
-                  <p class="s-paragraph mt-10">     Businesses today face a fast-changing, global environment that demands rapid software
+            <div class="content-boxes xl:h-300 xl:w-200 pb-5 hover:scale-102">  
+                    <h2 class="title"><img src="Chapter3-Images/icons8-flip-chart-50.png" >INTRODUCTION</h2>
+                  <p class="text-[var(--color-accent)] mx-5 ">     Businesses today face a fast-changing, global environment that demands rapid software
                      development to seize opportunities and stay competitive. <br>
                      Because requirements often change unpredictably, traditional plan-driven models like the waterfall approach are 
                      too rigid, leading to delays and <br>outdated systems. While such models may still suit 
@@ -78,32 +81,32 @@
                     software development, <br>they share some fundamental characteristics:<br><br></p>
 
                     
-                <ol>
-                    <li class="s-paragraph"> The processes of specification, design, and implementation are interleaved.
+                <ol class="text-[var(--color-accent)] mx-5 mt-2">
+                    <li class=""> The processes of specification, design, and implementation are interleaved.
                          There is no detailed system specification, and design documentation <br>is mini
                          mized or generated automatically by the programming environment used to
                          implement the system. The user requirements document only<br> defines the most
                          important characteristics of the system.<br><br></li>
-                    <li class="s-paragraph"> The system is developed in a series of versions. End-users and other system
+                    <li class=""> The system is developed in a series of versions. End-users and other system
                         stakeholders are involved in specifying and evaluating each version. <br>They may
                         propose changes to the software and new requirements that should be imple
                         mented in a later version of the system.<br><br></li>
-                    <li class="s-paragraph">System user interfaces are often developed using an interactive development
+                    <li class="">System user interfaces are often developed using an interactive development
                         system that allows the interface design to be quickly created by<br> drawing and placing
                         icons on the interface. The system may then generate a web-based interface for 
                         a browser or an interface for a specific <br>platform such as Microsoft Windows.<br><br></li>
                 </ol>
 
-                <p id="3.1" class="s-paragraph"> Agile methods are incremental development methods in which the increments are
+                <p id="3.1" class="text-[var(--color-accent)] mx-5 mt-2"> Agile methods are incremental development methods in which the increments are
                     small and, typically, new releases of the system are created <br>and made available to cus
                     tomers every two or three weeks. They involve customers in the development process
                     to get rapid feedback on <br>changing requirements. They minimize documentation by
                     using informal communications rather than formal meetings with written documents.<br><br></p>
             </div>
 
-            <div class="threewan-box ">
+            <div class="content-boxes xl:h-440 xl:w-200 pb-5 hover:scale-102">
                 <h2  class="title ">3.1 AGILE METHODS</h2>
-                 <p class="f-paragraph "> In the 1980s and early 1990s, software engineering
+                 <p class="text-[var(--color-accent)] mx-5 mt-2"> In the 1980s and early 1990s, software engineering
                      emphasized plan-driven, heavyweight methods involving detailed planning, documentation,<br>quality assurance, 
                      and formal design tools, which suited large, long-lived,
                     safety-critical systems like aerospace and government projects.<br> <br>
@@ -119,12 +122,12 @@
                     agreed on by many of the leading developers of these methods.<br>
                     </p>
 
-                    <p class="f-paragraph "> This manifesto states:<br><br>
+                    <p class="text-[var(--color-accent)] mx-5 "> This manifesto states:<br><br>
                     
                     We are uncovering better ways of developing software by doing it and helping others do it.<br>
                     Through this work we have come to value:<br><br></p>
 
-                    <p class="f-paragraph "> <i>Individuals and interactions over processes and tools<br><br>
+                    <p class="text-[var(--color-accent)] mx-5"> <i>Individuals and interactions over processes and tools<br><br>
 
                         Working software over comprehensive documentation<br><br>
 
@@ -155,7 +158,7 @@
                 
                     Agile methods have been very successful for some types of system development:<br><br></p>
 
-                    <ol class="f-paragraph">
+                    <ol class="text-[var(--color-accent)] mx-5">
                         <li> Product development where a software company is developing a small or
                              medium-sized product for sale.<br><br></li>
                         <li>Custom system development within an organization, where there is a clear com
@@ -164,14 +167,14 @@
                     </ol>
             </div>
 
-            <div class="threewan-principles-box ">
-                <p class="title center-fig">FIGURE 3.1 THE PRINCIPLES OF AGILE METHODS</p>
+            <div class="content-boxes xl:h-550 xl:w-200 pb-5 hover:scale-102">
+                <p class="title ">FIGURE 3.1 THE PRINCIPLES OF AGILE METHODS</p>
                   <div class=" box-imgcontainer ">
                      <img src="Chapter3-Images/Screenshot 2025-09-06 151814.png" class=" box-image object-contain " alt="img" >
                     </div> 
                     
                     
-                    <p class="s-paragraph"> As I discuss in the final section of this chapter, the success of agile methods has
+                    <p class="text-[var(--color-accent)] mx-5"> As I discuss in the final section of this chapter, the success of agile methods has
                         meant that there is a lot of interest in using these methods for other types of software
                         development. However, because of their focus on small, tightly integrated teams,
                         there are problems in scaling them to large systems. There have also been experi
@@ -183,7 +186,7 @@
                      In practice, the principles underlying agile methods are sometimes difficult to
                      realize:</p>
 
-                     <ol class="s-paragraph">
+                     <ol class="text-[var(--color-accent)] mx-5">
                         <li>Although the idea of customer involvement in the development process is an
                             attractive one, its success depends on having a customer who is willing and able
                             to spend time with the development team and who can represent all system
@@ -204,7 +207,7 @@
                             opment teams.<br><br></li>
                      </ol>
 
-                     <p class="s-paragraph">A key non-technical challenge with agile, incremental development arises when software is
+                     <p class="text-[var(--color-accent)] mx-5">A key non-technical challenge with agile, incremental development arises when software is
                         built by an external supplier. Traditionally, contracts are based on a fixed set of requirements, 
                         but agile’s evolving specifications make this difficult. Instead, contracts usually pay for developmen
                         t time and effort, not for delivering predefined features. While this can benefit both parties if progress
@@ -214,13 +217,13 @@
                         
                         There are two questions that should be considered when considering agile methods and maintenance:<br><br></p>
 
-                        <ol class="s-paragraph">
+                        <ol class="text-[var(--color-accent)] mx-5">
                             <li> Are systems that are developed using an agile approach maintainable, given the emphasis in the development 
                                 process of minimizing formal documentation?</li>
                             <li> Can agile methods be used effectively for evolving a system in response to customer change requests?</li>
                         </ol>
                         
-                        <p class="s-paragraph" id="3.2">Agile methods often minimize formal documentation, arguing it quickly becomes outdated and unreliable. Instead,
+                        <p class="text-[var(--color-accent)] mx-5" id="3.2">Agile methods often minimize formal documentation, arguing it quickly becomes outdated and unreliable. Instead,
                             they emphasize clean, well-structured, and continually improved code as the basis for maintainability. However,
                             the requirements document remains critical for system maintenance, as it explains what the system is meant to 
                             do and helps assess the impact of changes. Since many agile methods capture requirements informally and incrementally, 
@@ -239,11 +242,11 @@
 
             </div >
 
-            <div class="PLAN-DRIVEN-box ">
+            <div class="content-boxes xl:h-110 xl:w-200 pb-5 hover:scale-102">
                  <h2  class="title "> 3.2 PLAN-DRIVEN AND AGILE DEVELOPMENT</h2>
                           
 
-                            <p class="s-paragraph mt-10"> Agile approaches to software development consider design and implementation to be
+                            <p class="text-[var(--color-accent)] m-5"> Agile approaches to software development consider design and implementation to be
                              the central activities in the software process. They incorporate other activities, such as
                             requirements elicitation and testing, into design and implementation. By contrast, a
                             plan-driven approach to software engineering identifies separate stages in the soft
@@ -260,14 +263,14 @@
                             </p>
             </div>
 
-            <div class="Figure-PLAN-DRIVEN-box ">
-                 <p  class="title  center-fig"> FIGURE 3.2 PLAN-DRIVEN AND AGILE SPECIFICATION</p>
+            <div class="content-boxes xl:h-530 xl:w-200 pb-5 hover:scale-102">
+                 <p  class="title  "> FIGURE 3.2 PLAN-DRIVEN AND AGILE SPECIFICATION</p>
                             <div class=" box-imgcontainer ">
                             <img src="Chapter3-Images/Screenshot 2025-09-06 155356.png" class="box-image object-contain" alt="img" >
                             </div>
                            
 
-                            <p class="s-paragraph"> A plan-driven software process can support incremental development and deliv
+                            <p class="text-[var(--color-accent)] m-5"> A plan-driven software process can support incremental development and deliv
                             ery. It is perfectly feasible to allocate requirements and plan the design and develop
                             ment phase as a series of increments. An agile process is not inevitably code-focused
                             and it may produce some design documentation. As I discuss in the following sec
@@ -279,48 +282,48 @@
                               approaches. To decide on the balance between a plan-based and an agile approach,
                             you have to answer a range of technical, human, and organizational questions:<br><br></p>
 
-                            <ol class="s-paragraph">
-                            <li class="s-paragraph"> Is it important to have a very detailed specification and design before moving to
+                            <ol class="text-[var(--color-accent)] m-5">
+                            <li class=""> Is it important to have a very detailed specification and design before moving to
                             implementation? If so, you probably need to use a plan-driven approach.<br><br></li>
-                            <li class="s-paragraph"> Is an incremental delivery strategy, where you deliver the software to customers
+                            <li class=""> Is an incremental delivery strategy, where you deliver the software to customers
                             and get rapid feedback from them, realistic? If so, consider using agile methods.<br><br></li>
-                            <li class="s-paragraph"> How large is the system that is being developed? Agile methods are most effec
+                            <li class=""> How large is the system that is being developed? Agile methods are most effec
                             tive when the system can be developed with a small co-located team who can
                             communicate informally. This may not be possible for large systems that require
                             larger development teams so a plan-driven approach may have to be used.<br><br></li>
-                            <li class="s-paragraph"> What type of system is being developed? Systems that require a lot of analysis
+                            <li class=""> What type of system is being developed? Systems that require a lot of analysis
                             before implementation (e.g., real-time system with complex timing require
                             ments) usually need a fairly detailed design to carry out this analysis. A plan
                             driven approach may be best in those circumstances.<br><br></li>
-                            <li class="s-paragraph">What is the expected system lifetime? Long-lifetime systems may require more
+                            <li class="">What is the expected system lifetime? Long-lifetime systems may require more
                             design documentation to communicate the original intentions of the system  developers to the 
                             support team. However, supporters of agile methods rightly
                             argue that documentation is frequently not kept up to date and it is not of much
                             use for long-term system maintenance.<br><br></li>
-                            <li class="s-paragraph">What technologies are available to support system development? Agile methods
+                            <li class="">What technologies are available to support system development? Agile methods
                             often rely on good tools to keep track of an evolving design. If you are develop
                             ing a system using an IDE that does not have good tools for program visualiza
                             tion and analysis, then more design documentation may be required.<br><br></li>
-                            <li class="s-paragraph"> How is the development team organized? If the development team is distributed
+                            <li class=""> How is the development team organized? If the development team is distributed
                             or if part of the development is being outsourced, then you may need to develop
                             design documents to communicate across the development teams. You may
                             need to plan in advance what these are.<br><br></li>
-                            <li class="s-paragraph"> Are there cultural issues that may affect the system development? Traditional
+                            <li class=""> Are there cultural issues that may affect the system development? Traditional
                             engineering organizations have a culture of plan-based development, as this is
                             the norm in engineering. This usually requires extensive design documentation,
                             rather than the informal knowledge used in agile processes.<br><br></li>
-                            <li class="s-paragraph"> How good are the designers and programmers in the development team? It is
+                            <li class=""> How good are the designers and programmers in the development team? It is
                             sometimes argued that agile methods require higher skill levels than plan-based
                             approaches in which programmers simply translate a detailed design into code.
                             If you have a team with relatively low skill levels, you may need to use the best
                             people to develop the design, with others responsible for programming.<br><br></li>
-                            <li class="s-paragraph">Is the system subject to external regulation? If a system has to be approved by an
+                            <li class="">Is the system subject to external regulation? If a system has to be approved by an
                             external regulator (e.g., the Federal Aviation Authority [FAA] approve software
                             that is critical to the operation of an aircraft) then you will probably be required
                             to produce detailed documentation as part of the system safety case.<br><br></li>
                             </ol>
 
-                            <p class="s-paragraph" id="3.3"> In reality, the issue of whether a project can be labelled as plan-driven or agile is
+                            <p class="text-[var(--color-accent)] m-5" id="3.3"> In reality, the issue of whether a project can be labelled as plan-driven or agile is
                             not very important. Ultimately, the primary concern of buyers of a software system
                             is whether or not they have an executable software system that meets their needs and
                             does useful things for the individual user or the organization. In practice, many com
@@ -329,27 +332,27 @@
                            
             </div>
 
-            <div class="Xtreme-box ">
+            <div class="content-boxes xl:h-60 xl:w-200 pb-5 hover:scale-102">
                 <div class="text-center">
                             <h2  class="title" >3.3 EXTREME PROGRAMMING</h2>
                             </div>
                                 
-                            <p class="s-paragraph my-15">Extreme programming (XP) is perhaps the best known and most widely used of the
+                            <p class="text-[var(--color-accent)] m-5">Extreme programming (XP) is perhaps the best known and most widely used of the
                             agile methods. The name was coined by Beck (2000) because the approach was
                             developed by pushing recognized good practice, such as iterative development, to
                             ‘extreme’ levels. For example, in XP, several new versions of a system may be devel
                             oped by different programmers, integrated and tested in a day.</p>
             </div>
 
-            <div class="Xtreme-figure-box ">
-                            <p  class="title  center-fig"> FIGURE 3.3 THE EXTREME PROGRAMMING CYCLE</p>
+            <div class="content-boxes xl:h-380 xl:w-200 pb-5 hover:scale-102">
+                            <p  class="title  "> FIGURE 3.3 THE EXTREME PROGRAMMING CYCLE</p>
                             <div class="box-imgcontainer">
                                 <img src="Chapter3-Images/Screenshot 2025-09-06 160931.png" class="box-image object-contain" alt="img" >
                             </div>
                            
                             
 
-                            <p class="s-paragraph"> In extreme programming, requirements are expressed as scenarios (called user
+                            <p class="text-[var(--color-accent)] m-5"> In extreme programming, requirements are expressed as scenarios (called user
                             stories), which are implemented directly as a series of tasks. Programmers work in
                             pairs and develop tests for each task before writing the code. All tests must be suc
                             cessfully executed when new code is integrated into the system. There is a short time
@@ -359,26 +362,26 @@
                             Extreme programming involves a number of practices, summarized in Figure 3.4,
                             which reflect the principles of agile methods:</p>
 
-                            <ol class="s-paragraph">
+                            <ol class="text-[var(--color-accent)] m-5">
                             <li> Incremental development is supported through small, frequent releases of the
                             system. Requirements are based on simple customer stories or scenarios that are
                             used as a basis for deciding what functionality should be included in a system
                             increment.<br><br></li>
-                            <li class="s-paragraph">Customer involvement is supported through the continuous engagement of the
+                            <li class="">Customer involvement is supported through the continuous engagement of the
                             customer in the development team. The customer representative takes part in the
                             development and is responsible for defining acceptance tests for the system.<br><br></li>
-                            <li class="s-paragraph">People, not process, are supported through pair programming, collective owner
+                            <li class="">People, not process, are supported through pair programming, collective owner
                             ship of the system code, and a sustainable development process that does not
                             involve excessively long working hours.<br><br></li>
-                           <li class="s-paragraph">Change is embraced through regular system releases to customers, test-first
+                           <li class="">Change is embraced through regular system releases to customers, test-first
                             development, refactoring to avoid code degeneration, and continuous integra
                             tion of new functionality.<br><br></li>
-                           <li class="s-paragraph">Maintaining simplicity is supported by constant refactoring that improves code
+                           <li class="">Maintaining simplicity is supported by constant refactoring that improves code
                            quality and by using simple designs that do not unnecessarily anticipate future
                            changes to the system.<br><br></li>
                            </ol>
 
-                           <p class="s-paragraph"> In an XP process, customers are intimately involved in specifying and prioritizing
+                           <p class="text-[var(--color-accent)] m-5"> In an XP process, customers are intimately involved in specifying and prioritizing
                            system requirements. The requirements are not specified as lists of required system
                            functions. Rather, the system customer is part of the development team and discusses
                            scenarios with other team members. Together, they develop a ‘story card’ that encap
@@ -387,15 +390,13 @@
                            </p>
             </div>
 
-            <div class="XPPractices-box ">
-                <p  class="title  center-fig "> FIGURE 3.4 EXTREME PROGRAMMING PRACTICES</p>
+            <div class="content-boxes xl:h-260 xl:w-200 pb-5 hover:scale-102">
+                <p  class="title   "> FIGURE 3.4 EXTREME PROGRAMMING PRACTICES</p>
                             <div class="box-imgcontainer h-140">
                             <img src="Chapter3-Images/Screenshot 2025-09-06 161606.png" class="box-image object-contain mb-5" alt="img">
                            </div>
             
-                           
-
-                           <p class="s-paragraph my-10"> health care patient management system is shown in Figure 3.5. This is a short
+                           <p class="text-[var(--color-accent)] m-5"> health care patient management system is shown in Figure 3.5. This is a short
                             description of a scenario for prescribing medication for a patient.<br><br>
 
                             The story cards are the main inputs to the XP planning process or the ‘planning
@@ -413,13 +414,13 @@
                             should have priority over new functionality.</p>
             </div>
             
-            <div class="Figures-Prescribing-box ">
-                            <p class="title  center-fig"> FIGURE 3.5 A ‘PRESCRIBING MEDICATION’STORY.</p>
+            <div class="content-boxes xl:h-330 xl:w-200 pb-5 hover:scale-102">
+                            <p class="title  "> FIGURE 3.5 A ‘PRESCRIBING MEDICATION’STORY.</p>
                             <div class="box-imgcontainer p-5 h-40">
                             <img src="Chapter3-Images/Screenshot 2025-09-06 162026.png" class="box-image object-contain " alt="img">
                             </div>
                             
-                            <p class="s-paragraph"> Sometimes, during the planning game, questions that cannot be easily answered
+                            <p class="text-[var(--color-accent)] m-5"> Sometimes, during the planning game, questions that cannot be easily answered
                             come to light and additional work is required to explore possible solutions. The team
                             may carry out some prototyping or trial development to understand the problem and
                             solution. In XP terms, this is a ‘spike’, an increment where no programming is done.
@@ -445,8 +446,8 @@
                             </p>
             </div> 
 
-            <div class="Figures-examples-box ">
-                <p class="title  center-fig"> FIGURE 3.6 EXAMPLE OF TASK CARDS FOR PRESCRIBING MEDICATION.</p>
+            <div class="content-boxes xl:h-350 xl:w-200 pb-5 hover:scale-102">
+                <p class="title "> FIGURE 3.6 EXAMPLE OF TASK CARDS FOR PRESCRIBING MEDICATION.</p>
                             <div class="box-imgcontainer">
                             <img src="Chapter3-Images/Screenshot 2025-09-06 162557.png" class="box-image object-contain " alt="img">
                             </div>
@@ -454,7 +455,7 @@
                             
                          
 
-                            <p class="s-paragraph"> A general problem with incremental development is that it tends to degrade the
+                            <p class="text-[var(--color-accent)] m-5"> A general problem with incremental development is that it tends to degrade the
                             software structure, so changes to the software become harder and harder to imple
                             ment. Essentially, the development proceeds by finding workarounds to problems,
                             with the result that code is often duplicated, parts of the software are reused in inap
@@ -486,11 +487,11 @@
                             releases, test-first development, and continuous integration.<br><br></p>
             </div>
 
-            <div class="Testing-box ">
-                                <h2  class="title mb-10" > 3.3.1 TESTING IN XP</h2>
+            <div class="content-boxes xl:h-300 xl:w-200 pb-5 hover:scale-102">
+                                <h2  class="title " > 3.3.1 TESTING IN XP</h2>
                      
 
-                            <p class="s-paragraph">As I discussed in the introduction to this chapter, one of the important differences
+                            <p class="text-[var(--color-accent)] m-5">As I discussed in the introduction to this chapter, one of the important differences
                             between incremental development and plan-driven development is in the way that
                             the system is tested. With incremental development, there is no system specification
                             that can be used by an external testing team to develop system tests. As a conse
@@ -502,14 +503,14 @@
                                                
                             The key features of testing in XP are:</p>
 
-                            <ol class="s-paragraph">
+                            <ol class="text-[var(--color-accent)] m-5">
                                 <li> Test-first development</li>
                                 <li> incremental test development from scenarios,</li>
                                 <li> user involvement in the test development and validation, and</li>
                                 <li> the use of automated testing frameworks.</li>
                             </ol>
 
-                            <p class="s-paragraph"> Test-first development is one of the most important innovations in XP. Instead of
+                            <p class="text-[var(--color-accent)] m-5"> Test-first development is one of the most important innovations in XP. Instead of
                             writing some code and then writing tests for that code, you write the tests before you
                             write the code. This means that you can run the test as the code is being written and
                             discover problems during development.<br><br>
@@ -537,16 +538,14 @@
                             that the prescribed dose of a drug does not fall outside known safe limits.<br><br></p>
             </div>
 
-            <div class="TestingDescription-box ">
-                <p  class="title  center-fig"> FIGURE 3.7 TEST CASE DESCRIPTION FOR DOSE CHECKING</p>
+            <div class="content-boxes xl:h-310 xl:w-200 pb-5 hover:scale-105">
+                <p  class="title  "> FIGURE 3.7 TEST CASE DESCRIPTION FOR DOSE CHECKING</p>
                             <div class="box-imgcontainer">
                                 <img src="Chapter3-Images/Screenshot 2025-09-06 163344.png"  class="box-image object-contain" alt="img" >
                             </div>
                        
-                            
-                   
 
-                            <p class="s-paragraph"> The role of the customer in the testing process is to help develop acceptance tests
+                            <p class="text-[var(--color-accent)] m-5"> The role of the customer in the testing process is to help develop acceptance tests
                             for the stories that are to be implemented in the next release of the system. As I dis
                             cuss in Chapter 8, acceptance testing is the process where the system is tested using
                             customer data to check that it meets the customer’s real needs.<br><br>
@@ -554,7 +553,7 @@
                             tests being written and executed. However, this approach does not necessarily lead to
                             thorough program testing. There are three reasons for this:</p>
 
-                            <ol class="s-paragraph">
+                            <ol class="text-[var(--color-accent)] m-5">
                             <li>Programmers prefer programming to testing and sometimes they take shortcuts
                             when writing tests. For example, they may write incomplete tests that do not
                             check for all possible exceptions that may occur.<br><br>
@@ -566,17 +565,17 @@
                             lot of system tests, your test set may not provide complete coverage. Crucial
                             parts of the system may not be executed and so remain untested.<br><br></li>
                             </ol>
-                           <p class="s-paragraph"> Therefore, although a large set of frequently executed tests may give the impres
+                           <p class="text-[var(--color-accent)] m-5"> Therefore, although a large set of frequently executed tests may give the impres
                             sion that the system is complete and correct, this may not be the case. If the tests are
                             not reviewed and further tests written after development, then undetected bugs may
                             be delivered in the system release.</p>
             </div>
 
-            <div class="Pair-programming ">
+            <div class="content-boxes xl:h-160 xl:w-200 pb-5 hover:scale-102">
                          <h2  class="title" > 3.3.2 PAIR PROGRAMMING </h2>
 
-                            <p class="f-paragraph">The use of pair programming has a number of advantages:</p>
-                            <ol class="s-paragraph">
+                            <p class="text-[var(--color-accent)] m-5">The use of pair programming has a number of advantages:</p>
+                            <ol class="text-[var(--color-accent)] m-5">
                                 <li>It supports the idea of collective ownership and responsibility for the system.
                                 This reflects Weinberg’s (1971) idea of egoless programming where the soft
                                 ware is owned by the team as a whole and individuals are not held responsible
@@ -598,19 +597,19 @@
                             </ol>
             </div>
 
-            <div class="Scrum-process  hover:cursor-pointer" id="3.4">
-                    <h2  class="title center-fig"> FIGURE 3.8 THE SCRUM PROCESS</h2>
+            <div class="content-boxes xl:h-150 xl:w-200 pb-5 hover:scale-105 " id="3.4">
+                    <h2  class="title "> FIGURE 3.8 THE SCRUM PROCESS</h2>
                             <div class="box-imgcontainer">
                               <img src="Chapter3-Images/Screenshot 2025-09-06 164203.png" class="box-image object-contain " alt="img" >
                             </div> 
                             
             </div>           
 
-            <div class="Agile-project hover:cursor-pointer">
+            <div class="content-boxes xl:h-100 xl:w-200 pb-5 hover:scale-102">
 
                                 <p class="title mb-5" > 3.4 AGILE PROJECT MANAGEMENT</p>
                           
-                                <p class="s-paragraph" id="3.5"> 
+                                <p class="text-[var(--color-accent)] m-5" id="3.5"> 
                                 This is then followed by a series of Sprint cycles, 
                                 where each cycle focuses on developing a functional 
                                 increment of the system, gradually enhancing the 
@@ -634,11 +633,11 @@
                             
             </div>                                            
                 
-            <div class="Agile-methods hover:cursor-pointer">
+            <div class="content-boxes xl:h-120 xl:w-200 pb-5 hover:scale-105">
                
                                 <h2  class="title mb-10"> 3.5 SCALING AGILE METHODS</h2>
                      
-                            <p class="s-paragraph">Agile methods were developed for use by small programming teams who could
+                            <p class="text-[var(--color-accent)] m-5">Agile methods were developed for use by small programming teams who could
                             work together in the same room and communicate informally. Agile methods have
                             therefore been mostly used for the development of small and medium-sized systems.
                             Of course, the need for faster delivery of software, which is more suited to customer
@@ -656,17 +655,17 @@
                             </p>
             </div>
 
-            <div class="several-differences hover:cursor-pointer">
+            <div class="content-boxes xl:h-220 xl:w-200 pb-5 hover:scale-102">
                 <p class="title title mb-5"> Large software system development is different from small system development in a number of ways:</p>
 
-                 <ol class="s-paragraph">
-                                <li class="s-paragraph"> Large systems are usually collections of separate, communicating systems,
+                 <ol class="text-[var(--color-accent)] m-5">
+                                <li class=""> Large systems are usually collections of separate, communicating systems,
                                 where separate teams develop each system. Frequently, these teams are working
                                 in different places, sometimes in different time zones. It is practically impossi
                                 ble for each team to have a view of the whole system. Consequently, their prior
                                 ities are usually to complete their part of the system without regard for wider
                                 systems issues.</li><br>
-                                <li class="s-paragraph"> Large systems are ‘brownfield systems’ (Hopkins and Jenkins, 2008); that is
+                                <li class=""> Large systems are ‘brownfield systems’ (Hopkins and Jenkins, 2008); that is
                                 they include and interact with a number of existing systems. Many of the system
                                 requirements are concerned with this interaction and so don’t really lend them
                                 selves to flexibility and incremental development. Political issues can also be
@@ -674,17 +673,17 @@
                                 system. However, this requires negotiation with the managers of that system to
                                 convince them that the changes can be implemented without risk to the system’s
                                 operation.</li><br>
-                                <li class="s-paragraph">Where several systems are integrated to create a system, a significant fraction of
+                                <li class="">Where several systems are integrated to create a system, a significant fraction of
                                 the development is concerned with system configuration rather than original
                                 code development. This is not necessarily compatible with incremental develop
                                 ment and frequent system integration</li><br>
-                                <li class="s-paragraph"> Large systems and their development processes are often constrained by exter
+                                <li class=""> Large systems and their development processes are often constrained by exter
                                 nal rules and regulations limiting the way that they can be developed, that
                                 require certain types of system documentation to be produced, etc.</li><br>
-                                <li class="s-paragraph"> Large systems have a long procurement and development time. It is difficult to
+                                <li class=""> Large systems have a long procurement and development time. It is difficult to
                                 maintain coherent teams who know about the system over that period as,
                                 inevitably, people move on to other jobs and projects.</li><br>
-                                <li class="s-paragraph"> Large systems usually have a diverse set of stakeholders.<br> For example, nurses and
+                                <li class=""> Large systems usually have a diverse set of stakeholders.<br> For example, nurses and
                                 administrators may be the end-users of a medical system but senior medical staff,
                                 hospital managers, etc. are also stakeholders in the system. It is practically impos
                                 sible to involve all of these different stakeholders in the development process.</li>
@@ -693,6 +692,7 @@
             </div>
    </main>
 
+   
    <footer>
     <div>
         <section>

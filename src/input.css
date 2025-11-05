@@ -41,18 +41,12 @@ body {
 
 /* chapter 3 */
 
-
 .lists {
-  @apply flex p-5 text-center text-sm text-[var(--color-bg)]
-  transition duration-300 sm:hover:shadow-xl hover:text-amber-100 
-  sm:hover:border-b-2 sm:hover:border-[var(--color-bg)] sm:hover:bg-amber-800 
-  hover:cursor-pointer ;
+  @apply flex p-5  justify-center text-sm text-[var(--color-bg)] transition duration-300 sm:hover:shadow-xl hover:text-amber-100 sm:hover:border-b-2 sm:hover:border-[var(--color-bg)] sm:hover:bg-amber-800 hover:cursor-pointer ;
 } 
 
 .logo {
-  @apply flex my-5 ml-5 animate-bounce text-xl font-extrabold text-transparent 
-  bg-gradient-to-r from-[var(--color-bg)] to-[var(--color-accent)] bg-clip-text
-   bg-[var(--color-accent)]  ;
+  @apply flex my-5 ml-5 animate-bounce text-xl font-extrabold text-transparent bg-gradient-to-r from-[var(--color-bg)] to-[var(--color-accent)] bg-clip-text bg-[var(--color-accent)]  ;
 }
 
 .logo-container {
@@ -60,49 +54,36 @@ body {
 }
 
 .logo-gradient {
-  @apply bg-[var(--color-accent)] mx-2 p-5 transition-colors duration-500 
-hover:from-[var(--color-accent)] hover:to-[var(--color-bg)] hover:cursor-pointer;
+  @apply bg-[var(--color-accent)] mx-2 p-5 transition-colors duration-500 hover:from-[var(--color-accent)] hover:to-[var(--color-bg)] hover:cursor-pointer;
   text-shadow: 2px 2px 4px rgba(29, 29, 29, 0.5);
 }
 
 .title {
-  @apply flex items-center gap-10 p-5 rounded-t-2xl border-t-2 border-b-2 border-amber-50 
-  text-[20px] text-[var(--color-bg)] font-bold bg-gradient-to-l from-amber-700
-   to-[var(--color-primary)] shadow-lg;
+  @apply flex items-center p-5 rounded-t-2xl border-t-2 border-b-2 border-amber-50 text-[20px] text-[var(--color-bg)] font-bold bg-gradient-to-l from-amber-700 to-[var(--color-primary)] shadow-lg;
 }
 
-.body-bg {
-  @apply bg-amber-100;
-} 
-
 .box-imgcontainer {
-  @apply container mx-auto px-4 flex justify-center w-full h-130;
+  @apply container  xl:m-0 px-4 flex justify-center w-full h-130;
 }
 
 .box-image {
-  @apply max-w-full h-auto  sm:w-full sm:max-w-full;
+  @apply max-w-full h-auto sm:w-full sm:max-w-full;
 }
 
 .content-boxes {
-  @apply bg-[var(--color-bg)] rounded-2xl shadow-md mx-2 my-5 xl:mx-10 xl:my-10 pb-10 
-         hover:shadow-[var(--color-cream)] hover:border-2 hover:border-amber-900 hover:cursor-pointer
-          md:m-5 lg:ml-20;
+  @apply bg-amber-100 rounded-2xl shadow-md mx-2 my-5 xl:mx-10 xl:my-10 pb-10 hover:shadow-[var(--color-cream)] hover:border-2 hover:border-amber-900 hover:cursor-pointer md:m-5 lg:ml-20;
 }
-
 
 .content {
-  @apply fixed left-220 top-50 w-64 m-0 pb-5 bg-[var(--color-bg)] 
-         flex justify-baseline xl:h-145 xl:w-130 text-accent  hidden xl:block;
+  @apply fixed left-230 top-50 w-64 m-0 pb-5 bg-amber-100 flex justify-center xl:h-120 xl:w-110 text-accent  hidden xl:block;
 }
 
-
 .content-btn {
-  @apply  border-2  border-amber-200 rounded-md py-5 mx-10 my-5 
-hover:bg-[var(--color-bg)] hover:border-amber-600  hover:scale-105 ;
+  @apply  border-2 h-17 w-100 border-amber-200 rounded-md py-5 mx-4 my-2 hover:bg-[var(--color-bg)] hover:border-amber-600  hover:scale-105 ;
 }
 
 .content-num {
-  @apply bg-amber-800 ml-3 text-[var(--color-bg)] rounded-md  p-3;
+  @apply bg-amber-800 ml-3  text-[var(--color-bg)] rounded-md  p-3;
 }
 
 .title-num {

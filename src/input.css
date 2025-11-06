@@ -42,7 +42,7 @@ body {
 
 /*Header*/
 .headerhead{
-  @apply fixed top-0 left-0 w-full bg-primary text-bg shadow-lg z-50;
+  @apply left-0 w-full bg-primary text-bg shadow-lg sticky top-0 z-50;
 }
 
 .arthead{
@@ -98,7 +98,7 @@ body {
 }
 
 .maindesign{
-  @apply bg-bg text-text py-10 px-10 mt-20 sm:px-10 lg:px-20 xl:px-40
+  @apply bg-bg text-text px-8 pb-8 mt-10 sm:px-10 lg:px-20 xl:px-25
 }
 
 .mainh2{
@@ -106,11 +106,15 @@ body {
 }
 
 .mainh3{
-  @apply text-base md:text-xl lg:text-2xl xl:text-3xl font-semibold  text-primary;
+  @apply text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-primary;
 }
 
 .mainsubhead{
   @apply text-base md:text-xl lg:text-2xl xl:text-3xl font-bold text-primary mb-6;
+}
+
+.qlscroll{
+  @apply text-center scroll-mt-30 md:scroll-mt-26 lg:scroll-mt-24 xl:scroll-mt-22;
 }
 
 .tblth{
@@ -126,11 +130,11 @@ body {
 }
 
 .oldesign {
-  @apply list-decimal my-5 pl-6 space-y-4 text-text text-sm md:text-sm lg:text-base xl:text-base leading-relaxed text-justify;
+  @apply list-decimal my-5 pl-6 space-y-4 text-text text-sm md:text-sm lg:text-base xl:text-lg leading-relaxed text-justify;
 }
 
 .uldesign{
-  @apply list-disc pl-8 space-y-1 text-gray-800 text-sm md:text-sm lg:text-[17px] xl:text-[17px] leading-relaxed;
+  @apply list-disc pl-8 space-y-1 text-gray-800 text-sm md:text-sm lg:text-base xl:text-lg leading-relaxed;
 }
 
 .olbold{

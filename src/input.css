@@ -19,7 +19,7 @@
 
 body {
   font-family: var(--font-family-base);
-  @apply text-shadow-text bg-bg leading-relaxed;
+  @apply text-text bg-bg leading-relaxed;
 }
 
  /*Index.html*/
@@ -40,9 +40,10 @@ body {
   @apply text-lg sm:text-xl font-semibold text-primary group-hover:text-secondary;
 }
 
+
 /*Header*/
 .headerhead{
-  @apply fixed top-0 left-0 w-full bg-primary text-bg shadow-lg z-50;
+  @apply left-0 w-full bg-primary text-bg shadow-lg sticky top-0 z-50;
 }
 
 .arthead{
@@ -98,7 +99,7 @@ body {
 }
 
 .maindesign{
-  @apply bg-bg text-text py-10 px-10 mt-20 sm:px-10 lg:px-20 xl:px-40
+  @apply bg-bg text-text px-8 pb-8 mt-10 sm:px-10 lg:px-20 xl:px-25
 }
 
 .mainh2{
@@ -106,11 +107,15 @@ body {
 }
 
 .mainh3{
-  @apply text-base md:text-xl lg:text-2xl xl:text-3xl font-semibold  text-primary;
+  @apply text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-primary;
 }
 
 .mainsubhead{
   @apply text-base md:text-xl lg:text-2xl xl:text-3xl font-bold text-primary mb-6;
+}
+
+.qlscroll{
+  @apply text-center scroll-mt-30 md:scroll-mt-26 lg:scroll-mt-24 xl:scroll-mt-22;
 }
 
 .tblth{
@@ -126,11 +131,11 @@ body {
 }
 
 .oldesign {
-  @apply list-decimal my-5 pl-6 space-y-4 text-text text-sm md:text-sm lg:text-base xl:text-base leading-relaxed text-justify;
+  @apply list-decimal my-5 pl-6 space-y-4 text-text text-sm md:text-sm lg:text-base xl:text-lg leading-relaxed text-justify;
 }
 
 .uldesign{
-  @apply list-disc pl-8 space-y-1 text-gray-800 text-sm md:text-sm lg:text-[17px] xl:text-[17px] leading-relaxed;
+  @apply list-disc pl-8 space-y-1 text-gray-800 text-sm md:text-sm lg:text-base xl:text-lg leading-relaxed;
 }
 
 .olbold{
@@ -156,27 +161,28 @@ body {
   @apply text-2xl md:text-3xl font-bold text-amber-50 mb-4 bg-amber-900 rounded-2xl p-1 text-center;
 }
 
-<<<<<<< HEAD
-=======
-.chap-link {
-  @apply text-amber-950 hover:text-yellow-500 font-semibold text-xs transition px-2 sm:px-3 whitespace-nowrap;
-}
-
->>>>>>> a77c6f4ab6078ef8bd5c7ed4cef6a28a64ca6d78
 .nav-container {
   @apply flex flex-wrap justify-center items-center gap-2 sm:gap-2 overflow-x-auto;
 }
 
 .text {
-  @apply mb-4 text-gray-800;
+  @apply space-y-4;
+}
+
+.text-bg-ol {
+  @apply bg-amber-50 border-l-4 border-primary p-4 rounded-r-lg shadow-sm text-sm md:text-[16px] ;  
+}
+
+.text-bg-ul {
+  @apply bg-amber-50 p-4 rounded-md shadow-lg text-sm md:text-[16px];
 }
 
 .nav-a-hover {
-  @apply block py-3 px-4 text-amber-900 hover:font-semibold hover:bg-white  hover:text-amber-900 rounded-lg transition-all duration-200 border-l-4 border-transparent hover:border-amber-900 hover:shadow-xl;
-}
+  @apply  flex items-center px-3 py-2 text-amber-900 hover:font-bold hover:bg-white hover:shadow-sm rounded-lg;
+} 
 
 .image {
-  @apply rounded-lg shadow-md max-w-full h-auto;
+  @apply rounded-lg shadow-md h-80 hover:scale-105 transition-transform duration-500 hover:shadow-2xl hover:brightness-90 hover:animate-pulse;
 }
 
 .div-img {
@@ -336,3 +342,59 @@ body {
   @apply flex items-center justify-center lg:justify-end gap-3 mt-2;
 }
 
+.tr-2 {
+  @apply  border border-amber-200;
+}
+
+.td-num {
+  @apply px-4 py-3 font-semibold text-amber-800;
+}
+
+.td-text {
+  @apply px-4 py-3 border-b border-amber-200 text-justify;
+}
+
+/* chapter 8 */
+.body {
+    @apply  min-h-screen flex flex-col;
+}
+
+.h1-software {
+    @apply text-2xl md:text-3xl font-bold bg-gradient-to-r from-[var(--color-primary)] via-[var(--color-secondary)] to-[var(--color-primary)] bg-clip-text text-transparent;
+}
+
+.nav-div {
+    @apply text-xl font-bold text-center text-[var(--color-primary)] bg-[var(--color-secondary)]  bg-gradient-to-tr from-[var(--color-bg)] rounded-2xl hover:scale-110;
+}
+
+.main {
+    @apply  mb-10 max-w-5xl mx-auto p-25 px-4 min-w-2 bg-[var(--color-bg)] text-[var(--color-text)] rounded-2xl leading-relaxed space-y-16;
+}
+
+.h2-main {
+    @apply   bg-[var(--color-primary)] bg-gradient-to-tr from-[var(--color-secondary)] text-white hover:transition hover:text-secondary hover:bg-accent text-center text-3xl font-extrabold py-3 rounded-xl shadow-md hover:scale-110;
+}
+
+.ul {
+    @apply list-disc list-inside pl-6 space-y-2 text-lg;
+}
+
+.div {
+    @apply grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-[var(--color-accent)] font-semibold;
+}
+
+.h3-main {
+    @apply bg-[var(--color-primary)] bg-gradient-to-tr from-[var(--color-secondary)] text-[var(--color-bg)] hover:transition hover:text-secondary text-center text-2xl font-extrabold py-2 rounded-xl shadow-md hover:scale-110;
+}
+
+.navigation {
+    @apply bg-[var(--color-primary)] bg-gradient-to-tr from-[var(--color-secondary)] text-[var(--color-bg)] hover:transition hover:text-secondary text-center text-3xl font-extrabold py-3 rounded-xl shadow-md animate-bounce;
+}
+
+.side-bar {
+    @apply block py-3 px-4 text-[var(--color-bg)] hover:font-bold hover:bg-[var(--color-secondary)]  hover:text-[var(--color-accent)] rounded-2xl transition-all duration-200 border-l-4 border-transparent ;
+}
+
+.div-img {
+    @apply flex items-center justify-center hover:scale-110;
+}

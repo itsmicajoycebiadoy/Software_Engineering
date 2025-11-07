@@ -5,40 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Software Testing</title>
     <link rel="stylesheet" href="./src/output.css">
-    <link rel="icon" type="image/png" href="./index_images/image.png" />
+    <link rel="icon" href="index_images/image.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body class="body">
 
-  <!-- Website Header -->
-<header class="header">
-    <section>
-        <div class="container mx-auto px-4 py-4">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <div class="flex items-center space-x-2 mb-4 md:mb-0">
-                        <h1 class="h1-software">
-                            🔍CHAPTER 8: Software Testing
-                        </h1>
-                    </div>
+    <!-- Website Header -->
+    <header class="headerhead">
+        <article class="arthead">
+            <div class="flex items-center mb-2 md:mb-0 gap-3">
+        
+                <div class="headerlogo">
+                    C8
                 </div>
-            
-            <nav id="menu">
-                <ul class="nav-ul">
-                    <li><a href="#8.1" class="ul-li">8.1 DEVELOPMENT TESTING</a></li>
-                    <li><a href="#8.2" class="ul-li">8.2 TEST-DRIVEN DEVELOPMENT</a></li>
-                    <li><a href="#8.3" class="ul-li">8.3 RELEASE TESTING</a></li>
-                    <li><a href="#8.4" class="ul-li">8.4 USER TESTING</a></li>
-                </ul>
+
+                <h1 class="headh1">
+                    Chapter 8: Software Testing
+                </h1>
+            </div>
+
+            <nav class="relative">
+            <ul class="rightnav">
+
+                <!-- Home Link -->
+                <li>
+                <a href="index.html"
+                    class="linktoch">
+                    Home
+                </a>
+                </li>
+
+                <!-- Links to Other Chapters -->
+                 <li>
+                <a href="chapter1.html"
+                    class="linktoch">
+                    Chapter 1
+                </a>
+                </li>
+
+                <li>
+                <a href="chapter2.html"
+                    class="linktoch">
+                    Chapter 2
+                </a>
+                </li>
+
+                <li>
+                <a href="chapter3.html"
+                    class="linktoch">
+                    Chapter 3
+                </a>
+                </li>
+
+                <li>
+                <a href="chapter14.html"
+                    class="linktoch">
+                    Chapter 14
+                </a>
+                </li>
+
+            </ul>
             </nav>
-        </div>
-
-    </section>
-
-</header>
+        </article>
+    </header>
 
     <!--Side Bar Navigation-->
     <div class="flex flex-1">
-        <nav class="sidebar-nav sticky top-19  overflow-y-auto w-80 m-5  bg-[var(--color-accent)] shadow-xl p-6 lg:top-18.5 h-[calc(100vh-5rem)] hidden md:block animate-slide-in-right rounded-2xl">
+        <nav class="sidebar-nav sticky top-19 overflow-y-auto w-80 m-5  bg-accent shadow-xl p-6 lg:top-18.5 h-[calc(100vh-5rem)] hidden md:block animate-slide-in-right rounded-2xl hover:brightness-90 animate-pulse">
             <div class="mb-6">
                 <h2 class="nav-div">Chapter 8: Software Testing</h2>
             </div>
@@ -47,14 +81,14 @@
                 <a href="#Objectives" class="side-bar">Objectives</a>
                 <a href="#Contents" class="side-bar">Contents</a>
                 <a href="#Test" class="side-bar">Test Planning</a>
-                <a href="#8.1.1" class="side-bar">8.1.1 Unit testing</a>
-                <a href="#8.1.2" class="side-bar">8.1.2 Choosing unit test cases</a>
-                <a href="#8.1.3" class="side-bar">8.1.3 Component testing</a>
-                <a href="#8.1.4" class="side-bar">8.1.4 System testing</a>
-                <a href="#8.3.1" class="side-bar">8.3.1 Requirements-based testing</a>
-                <a href="#8.3.2" class="side-bar">8.3.2 Scenario testing</a>
-                <a href="#8.3.3" class="side-bar">8.3.3 Performance testing</a>
+                <a href="#8.1" class="side-bar">8.1 Development Testing</a>
+                <a href="#8.2" class="side-bar">8.2 Test-Driven Development</a>
+                <a href="#8.3" class="side-bar">8.3 Release Testing</a>
+                <a href="#8.4" class="side-bar">8.4 User Testing</a>
+            </div>
 
+            <div class="mt-8 pt-6 text-center border-t text-bg">
+                <p class="text-sm  text-bg">© 2025 Software Testing  | BSIT/BA-3A</p><br>
             </div>
         </nav>    
     
@@ -63,7 +97,7 @@
         <!--Website Main-->
         <main class="main">
             <section class="space-y-6 text-lg text-justify">
-                <h2 id="Objectives" class="h2-main">Objectives</h2>
+                <h2 id="Objectives" class="h2-main scroll-mt-2">Objectives</h2>
                 <p class="text-lg"> The objective of this chapter is to introduce software testing and software testing processes. When you have read the chapter, you will:</p>
         
                  <ul class="ul">
@@ -75,7 +109,7 @@
             </section>
 
             <section class="space-y-4">
-                <h2 id="Contents" class="h2-main">
+                <h2 id="Contents" class="h2-main scroll-mt-28">
                     Contents
                 </h2>
 
@@ -88,7 +122,7 @@
             </section>
             <section class="text-lg text-justify">
                 <article class="space-y-4 text-justify text-lg"></article>
-                    <p><span class="font-bold text-amber-900">Testing</span> is intended to show that a program does what it is intended to do and to discover program defects before it is put into use. When you test software, you execute a program using artificial data. You check the results of the test run for errors, anomalies, or information about the program’s non-functional attributes.The testing process has two distinct goals</p><br>
+                    <p><span class="font-bold text-primary">Testing</span> is intended to show that a program does what it is intended to do and to discover program defects before it is put into use. When you test software, you execute a program using artificial data. You check the results of the test run for errors, anomalies, or information about the program’s non-functional attributes.The testing process has two distinct goals</p><br>
                     <p><span class="font-semibold">1.</span> To demonstrate to the developer and the customer that the software meets its requirements. For custom software, this means that there should be at least one test for every requirement in the requirements document. For generic software products, it means that there should be tests for all of the system features, plus combinations of these features, that will be incorporated in the product release.</p><br>
                     <p><span class="font-semibold">2.</span> To discover situations in which the behavior of the software is incorrect, undesirable, or does not conform to its specification. These are a consequence of software defects. Defect testing is concerned with rooting out undesirable system behavior such as system crashes, unwanted interactions with other systems,incorrect computations, and data corruption.</p><br>
                     <p>The first goal leads to validation testing, where you expect the system to perform correctly using a given set of test cases that reflect the system’s expected use. Thesecond goal leads to defect testing, where the test cases are designed to expose defects. The test cases in defect testing can be deliberately obscure and need not reflect how the system is normally used. Of course, there is no definite boundary between these two approaches to testing. During validation testing, you will find defects in the system; during defect testing, some of the tests will show that the program meets its requirements.</p><br>
@@ -99,18 +133,18 @@
                     <p> Testing is part of a broader process of software verification and validation (V & V).Verification and validation are not the same thing, although they are often confused.</p><br>
         
                     <div class="div-img">
-                        <img  src="./Chapter8-Images/image1.png" class="max-w-w-0.5" alt="Centered Image">
+                        <img  src="./Chapter8-Images/image1.png" class="max-w-w-0.5 hover:shadow-2xl" alt="Centered Image">
                     </div>
                 </article>
             </section>
 
             <section class="text-lg text-justify">
-                <p><span class="font-bold text-[var(--color-primary)]"> Barry Boehm</span>, a pioneer of software engineering, succinctly expressed the differencebetween them (Boehm, 1979):</p>
+                <p><span class="font-bold text-primary"> Barry Boehm</span>, a pioneer of software engineering, succinctly expressed the differencebetween them (Boehm, 1979):</p>
        
-                <h3 class="text-2xl font-bold text-[var(--color-accent)] mt-10">Verification and Validation</h3>
-                <ul class="list-disc list-inside pl-6 space-y-2 text-lg text-justify">
-                    <li> ‘Validation: Are we building the right product?’</li>
-                    <li> ‘Verification: Are we building the product right?’</li>
+                <h3 class="text-2xl font-bold text-accent mt-10">Verification and Validation</h3><br>
+                <ul class="grid grid-cols-2 gap-4 list-disc list-inside pl-6 text-lg text-justify">
+                    <li class="border border-primary text-secondary p-3 bg-text hover:bg-accent hover:scale-105 rounded"> ‘Validation: Are we building the right product?’</li>
+                    <li class="border border-primary text-secondary p-3 bg-text hover:bg-accent hover:scale-105 rounded"> ‘Verification: Are we building the product right?’</li>
                 </ul>
                 <br><p> Verification and validation processes are concerned with checking that software being developed meets its specification and delivers the functionality expected by the people paying for the software. These checking processes start as soon as requirements become available and continue through all stages of the development process.</p><br>
                 <p> The aim of verification is to check that the software meets its stated functional andnon-functional requirements. Validation, however, is a more general process. The aimof validation is to ensure that the software meets the customer’s expectations. It goesbeyond simply checking conformance with the specification to demonstrating that the software does what the customer expects it to do.
@@ -121,7 +155,7 @@
                 They are not surprised when their software fails. When a new system is installed, users may tolerate  failures because the benefits of use outweigh the costs of failure recovery.In these situations, you may not need to devote as much time to testing the software. However, as software matures, users expect it to become more reliable so more thorough testing of later versions may be required</p><br>
         
                 <div class="div-img">
-                    <img  src="./Chapter8-Images/image2.png" class="max-w-w-0.5" alt="Centered Image">
+                    <img  src="./Chapter8-Images/image2.png" class="max-w-w-0.5 hover:shadow-2xl" alt="Centered Image">
                 </div><br>
         
                 <p><span class="font-semibold">3.</span> Marketing environment When a system is marketed, the sellers of the system must take into account competing products, the price that customers are willing to pay for a system, and the required schedule for delivering that system.</p>
@@ -133,14 +167,14 @@
             </section>
 
             <section class="space-y-6 text-lg text-justify">
-                <h3 id="Test" class="h3-main">
+                <h3 id="Test" class="h3-main scroll-mt-28">
                     Test Planning
                 </h3>
                 <p>Test planning is concerned with scheduling and resourcing all of the activities in the testing process. It involves
                 defining the testing process, taking into account the people and the time available. Usually, a test plan will be
                 created, which defines what is to be tested, the predicted testing schedule, and how tests will be recorded. For
                 critical systems, the test plan may also include details of the tests to be run on the software</p>
-                <p class="text-[var(--color-primary)] underline">
+                <p class="text-primary underline">
                     <a href="http://www.SoftwareEngineering-9.com/Web/Testing/Planning.html">
                         http://www.SoftwareEngineering-9.com/Web/Testing/Planning.html
                     </a>
@@ -155,39 +189,39 @@
                 <p class="font-bold">Program inspections are an old idea and there have been several studies and experiments that have demonstrated that inspections are more effective for defect discovery than program testing. Fagan (1986) reported that more than 60% of the errors in a program can be detected using informal program inspections.</p><br>
             
                 <div class="div-img">
-                    <img  src="./Chapter8-Images/image3.png" class="max-w-w-0.5" alt="Centered Image">
+                    <img  src="./Chapter8-Images/image3.png" class="max-w-w-0.5 hover:shadow-2xl" alt="Centered Image">
                 </div><br>
 
                 <p> Typically, a commercial software system has to go through three stages of testing:</p>
-                <p><span class="font-semibold">1.</span> <span class="font-bold text-[var(--color-primary)]">Development testing</span>, where the system is tested during development to discoverbugs and defects. System designers and programmers are likely to be involved in the testing process.</p>
-                <p><span class="font-semibold">2.</span> <span class="font-bold text-[var(--color-primary)]">Release testing</span>, where a separate testing team tests a complete version of thesystem before it is released to users. The aim of release testing is to check that the system meets the requirements of system stakeholders.</p>
-                <p><span class="font-semibold">3.</span> <span class="font-bold text-[var(--color-primary)]">User testing</span>, where users or potential users of a system test the system in their own environment. For software products, the ‘user’ may be an internal marketing group who decide if the software can be marketed, released, and sold. Acceptance testing is one type of user testing where the customer formally tests a system to decide if it should be accepted from the system supplier or if further development is required.</p>
+                <p><span class="font-semibold">1.</span> <span class="font-bold text-primary">Development testing</span>, where the system is tested during development to discoverbugs and defects. System designers and programmers are likely to be involved in the testing process.</p>
+                <p><span class="font-semibold">2.</span> <span class="font-bold text-primary">Release testing</span>, where a separate testing team tests a complete version of thesystem before it is released to users. The aim of release testing is to check that the system meets the requirements of system stakeholders.</p>
+                <p><span class="font-semibold">3.</span> <span class="font-bold text-primary">User testing</span>, where users or potential users of a system test the system in their own environment. For software products, the ‘user’ may be an internal marketing group who decide if the software can be marketed, released, and sold. Acceptance testing is one type of user testing where the customer formally tests a system to decide if it should be accepted from the system supplier or if further development is required.</p>
             </section>
 
             <!--8.1 Section-->
             <section class="space-y-6 text-lg text-justify">
-                <h2 id="8.1" class="navigation">
+                <h2 id="8.1" class="navigation scroll-mt-28">
                     8.1 Development Testing
                 </h2>
                 <p> Development testing includes all testing activities that are carried out by the team developing the system. The tester of the software is usually the programmer who developed that software, although this is not always the case. Some development processes use programmer/tester pairs (Cusamano and Selby, 1998) where each</p>
             
-                <h3 class="text-2xl font-bold text-amber-950 mt-10">Debugging</h3>
+                <h3 class="text-2xl font-bold text-accent mt-10">Debugging</h3>
                 <p class="text-lg text-justify">Debugging is the process of fixing errors and problems that have been discovered by testing. Using information from the program tests, debuggers use their knowledge of the programming language and the intended outcome of the test to locate and repair the program error. This process is often supported by interactive debugging tools that provide extra information about program execution.</p>
-                <p class="text-[var(--color-primary)] underline">
+                <p class="text-primary underline">
                     <a href="http://www.SoftwareEngineering-9.com/Web/Testing/Debugging.html">
                         http://www.SoftwareEngineering-9.com/Web/Testing/Debugging.html
                     </a>
                 </p>
                 <p>Programmer has an associated tester who develops tests and assists with the testing process. For critical systems, a more formal process may be used, with a separate testing group within the development team.</p>
-                <p><span class="font-semibold">1.</span> <span class="font-bold text-[var(--color-primary)]">Unit testing</span>, where individual program units or object classes are tested. Unit testing should focus on testing the functionality of objects or methods.</p>
-                <p><span class="font-semibold">2.</span> <span class="font-bold text-[var(--color-primary)]">Component testing</span>, where several individual units are integrated to create composite components. Component testing should focus on testing component interfaces.</p>
-                <p><span class="font-semibold">3.</span> <span class="font-bold text-[var(--color-primary)]">System testing</span>, where some or all of the components in a system are integrated and the system is tested as a whole. System testing should focus on testing component interactions.</p>
+                <p><span class="font-semibold">1.</span> <span class="font-bold text-primary">Unit testing</span>, where individual program units or object classes are tested. Unit testing should focus on testing the functionality of objects or methods.</p>
+                <p><span class="font-semibold">2.</span> <span class="font-bold text-primary">Component testing</span>, where several individual units are integrated to create composite components. Component testing should focus on testing component interfaces.</p>
+                <p><span class="font-semibold">3.</span> <span class="font-bold text-primary">System testing</span>, where some or all of the components in a system are integrated and the system is tested as a whole. System testing should focus on testing component interactions.</p>
                 <p>Development testing is primarily a defect testing process, where the aim of testing is to discover bugs in the software. It is therefore usually interleaved with debugging—the process of locating problems with the code and changing the program to fix these problems</p>
             </section>
 
             
             <section class="space-y-6 text-lg text-justify">    
-                <h3 id="8.1.1"class="h3-main">8.1.1 Unit testing</h3>
+                <h3 class="h3-main">8.1.1 Unit testing</h3>
             
                 <p>Unit testing is the process of testing program components, such as methods or object classes. Individual functions or methods are the simplest type of component. Your tests should be calls to these routines with different input parameters. You can use the approaches to test case design discussed in Section 8.1.2, to design the function or method tests.</p>
                 <p>When you are testing object classes, you should design your tests to provide coverage of all of the features of the object. This means that you should:</p>
@@ -198,12 +232,12 @@
                 </ul><br>
             
                 <div class="div-img">
-                    <img  src="./Chapter8-Images/image4.png" class="max-w-w-0.5" alt="Centered Image">
+                    <img  src="./Chapter8-Images/image4.png" class="max-w-w-0.5 hover:shadow-2xl" alt="Centered Image">
                 </div><br>
                 <p>Generalization or inheritance makes object class testing more complicated. You can’t simply test an operation in the class where it is defined and assume that it will work as expected in the subclasses that inherit the operation. The operation that is inherited may make assumptions about other operations and attributes.</p>
-                <p class="font-bold text-amber-900"><span> Shutdown </span><span> → Running</span><span>→ Shutdown</span></p>
-                <p class="font-bold text-amber-900"><span>  Configuring </span><span> → Running</span><span>→ Testing</span><span> → Transmitting</span><span>→ Running</span></p>
-                <p class="font-bold text-amber-900"><span>  Running  </span><span> → Collecting </span><span>→  Running</span><span> → Summarizing</span><span>→  Transmitting</span><span>→ Running</span></p>
+                <p class="font-bold text-primary"><span> Shutdown </span><span> → Running</span><span>→ Shutdown</span></p>
+                <p class="font-bold text-primary"><span>  Configuring </span><span> → Running</span><span>→ Testing</span><span> → Transmitting</span><span>→ Running</span></p>
+                <p class="font-bold text-primary"><span>  Running  </span><span> → Collecting </span><span>→  Running</span><span> → Summarizing</span><span>→  Transmitting</span><span>→ Running</span></p>
 
                 <p>An automated test has three parts:</p>
                 <p><span class="font-semibold">1.</span> A setup part, where you initialize the system with the test case, namely the inputs and expected outputs.</p>
@@ -213,7 +247,7 @@
             </section>
 
             <section class="space-y-6 text-lg text-justify">    
-                <h3 id="8.1.2" class="h3-main"> 8.1.2 Choosing unit test cases</h3>
+                <h3  class="h3-main"> 8.1.2 Choosing unit test cases</h3>
             
                 <p> Testing is expensive and time consuming, so it is important that you choose effective unit test cases. Effectiveness, in this case, means two things:</p>
                 <p><span class="font-semibold">1.</span> The test cases should show that, when used as expected, the component that you are testing does what it is supposed to do.</p>
@@ -225,13 +259,13 @@
                 <p><span class="font-semibold">1.</span> Guideline-based testing, where you use testing guidelines to choose test cases. These guidelines reflect previous experience of the kinds of errors that programmers often make when developing components.</p><br>
             
                 <div class="div-img">
-                    <img  src="./Chapter8-Images/image5.png" class="max-w-w-0.5" alt="Centered Image">
+                    <img  src="./Chapter8-Images/image5.png" class="max-w-w-0.5 hover:shadow-2xl" alt="Centered Image">
                 </div><br>
 
                 <p>The input data and output results of a program often fall into a number of different classes with common characteristics. Examples of these classes are positive numbers, negative numbers, and menu selections. Programs normally behave in a comparable way for all members of a class. That is, if you test a program that does a computation and requires two positive numbers, then you would expect the program to behave in the same way for all positive numbers.</p><br>
             
                 <div class="div-img">
-                    <img  src="./Chapter8-Images/image6.png" class="max-w-w-0.5" alt="Centered Image">
+                    <img  src="./Chapter8-Images/image6.png" class="max-w-w-0.5 hover:shadow-2xl" alt="Centered Image">
                 </div><br>
 
                 <p>You identify partitions by using the program specification or user documentation and from experience where you predict the classes of input value that are likely to detect errors. For example, say a program specification states that the program accepts 4 to 8 inputs which are five-digit integers greater than 10,000. You use this information to identify the input partitions and possible test input values. These are shown in Figure 8.6.</p>
@@ -246,9 +280,9 @@
 
             <section class="space-y-6 text-lg text-justify">
                 <article class="space-y-4 text-justify text-lg">
-                    <p><span class="font-bold text-[var(--color-accent)]"> Path testing</p>
+                    <p><span class="font-bold text-accent"> Path testing</p>
                     <p> Path testing is a testing strategy that aims to exercise every independent execution path through a component or program. If every independent path is executed, then all statements in the component must have been executed at least once. All conditional statements are tested for both true and false cases. In an object-oriented development process, path testing may be used when testing the methods associated with objects.</p>
-                    <p class="text-[var(--color-primary)] underline">
+                    <p class="text-primary underline">
                         <a href=" http://www.SoftwareEngineering-9.com/Web/Testing/PathTest.html">
                             http://www.SoftwareEngineering-9.com/Web/Testing/PathTest.html
                         </a>
@@ -266,25 +300,25 @@
             </section>
 
             <section class="space-y-6 text-lg text-justify">    
-                <h3 id="8.1.3" class="h3-main">8.1.3 Component testing</h3>
+                <h3  class="h3-main">8.1.3 Component testing</h3>
             
                 <p> Software components are often composite components that are made up of several interacting objects. For example, in the weather station system, the reconfiguration component includes objects that deal with each aspect of the reconfiguration. You access the functionality of these objects through the defined component interface. Testing composite components should therefore focus on showing that the component interface behaves according to its specification. </p>
                 <ul class="list-disc list-inside">
-                    <li><i class="font-bold text-[var(--color-primary)]">Parameter interfaces -</i> These are interfaces in which data or sometimes function references are passed from one component to another. Methods in an object have a parameter interface. <br>
+                    <li><i class="font-bold text-primary">Parameter interfaces -</i> These are interfaces in which data or sometimes function references are passed from one component to another. Methods in an object have a parameter interface. <br>
                     
                         <div class="div-img">
-                            <img  src="./Chapter8-Images/image7.png" class="max-w-w-0.5" alt="Centered Image">
+                            <img  src="./Chapter8-Images/image7.png" class="max-w-w-0.5 hover:shadow-2xl" alt="Centered Image">
                         </div><br>
                     </li>
-                    <li><i class="font-bold text-[var(--color-primary)]"> Shared memory interfaces -</i> These are interfaces in which a block of memory is shared between components. Data is placed in the memory by one subsystem and retrieved from there by other sub-systems. This type of interface is often used in embedded systems, where sensors create data that is retrieved and processed by other system components.</li>
-                    <li><i class="font-bold text-[var(--color-primary)]"> Procedural interfaces -</i> These are interfaces in which one component encapsulates a set of procedures that can be called by other components. Objects and reusable components have this form of interface.</li>
-                    <li><i class="font-bold text-[var(--color-primary)]">Message passing interfaces -</i> These are interfaces in which one component requests a service from another component by passing a message to it. A return message includes the results of executing the service. Some object-oriented systems have this form of interface, as do client–server systems</li>
+                    <li><i class="font-bold text-primary"> Shared memory interfaces -</i> These are interfaces in which a block of memory is shared between components. Data is placed in the memory by one subsystem and retrieved from there by other sub-systems. This type of interface is often used in embedded systems, where sensors create data that is retrieved and processed by other system components.</li>
+                    <li><i class="font-bold text-primary"> Procedural interfaces -</i> These are interfaces in which one component encapsulates a set of procedures that can be called by other components. Objects and reusable components have this form of interface.</li>
+                    <li><i class="font-bold text-primary">Message passing interfaces -</i> These are interfaces in which one component requests a service from another component by passing a message to it. A return message includes the results of executing the service. Some object-oriented systems have this form of interface, as do client–server systems</li>
                 </ul><br>
                 <p>Interface errors are one of the most common forms of error in complex systems (Lutz, 1993). These errors fall into three classes:</p>
                 <ul>
-                    <li><span class="font-bold text-[var(--color-primary)]">Interface misuse</span>- A calling component calls some other component and makes an error in the use of its interface. This type of error is common with parameter interfaces, where parameters may be of the wrong type or be passed in the wrong order, or the wrong number of parameters may be passed.</li><br>
-                    <li><span class="font-bold text-[var(--color-primary)]">Interface misunderstanding</span>- A calling component misunderstands the specification of the interface of the called component and makes assumptions about its behavior. The called component does not behave as expected which then causes unexpected behavior in the calling component. For example, a binary search method may be called with a parameter that is an unordered array. The search would then fail.</li><br>
-                    <li><span class="font-bold text-[var(--color-primary)]">Timing errors</span>-These occur in real-time systems that use a shared memory or a message-passing interface. The producer of data and the consumer of data may operate at different speeds. Unless particular care is taken in the interface design, the consumer can access out-of-date information because the producer of the information has not updated the shared interface information.</li><br>     
+                    <li><span class="font-bold text-primary">Interface misuse</span>- A calling component calls some other component and makes an error in the use of its interface. This type of error is common with parameter interfaces, where parameters may be of the wrong type or be passed in the wrong order, or the wrong number of parameters may be passed.</li><br>
+                    <li><span class="font-bold text-primary">Interface misunderstanding</span>- A calling component misunderstands the specification of the interface of the called component and makes assumptions about its behavior. The called component does not behave as expected which then causes unexpected behavior in the calling component. For example, a binary search method may be called with a parameter that is an unordered array. The search would then fail.</li><br>
+                    <li><span class="font-bold text-primary">Timing errors</span>-These occur in real-time systems that use a shared memory or a message-passing interface. The producer of data and the consumer of data may operate at different speeds. Unless particular care is taken in the interface design, the consumer can access out-of-date information because the producer of the information has not updated the shared interface information.</li><br>     
                 </ul>
                 <p>Testing for interface defects is difficult because some interface faults may only manifest themselves under unusual conditions. For example, say an object implements a queue as a fixed-length data structure. A calling object may assume that the queue is implemented as an infinite data structure and may not check for queue overflow when an item is entered. This condition can only be detected during testing by designing test cases that force the queue to overflow and cause that overflow to corrupt the object behavior in some detectable way.</p><br>
                 <p> A further problem may arise because of interactions between faults in different modules or objects. Faults in one object may only be detected when some other object behaves in an unexpected way. For example, an object may call another object to receive some service and assume that the response is correct. If the called service is faulty in some way, the returned value may be valid but incorrect. This is not immediately detected but only becomes obvious when some later computation goes wrong. Some general guidelines for interface testing are:</p><br>
@@ -297,10 +331,10 @@
                     <li> Use stress testing in message passing systems. This means that you should design tests that generate many more messages than are likely to occur in practice. This is an effective way of revealing timing problems.</li><br>
                     <li>Where several components interact through shared memory, design tests that vary the order in which these components are activated. These tests may reveal implicit assumptions made by the programmer about the order in which the shared data is produced and consumed.</li><br>
                 </ol>
-                <p><span class="font-bold text-[var(--color-accent)]">Incremental integration and testing</span></p><br>
+                <p><span class="font-bold text-accent">Incremental integration and testing</span></p><br>
                 <p> System testing involves integrating different components then testing the integrated system that you have created. You should always use an incremental approach to integration and testing (i.e., you should integrate a component, test the system, integrate another component, test again, and so on). This means that if problems occur, it is probably due to interactions with the most recently integrated component. Incremental integration and testing is fundamental to agile methods such as XP, where regression tests (see Section 8.2) are run every time a new increment is integrated.</p><br>
             
-                <p class="text-[var(--color-primary)] underline">
+                <p class="text-primary underline">
                     <a href=" http://www.SoftwareEngineering-9.com/Web/Testing/Integration.html">
                         http://www.SoftwareEngineering-9.com/Web/Testing/Integration.html
                     </a>
@@ -308,7 +342,7 @@
             </section>
         
             <section class="space-y-6 text-lg text-justify">    
-                <h3 id="8.1.4" class="h3-main"> 8.1.4 System testing</h3>
+                <h3  class="h3-main"> 8.1.4 System testing</h3>
             
                 <p> System testing during development involves integrating components to create a version of the system and then testing the integrated system. System testing checks that components are compatible, interact correctly and transfer the right data at the right time across their interfaces. It obviously overlaps with component testing but there are two important differences</p>
                 <ol class="list-disc list-inside">
@@ -319,10 +353,10 @@
                 <p>Therefore system testing should focus on testing the interactions between the components and objects that make up a system. You may also test reusable components or systems to check that they work as expected when they are integrated with new components. This interaction testing should discover those component bugs that are only revealed when a component is used by other components in the system. Interaction testing also helps find misunderstandings, made by component developers, about other components in the system.</p><br>
             
                 <div class="div-img">
-                    <img  src="./Chapter8-Images/image8.png" class="max-w-w-0.5" alt="Centered Image">
+                    <img  src="./Chapter8-Images/image8.png" class="max-w-w-0.5 hover:shadow-2xl" alt="Centered Image">
                 </div><br>
 
-                <p class="font-bold text-[var(--color-primary)]">SatComms:request→>WeatherStation:reportWeather→Commslink:Get(summary)>→WeatherData:summarize</p>
+                <p class="font-bold text-primary">SatComms:request→>WeatherStation:reportWeather→Commslink:Get(summary)>→WeatherData:summarize</p>
                 <p> The sequence diagram helps you design the specific test cases that you need as it shows what inputs are required and what outputs are created:</p>
                 <ol class="list-disc list-inside">
                     <li> An input of a request for a report should have an associated acknowledgment. A report should ultimately be returned from the request. During testing, you should create summarized data that can be used to check that the report is correctly organized.</li><br>
@@ -339,14 +373,14 @@
             
             <!--8.2 Section-->
             <section class="space-y-6 text-lg text-justify">
-                <h2 id="8.2" class="navigation">
+                <h2 id="8.2" class="navigation scroll-mt-28">
                     8.2 Test-driven development
                 </h2>
             
                 <p>Test-driven development (TDD) is an approach to program development in which you interleave testing and code development (Beck, 2002; Jeffries and Melnik, 2007). Essentially, you develop the code incrementally, along with a test for that increment. You don’t move on to the next increment until the code that you have developed passes its test. Test-driven development was introduced as part of agile methods such as Extreme Programming. However, it can also be used in plan-driven development processes</p><br>
             
                 <div class="div-img">
-                    <img  src="./Chapter8-Images/image9.png" class="max-w-w-0.5" alt="Centered Image">
+                    <img  src="./Chapter8-Images/image9.png" class="max-w-w-0.5 hover:shadow-2xl" alt="Centered Image">
                 </div><br>
 
                 <ol class="list-disc list-inside">
@@ -391,7 +425,7 @@
             
             <!--8.3 Section-->
             <section class="space-y-6 text-lg text-justify">
-                    <h2 id="8.3" class="navigation"> 8.3 Release testing</h2>
+                    <h2 id="8.3" class="navigation scroll-mt-28"> 8.3 Release testing</h2>
                     <p>Release testing is the process of testing a particular release of a system that is
                     intended for use outside of the development team. Normally, the system release is for
                     customers and users. In a complex project, however, the release could be for other
@@ -416,7 +450,7 @@
                         tionality and not the implementation of the software.<br></p>
             </section>            
             <section class="space-y-6 text-lg text-justify">    
-                <h3 id="8.3.1" class="h3-main"> 8.3.1 Requirements-based testing</h3>
+                <h3  class="h3-main"> 8.3.1 Requirements-based testing</h3>
                     
                 <p> A general principle of good requirements engineering practice is that requirements
                 should be testable; that is, the requirement should be written so that a test can be
@@ -449,7 +483,7 @@
             </section>
 
             <section class="space-y-6 text-lg text-justify">    
-                <h3 id="8.3.2"class="h3-main"> 8.3.2 Scenario testing</h3>
+                <h3 class="h3-main"> 8.3.2 Scenario testing</h3>
                     
                 <p> Scenario testing is an approach to release testing where you devise typical scenarios
                 of use and use these to develop test cases for the system. A scenario is a story that
@@ -463,7 +497,7 @@
                 </p><br>
 
                 <div class="div-img">
-                    <img  src="./Chapter8-Images/image10.png" class="max-w-w-0.5" alt="Centered Image">
+                    <img  src="./Chapter8-Images/image10.png" class="max-w-w-0.5 hover:shadow-2xl" alt="Centered Image">
                 </div><br>
                 
                 <p> that the system passes the test. He also suggests that it should be easy to evaluate. 
@@ -495,7 +529,7 @@
             </section>
 
             <section class="space-y-6 text-lg text-justify">    
-                <h3 id="8.3.3" class="h3-main">8.3.3 Performance testing</h3>
+                <h3  class="h3-main">8.3.3 Performance testing</h3>
                     
                     <p> Once a system has been completely integrated, it is possible to test for emergent prop
                         erties, such as performance and reliability. Performance tests have to be designed to
@@ -537,10 +571,10 @@
                         processes must exchange. The processes become slower and slower as they wait for
                         the required data from other processes. Stress testing helps you discover when the
                         degradation begins so that you can add checks to the system to reject transactionsbeyond this point</p><br>
-             
+            </section> 
             <!--8.4 Section-->
             <section class="space-y-6 text-lg text-justify">
-                <h2 id="8.4" class="navigation"> 8.4 User testing</h2>
+                <h2 id="8.4" class="navigation scroll-mt-28"> 8.4 User testing</h2>
                     
                 <p> User or customer testing is a stage in the testing process in which users or customers
                 provide input and advice on system testing. This may involve formally testing a sys
@@ -585,7 +619,7 @@
                         ware system is made available to customers and users for evaluation. Beta testers<br></p><br>
 
                     <div class="div-img">
-                        <img  src="./Chapter8-Images/image11.png" class="max-w-w-0.5" alt="Centered Image">
+                        <img  src="./Chapter8-Images/image11.png" class="max-w-w-0.5 hover:shadow-2xl" alt="Centered Image">
                     </div><br>
 
                     <p> may be a selected group of customers who are early adopters of the system.
@@ -605,38 +639,38 @@
                         They are:</p>
 
                     <ol class="list-disc list-inside">
-                        <li><span class="font-bold text-[var(--color-primary)]">Define acceptance criteria</span> - This stage should, ideally, take place early in the
+                        <li><span class="font-bold text-primary">Define acceptance criteria</span> - This stage should, ideally, take place early in the
                             process before the contract for the system is signed. The acceptance criteria
                             should be part of the system contract and be agreed between the customer and
                             the developer. In practice, however, it can be difficult to define criteria so early
                             in the process. Detailed requirements may not be available and there may be sig
                             nificant requirements change during the development process.</li>
-                        <li><span class="font-bold text-[var(--color-primary)]">Plan acceptance testing</span> - This involves deciding on the resources, time, and
+                        <li><span class="font-bold text-primary">Plan acceptance testing</span> - This involves deciding on the resources, time, and
                             budget for acceptance testing and establishing a testing schedule. The accep
                             tance test plan should also discuss the required coverage of the requirements and
                             the order in which system features are tested. It should define risks to the testing
                             process, such as system crashes and inadequate performance, and discuss how
                             these risks can be mitigated.</li>
-                        <li><span class="font-bold text-[var(--color-primary)]">Derive acceptance tests</span> - Once acceptance criteria have been established, tests
+                        <li><span class="font-bold text-primary">Derive acceptance tests</span> - Once acceptance criteria have been established, tests
                             have to be designed to check whether or not a system is acceptable. Acceptance
                             tests should aim to test both the functional and non-functional characteristics
                             (e.g., performance) of the system. They should, ideally, provide complete cover
                             age of the system requirements. In practice, it is difficult to establish completely
                             objective acceptance criteria. There is often scope for argument about whether
                             or not a test shows that a criterion has definitely been met.</li>
-                        <li><span class="font-bold text-[var(--color-primary)]">Run acceptance tests</span> - The agreed acceptance tests are executed on the system.
+                        <li><span class="font-bold text-primary">Run acceptance tests</span> - The agreed acceptance tests are executed on the system.
                             Ideally, this should take place in the actual environment where the system will
                             be used, but this may be disruptive and impractical. Therefore, a user testing
                             environment may have to be set up to run these tests. It is difficult to automate
                             this process as part of the acceptance tests may involve testing the interactions
                             between end-users and the system. Some training of end-users may be required.</li>
-                        <li><span class="font-bold text-[var(--color-primary)]">Negotiate test results</span> - It is very unlikely that all of the defined acceptance tests will
+                        <li><span class="font-bold text-primary">Negotiate test results</span> - It is very unlikely that all of the defined acceptance tests will
                             pass and that there will be no problems with the system. If this is the case, then
                             acceptance testing is complete and the system can be handed over. More com
                             monly, some problems will be discovered. In such cases, the developer and the
                             customer have to negotiate to decide if the system is good enough to be put into
                             use. They must also agree on the developer’s response to identified problems.</li>
-                        <li><span class="font-bold text-[var(--color-primary)]">Reject/accept system</span> - This stage involves a meeting between the developers 
+                        <li><span class="font-bold text-primary">Reject/accept system</span> - This stage involves a meeting between the developers 
                             and the customer to decide on whether or not the system should be accepted. If
                             the system is not good enough for use, then further development is required
                             to fix the identified problems. Once complete, the acceptance testing phase isrepeated.</li>                       
@@ -667,10 +701,29 @@
                         acceptance of the system. The customer may accept the system so that deployment
                         can begin. The system provider agrees to repair urgent problems and deliver a new
                         version to the customer as quickly as possible<br></p>
-                    
-                    <h2 class="text-2xl font-bold text-[var(--color-accent)] mt-10">KEY POINTS</h2>
-                    
-                    <ol class="list-disc list-inside">
+            
+            </section>
+
+        </main>
+        <!--Website Main-->
+    </div>
+
+    <!--Website-Footer-->
+    <footer class="relative overflow-hidden bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 text-gray-200 border-t border-amber-600/30">
+            <!-- Top Accent Line -->
+        <div class="relative overflow-hidden bg-text/100 text-bg border-t border-primary">
+
+            <div class="max-w-7xl mx-auto px-6 py-12 sm:px-10 lg:px-16">
+                <!-- Navigation Section -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-10 pb-8 border-b border-bg">
+
+                <!-- Key Points (Wider Column) -->
+                <div class="lg:col-span-2">
+                    <h2 class="footh2">
+                    <i class="fas fa-key text-secondary"></i> Key Points
+                    </h2>
+                    <div class=" gap-x-6 gap-y-3 text-gray-400 text-xs sm:text-base leading-relaxed">
+                    <ol class="list-disc list-inside text-justify">
                         <li> Testing can only show the presence of errors in a program. It cannot demonstrate that there are no remaining faults.</li>
                         <li> Development testing is the responsibility of the software development team. A separate team
                             should be responsible for testing a system before it is released to customers. In the user testing
@@ -688,81 +741,82 @@
                         <li> Acceptance testing is a user testing process where the aim is to decide if the software is good
                             enough to be deployed and used in its operational environment.</li>
                     </ol>
-                    
-                    <h2 class="text-2xl font-bold text-[var(--color-accent)] mt-10">FURTHER READING</h2>
-                    
-                    <p> ‘How to design practical test cases’. A how-to article on test case design by an author from a
-                        Japanese company that has a very good reputation for delivering software with very few faults. 
-                        (T. Yamaura, IEEE Software, 15(6), November 1998.)
-                        <a href="http://dx.doi.org/10.1109/52.730835" class="text-[var(--color-primary)] underline"> http://dx.doi.org/10.1109/52.730835</a>.</p>
-                    <p> How to Break Software: A Practical Guide to Testing. This is a practical, rather than theoretical, book
-                        on software testing in which the author presents a set of experience-based guidelines on designing
-                        tests that are likely to be effective in discovering system faults. (J. A. Whittaker, Addison-Wesley,2002.)</p>
-                    <p> ‘Software Testing and Verification’. This special issue of the IBM Systems Journal includes a number
-                        of papers on testing, including a good general overview, papers on test metrics, and test
-                        automation. (IBM Systems Journal, 41(1), January 2002.)</p>
-                    <p>‘Test-driven development’. This special issue on test-driven development includes a good general
-                        overview of TDD as well as experience papers on how TDD has been used for different types of
-                        software. (IEEE Software, 24 (3) May/June 2007.)</p>
-                    
-                    <h2 class="text-2xl font-bold text-[var(--color-accent)] mt-10"> EXERCISES</h2>
-                    
-                    
-                    <p><span class="font-bold">8.1</span>. Explain why it is not necessary for a program to be completely free of defects before it is
-                            delivered to its customers.</p>
-                    <p><span class="font-bold">8.2</span>. Explain why testing can only detect the presence of errors, not their absence.</p>
-                    <p><span class="font-bold">8.3</span>. Some people argue that developers should not be involved in testing their own code but that
-                            all testing should be the responsibility of a separate team. Give arguments for and against
-                            testing by the developers themselves.</p>
-                    <p><span class="font-bold">8.4</span>. You have been asked to test a method called ‘catWhiteSpace’ in a ‘Paragraph’ object that,
-                            within the paragraph, replaces sequences of blank characters with a single blank character.
-                            Identify testing partitions for this example and derive a set of tests for the ‘catWhiteSpace’
-                            method.</p>
-                    <p><span class="font-bold">8.5</span>. What is regression testing? Explain how the use of automated tests and a testing framework
-                            such as JUnit simplifies regression testing.</p>
-                    <p><span class="font-bold">8.6</span>. The MHC-PMS is constructed by adapting an off-the-shelf information system. What do you
-                            think are the differences between testing such a system and testing software that is
-                            developed using an object-oriented language such as Java?</p>
-                    <p><span class="font-bold">8.7</span>. Write a scenario that could be used to help design tests for the wilderness weather station
-                            system.</p>
-                    <p><span class="font-bold">8.8</span>. What do you understand by the term ‘stress testing’? Suggest how you might stress test the
-                            MHC-PMS.</p>
-                    <p><span class="font-bold">8.9</span>. What are the benefits of involving users in release testing at an early stage in the testing
-                            process? Are there disadvantages in user involvement?</p>
-                    <p><span class="font-bold">8.10</span>. A common approach to system testing is to test the system until the testing budget is
-                            exhausted and then deliver the system to customers. Discuss the ethics of this approach
-                            for systems that are delivered to external customers.</p>            
+                    </div>
+                </div>
 
-            </section>
-        </main>
-        <!--Website Main-->
-    </div>
+                <!-- Quick Links -->
+                <div>
+                    <h2 class="footh2">
+                    <i class="fas fa-graduation-cap text-secondary"></i> Quick Links
+                    </h4>
+                    <ul class="space-y-2">
+                    <li><a href="#Objectives"  class="group text-md foothref">
+                            <i class="fas fa-angle-right footicon"></i>Objectives
+                    </a></li>
+                    <li><a href="#Contents"  class="group text-md foothref">
+                            <i class="fas fa-angle-right footicon"></i>Contents
+                    </a></li>
+                    <li><a href="#Test"  class="group text-md foothref">
+                            <i class="fas fa-angle-right footicon"></i>Test Planning
+                    </a></li>
+                    <li><a href="#8.1"  class="group text-md foothref">
+                            <i class="fas fa-angle-right footicon"></i>8.1 Development Testing
+                    </a></li>
+                    <li><a href="#8.2"  class="group text-md foothref">
+                            <i class="fas fa-angle-right footicon"></i>8.2 Test-Driven Development
+                    </a></li>
+                    <li><a href="#8.3"  class="group text-md foothref">
+                            <i class="fas fa-angle-right footicon"></i>8.3 Release Testing
+                    </a></li>
+                    <li><a href="#8.4"  class="group text-md foothref">
+                            <i class="fas fa-angle-right footicon"></i>8.4 User Testing
+                    </a></li>
+                    </ul>
+                </div>
+                </div>
 
-    <!--Website-Footer-->
-    <footer class ="bg-[var(--color-primary)] bg-gradient-to-tr from-[var(--color-bg)] text-center py-4 mt-10">
-        <p class="text-sm font-bold text-[var(--color-accent)]">© 2025 Software Testing  | BSIT/BA-3A</p>
-        <p class="text-[var(--color-accent)]">Developed by:</p>
-        <article>
-            <p class="font-bold text-[var(--color-primary)]">
-                Ma. Erica Z. Vidal
-            </p>
-        </article>
+                <!-- Bottom Section -->
+                <div class="flex justify-baseline lg:flex-row justify-between items-center gap-6">
+                    <!-- Left: Logo & Info -->
+                    <div class="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left">
+                    <div class="w-10 h-10 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center text-sm sm:text-base font-bold text-white shadow-lg shadow-amber-500/40">SE</div>
+                    <div>
+                        <h4 class="text-bg text-sm sm:text-base font-semibold">Software Engineering</h4>
+                        <p class="text-bg text-xs sm:text-sm">BSIT/BA-3A</p>
+                    </div>
+                </div>
 
-        <div class="flex justify-center gap-4 mt-3">
-            <a href="https://www.facebook.com/erica.vidal.33671#">
-                <img src="./Chapter8-Images/facebook-logo.png" alt="Facebook" class="w-6 h-6 hover:scale-110 transition-transform">
-            </a>
-            <a href="https://www.instagram.com/imericavidal?igsh=bG1oM3I2eHRiMnhw"> 
-                <img src="./Chapter8-Images/ig logo.png" alt="Instagram" class="w-6 h-6 hover:scale-110 transition-transform">
-            </a>
-            <a href="https://x.com/2_burgoo?t=LmuryL7LuKSKmR4ZmC9W8A&s=09">
-                <img src="./Chapter8-Images/X twitter logo.webp" alt="Twitter" class="w-6 h-6 hover:scale-110 transition-transform">
-            </a>
-            <a href="https://www.tiktok.com/@ericavidal01?">
-                <img src="./Chapter8-Images/tiktok logo.jpg" alt="TikTok" class="w-6 h-6 hover:scale-110 transition-transform">
-            </a>
+                    <div>
+                        <a href="#top" class="bg-white/20 border  border-white/40 px-4 py-2 sm:px-6 sm:py-2.5 rounded-md text-bg text-sm sm:text-base font-semibold hover:bg-primary hover:translate-y-[-2px] transition-all duration-300 whitespace-nowrap">
+                            ↑ Back to Top
+                        </a>
+                    </div>
+                
+                
+                <div class="text-center lg:text-right">
+                    <p class="text-bg text-sm sm:text-base">Created by: <span class="text-secondary font-semibold">Vidal, Ma. Erica Z.</span></p>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="flex items-center justify-center lg:justify-end gap-3 mt-2">
+                        <a href="https://github.com/ericavidaloop" class="_blank" rel="noopener noreferrer" 
+                            class="footicons">
+                            <i class="fab fa-github text-sm"></i>
+                        </a>
+                        <a href="https://www.facebook.com/erica.vidal.33671" class="_blank" rel="noopener noreferrer" 
+                            class="footicons">
+                            <i class="fab fa-facebook-f text-sm"></i>
+                        </a>
+                        <a href="https://www.instagram.com/imericavidal?igsh=bG1oM3I2eHRiMnhw" class="_blank" rel="noopener noreferrer" 
+                            class="footicons">
+                            <i class="fab fa-instagram text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+
+    
 
 </body>
 </html>

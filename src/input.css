@@ -19,10 +19,11 @@
 
 body {
   font-family: var(--font-family-base);
-  @apply text-[var(--color-text)] bg-[var(--color-bg)] leading-relaxed;
+  @apply text-shadow-text bg-bg leading-relaxed;
 }
 
  /*Index.html*/
+
 .foot-card {
   @apply bg-white rounded-2xl overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-xl border border-amber-200 hover:border-[var(--color-secondary)];
 }
@@ -36,8 +37,123 @@ body {
 }
 
 .main-card-header{
-  @apply text-lg sm:text-xl font-semibold text-[var(--color-primary)] group-hover:text-[var(--color-secondary)];
+  @apply text-lg sm:text-xl font-semibold text-primary group-hover:text-secondary;
 }
+
+/*Header*/
+.headerhead{
+  @apply left-0 w-full bg-primary text-bg shadow-lg sticky top-0 z-50;
+}
+
+.arthead{
+  @apply max-w-7xl mx-auto px-4 sm:px-6 py-3 flex flex-col md:flex-row items-center justify-between
+}
+
+.rightnav{
+  @apply flex flex-row flex-wrap md:flex-row md:items-center gap-2 sm:gap-3 text-sm sm:text-base font-semibold
+}
+
+.linktoch{
+  @apply block px-2 py-1 text-bg  hover:text-secondary hover:scale-110 transition-transform transition-colors duration-300
+}
+
+.headerlogo{
+  @apply w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-bg text-primary font-bold rounded-full shadow-md
+}
+
+.headh1{
+  @apply text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-bg;
+}
+
+/*footer*/
+
+.footh2{
+  @apply text-bg text-lg sm:text-xl font-semibold mb-4 flex items-center gap-2;
+}
+
+.foothref{
+  @apply  text-bg no-underline  transition-all duration-300 flex items-center gap-2 py-0.5 hover:text-secondary hover:pl-2;
+}
+
+.footicon{
+  @apply  text-[10px] opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0;
+}
+
+.footicons{
+  @apply w-8 h-8 flex items-center justify-center rounded-full bg-bg hover:bg-secondary text-text hover:bg-bg transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-amber-500/50;
+}
+
+
+ /*Chapter1*/
+.ptext {
+  @apply text-sm md:text-sm lg:text-base xl:text-lg leading-relaxed text-justify mt-4;
+}
+
+.boxtype{
+  @apply bg-white rounded-2xl shadow-xl border-l-4 border-primary p-8 hover:scale-[1.02] transition-transform duration-300  transform transition-all duration-500 hover:scale-105;
+}
+
+.boxcontainer{
+  @apply bg-white rounded-2xl shadow-xl border-l-4 border-primary p-8 hover:scale-[1.02] transition-transform duration-300 mx-auto max-w-md transform transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-primary/40 delay-100;
+}
+
+.maindesign{
+  @apply bg-bg text-text px-8 pb-8 mt-10 sm:px-10 lg:px-20 xl:px-25
+}
+
+.mainh2{
+  @apply text-lg md:text-2xl lg:text-3xl xl:text-4xl font-bold text-bg bg-primary rounded-lg px-4 py-2 mb-6;
+}
+
+.mainh3{
+  @apply text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-primary;
+}
+
+.mainsubhead{
+  @apply text-base md:text-xl lg:text-2xl xl:text-3xl font-bold text-primary mb-6;
+}
+
+.qlscroll{
+  @apply text-center scroll-mt-30 md:scroll-mt-26 lg:scroll-mt-24 xl:scroll-mt-22;
+}
+
+.tblth{
+  @apply px-6 py-3 text-left text-sm sm:text-base font-semibold;
+}
+
+.tbltd{
+  @apply px-6 py-4 text-sm sm:text-base;
+}
+
+.tbltr{
+  @apply bg-bg hover:bg-text/10 transition-colors;
+}
+
+.oldesign {
+  @apply list-decimal my-5 pl-6 space-y-4 text-text text-sm md:text-sm lg:text-base xl:text-lg leading-relaxed text-justify;
+}
+
+.uldesign{
+  @apply list-disc pl-8 space-y-1 text-gray-800 text-sm md:text-sm lg:text-base xl:text-lg leading-relaxed;
+}
+
+.olbold{
+  @apply font-semibold text-primary
+}
+
+.imagebox{
+  @apply bg-white rounded-xl border border-bg p-3 my-8 w-fit mx-auto shadow-[0_8px_20px_rgba(120,72,0,0.3)] hover:shadow-[0_10px_25px_rgba(120,72,0,0.45)] transition-shadow duration-300
+}
+
+.footerh2{
+  @apply text-2xl font-bold mb-4
+}
+
+.footerlink{
+  @apply hover:text-secondary hover:scale-105 flex items-center gap-2 text-bg hover:text-amber-500 transition-all
+}
+
+
 
 /* chapter 14 */
 .chap-h2{
@@ -57,7 +173,7 @@ body {
 }
 
 .image {
-  @apply rounded-lg shadow-md h-80 ;
+  @apply rounded-lg shadow-md max-w-full h-auto;
 }
 
 .div-img {

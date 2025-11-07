@@ -6,7 +6,7 @@
     <title>Chapter 14: Security Engineering</title>
     <link rel="stylesheet" href="./src/output.css">
     <link rel="icon" type="image/png" href="./index_images/image.png" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><!-- icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><!-- icons link -->
 
 </head>
 
@@ -223,7 +223,7 @@
                     <section id="section-14-1" class="mb-12 scroll-mt-27 md:scroll-mt-24">
                         <h2 class="chap-h2">14.1 Security risk management</h2>
                         <div class="text">
-                            <p >
+                            <p>
                                 Security risk management balances the potential financial losses from attacks against the costs of implementing security measures. This is a business decision, not a technical one, meaning senior management is responsible for accepting security costs or the risks of not having them. Software engineers are vital participants, providing technical guidance to inform these decisions. The organizational security policy is a key input to this process, as it defines what is and isn't allowed, helping to identify potential threats. Risk assessment is an ongoing process that begins before a system is acquired and continues throughout its entire lifecycle.
                             </p>
 
@@ -261,7 +261,7 @@
                                 </div>
                             </div>
 
-                            <p >Misuse cases are valuable for all stages of risk assessment, providing a structured way to analyze potential attacks and their security implications during system design and evolution.</p>
+                            <p>Misuse cases are valuable for all stages of risk assessment, providing a structured way to analyze potential attacks and their security implications during system design and evolution.</p>
 
                             <div class="div-img">
                                 <img src="Chapter14-Images/Figure 14.2.png" alt="Figure 14.2: Misuse case example" class="image"/>
@@ -300,7 +300,7 @@
                                 <img src="Chapter14-Images/Figure 14.3.png" alt="Figure 14.3: Misuse case for life-cycle risk assessment" class="image"/>
                             </div>
 
-                            <p  >Even with generic design decisions, a life-cycle risk analysis can reveal vulnerabilities. Once identified, you must decide on steps to reduce these risks, which may involve adding new security requirements or changing operational procedures. Here are some examples of potential requirements to address these vulnerabilities:</p>
+                            <p>Even with generic design decisions, a life-cycle risk analysis can reveal vulnerabilities. Once identified, you must decide on steps to reduce these risks, which may involve adding new security requirements or changing operational procedures. Here are some examples of potential requirements to address these vulnerabilities:</p>
 
                             <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 p-2">
                                 <div class="text-bg-ul">
@@ -352,7 +352,7 @@
                                 There's a strong link between security and dependability. Strategies used for dependability, such as redundancy and diversity, can also help a system resist and recover from attacks. Similarly, high-availability mechanisms can aid in recovering from denial-of-service (DoS) attacks.
                             </p>
                             
-                            <p  >
+                            <p>
                                 Designing for security always involves compromises, especially between security, performance, and usability. Implementing strong security measures, such as encryption, can impact a system's performance by slowing down processes. There is also a tension with usability, as security features like multiple passwords can be inconvenient and lead to users being locked out. The ideal balance among these factors depends on the system's type and its operational environment. For instance, a military system's users are accustomed to rigorous security, whereas a stock trading system requires speed and would find frequent security checks unacceptable.
                             </p>
 
@@ -677,57 +677,57 @@
 
             <!-- Footer -->
             <footer  class="relative overflow-hidden bg-text/100 text-bg border-t border-primary">
-            <!-- Top Accent Line -->
+                <!-- Top Accent Line -->
                 <div class="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-secondary via-accent to-accent"></div>
 
                 <div class="max-w-7xl mx-auto px-6 py-12 sm:px-10 lg:px-16">
                     <!-- Navigation Section -->
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-10 pb-8 border-b border-bg">
 
-                    <!-- Key Points (Wider Column) -->
-                    <div class="lg:col-span-2">
-                        <h2 class="footh2">
-                        <i class="fas fa-key text-secondary"></i> Key Points
-                        </h2>
-                        <div class=" gap-x-6 gap-y-3 text-bg text-xs sm:text-base leading-relaxed">
-                        <p><p class="text-secondary inline">1.</p> Security engineering focuses on how to develop and maintain software systems that can resist malicious attacks intended to damage a computer-based system or its data.</p>
-                        
-                        <p><p class="text-secondary inline">2.</p> Security threats can be threats to the confidentiality, integrity, or availability of a system or its data.</p>
-                        
-                        <p><p class="text-secondary inline">3   .</p> Security risk management involves assessing the losses that might ensue from attacks on a system, and deriving security requirements that are aimed at eliminating or reducing these losses.</p>
-                        
-                        <p><p class="text-secondary inline">4.</p> Design for security involves designing a secure system architecture, following good practice for secure systems design, and including functionality to minimize the possibility of introducing vulnerabilities when the system is deployed.</p>
-                        
-                        <p><p class="text-secondary inline">5.</p> Key issues when designing a secure systems architecture include organizing the system structure to protect key assets and distributing the system assets to minimize the losses from a successful attack.</p>
-                        
-                        <p><p class="text-secondary inline">6.</p> Security design guidelines sensitize system designers to security issues that they may not have considered. They provide a basis for creating security review checklists.</p>
-                        
-                        <p><p class="text-secondary inline">7.</p> To support secure deployment you should provide a way of displaying and analyzing system configurations, localize configuration settings so that important configurations are not forgotten, minimize default privileges assigned to system users, and provide ways to repair security vulnerabilities.</p>
-                        
-                        <p><p class="text-secondary inline">8.</p> System survivability reflects the ability of a system to continue to deliver essential business or mission-critical services to legitimate users while it is under attack, or after part of the system has been damaged.</p>
+                        <!-- Key Points (Wider Column) -->
+                        <div class="lg:col-span-2">
+                            <h2 class="footh2">
+                            <i class="fas fa-key text-secondary"></i> Key Points
+                            </h2>
+                            <div class=" gap-x-6 gap-y-3 text-bg text-xs sm:text-base leading-relaxed">
+                            <p><p class="text-secondary inline">1.</p> Security engineering focuses on how to develop and maintain software systems that can resist malicious attacks intended to damage a computer-based system or its data.</p>
+                            
+                            <p><p class="text-secondary inline">2.</p> Security threats can be threats to the confidentiality, integrity, or availability of a system or its data.</p>
+                            
+                            <p><p class="text-secondary inline">3   .</p> Security risk management involves assessing the losses that might ensue from attacks on a system, and deriving security requirements that are aimed at eliminating or reducing these losses.</p>
+                            
+                            <p><p class="text-secondary inline">4.</p> Design for security involves designing a secure system architecture, following good practice for secure systems design, and including functionality to minimize the possibility of introducing vulnerabilities when the system is deployed.</p>
+                            
+                            <p><p class="text-secondary inline">5.</p> Key issues when designing a secure systems architecture include organizing the system structure to protect key assets and distributing the system assets to minimize the losses from a successful attack.</p>
+                            
+                            <p><p class="text-secondary inline">6.</p> Security design guidelines sensitize system designers to security issues that they may not have considered. They provide a basis for creating security review checklists.</p>
+                            
+                            <p><p class="text-secondary inline">7.</p> To support secure deployment you should provide a way of displaying and analyzing system configurations, localize configuration settings so that important configurations are not forgotten, minimize default privileges assigned to system users, and provide ways to repair security vulnerabilities.</p>
+                            
+                            <p><p class="text-secondary inline">8.</p> System survivability reflects the ability of a system to continue to deliver essential business or mission-critical services to legitimate users while it is under attack, or after part of the system has been damaged.</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Quick Links -->
-                    <div>
-                        <h4 class="footh2">
-                        <i class="fas fa-graduation-cap text-secondary"></i> Quick Links
-                        </h4>
-                        <ul class="space-y-2">
-                        <li><a href="#introduction"  class="group text-md foothref">
-                                <i class="fas fa-angle-right footicon"></i> Introduction
-                        </a></li>
-                        <li><a href="#section-14-1"  class="group text-md foothref">
-                                <i class="fas fa-angle-right footicon"></i>14.1 Security Risk Management
-                        </a></li>
-                        <li><a href="#section-14-2"  class="group text-md foothref">
-                                <i class="fas fa-angle-right footicon"></i>14.2 Design for Security
-                        </a></li>
-                        <li><a href="#section-14-3"  class="group text-md foothref">
-                                <i class="fas fa-angle-right footicon"></i>14.3 System Survivability
-                        </a></li>
-                        </ul>
-                    </div>
+                        <!-- Quick Links -->
+                        <div>
+                            <h4 class="footh2">
+                            <i class="fas fa-graduation-cap text-secondary"></i> Quick Links
+                            </h4>
+                            <ul class="space-y-2">
+                            <li><a href="#introduction"  class="group text-md foothref">
+                                    <i class="fas fa-angle-right footicon"></i> Introduction
+                            </a></li>
+                            <li><a href="#section-14-1"  class="group text-md foothref">
+                                    <i class="fas fa-angle-right footicon"></i>14.1 Security Risk Management
+                            </a></li>
+                            <li><a href="#section-14-2"  class="group text-md foothref">
+                                    <i class="fas fa-angle-right footicon"></i>14.2 Design for Security
+                            </a></li>
+                            <li><a href="#section-14-3"  class="group text-md foothref">
+                                    <i class="fas fa-angle-right footicon"></i>14.3 System Survivability
+                            </a></li>
+                            </ul>
+                        </div>
                     </div>
 
                     <!-- Bottom Section -->
@@ -748,18 +748,18 @@
                             
                             <!-- Social Media Icons -->
                             <div class="flex items-center justify-center sm:justify-end gap-3 mt-2 mb-2">
-                            <a href="https://github.com/ChristinePDP" target="_blank" rel="noopener noreferrer" 
-                                class="footicons">
-                                <i class="fab fa-github text-sm"></i>
-                            </a>
-                            <a href="https://www.facebook.com/christine.purilan" target="_blank" rel="noopener noreferrer" 
-                                class="footicons">
-                                <i class="fab fa-facebook-f text-sm"></i>
-                            </a>
-                            <a href="https://www.instagram.com/chrixtinnnne?igsh=aGYxdXFyOTY4bnh1" target="_blank" rel="noopener noreferrer" 
-                                class="footicons">
-                                <i class="fab fa-instagram text-sm"></i>
-                            </a>
+                                <a href="https://github.com/ChristinePDP" target="_blank" rel="noopener noreferrer" 
+                                    class="footicons">
+                                    <i class="fab fa-github text-sm"></i>
+                                </a>
+                                <a href="https://www.facebook.com/christine.purilan" target="_blank" rel="noopener noreferrer" 
+                                    class="footicons">
+                                    <i class="fab fa-facebook-f text-sm"></i>
+                                </a>
+                                <a href="https://www.instagram.com/chrixtinnnne?igsh=aGYxdXFyOTY4bnh1" target="_blank" rel="noopener noreferrer" 
+                                    class="footicons">
+                                    <i class="fab fa-instagram text-sm"></i>
+                                </a>
                             </div>
                         </div>
                     </div>

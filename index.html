@@ -6,6 +6,9 @@
     <title>Software Engineering</title>
     <link rel="stylesheet" href="./src/output.css">
     <link rel="icon" type="image/png" href="./index_images/image.png" />
+
+     <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
 
   <body class="min-h-screen flex flex-col">
@@ -14,10 +17,10 @@
       <div class="container mx-auto px-4 py-4 sm:py-6">
         <div class="flex flex-col sm:flex-row justify-between items-center">
           <div class="flex items-center space-x-2 mb-3 sm:mb-0">
-            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-[var(--color-secondary)] rounded-lg flex items-center justify-center">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-secondary rounded-lg flex items-center justify-center">
               <span class="text-white font-bold text-lg sm:text-xl">SE</span>
             </div>
-            <h1 class="text-2xl sm:text-3xl font-bold text-[var(--color-accent)]">Software Engineering</h1>
+            <h1 class="text-2xl sm:text-3xl font-bold text-accent">Software Engineering</h1>
           </div>
         </div>
       </div>
@@ -27,18 +30,19 @@
     <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-10 grow">
       <!-- Hero Section -->
       <section class="mb-12 text-center px-2 sm:px-6">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[var(--color-accent)] mb-6 leading-tight">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-accent mb-6 leading-tight">
           Software Engineering
         </h1>
         <p class="text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+          <i class="fas fa-graduation-cap text-primary mr-2"></i>
           Welcome to our project homepage for BSIT/BA-3A. Explore each chapter to learn about key software engineering concepts, design principles, and testing methods.
         </p>
       </section>
 
       <!-- Chapters Navigation -->
       <section class="max-w-5xl mx-auto">
-        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-center text-[var(--color-primary)] mb-8">
-          Explore Chapters
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-center text-primary mb-8">
+        <i class="fas fa-book-open mr-2"></i>Explore Chapters
         </h2>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -143,25 +147,25 @@
 
 
     <!-- Footer -->
-    <footer class="bg-white text-[var(--color-accent)] shadow-2xl py-12 mt-16">
+    <footer class="bg-white text-accent shadow-2xl py-12 mt-16">
       <div class="container mx-auto px-4 sm:px-6">
         <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-10">
-          Group 5 Members
+        <i class="fas fa-users mr-2"></i>Group 5 Members
         </h2>
 
        
         <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-10 justify-items-center">
 
           <!-- Jerick -->
-          <div class="group [perspective:1000px] w-full max-w-[220px] h-80">
-            <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] rounded-xl border-2 border-[var(--color-primary)] shadow-xl">
+          <div class="group perspective-[1000px] w-full max-w-[220px] h-80">
+            <div class="relative w-full h-full transition-transform duration-700 transform-3d group-hover:[transform:rotateY(180deg)] rounded-xl border-2 border-primary shadow-xl">
           
               <div class="absolute inset-0 bg-white rounded-xl overflow-hidden backface-hidden flex flex-col">
-                <div class="aspect-[3/3.8] overflow-hidden flex-grow">
+                <div class="aspect-[3/3.8] overflow-hidden grow">
                   <img src="./index_images/guyala.jpeg" alt="Jhon Jerick Guyala" class="w-full h-full object-cover">
                 </div>
-                <div class="p-3 text-center border-t border-[var(--color-primary)]">
-                  <h3 class="font-semibold text-sm sm:text-base text-[var(--color-primary)]">
+                <div class="p-3 text-center border-t border-primary">
+                  <h3 class="font-semibold text-sm sm:text-base text-primary">
                     Jhon Jerick Guyala
                   </h3>
                   <p class="text-gray-600 text-xs sm:text-sm mt-1">
@@ -171,7 +175,7 @@
                 </div>
               </div>
           
-              <div class="absolute inset-0 bg-[var(--color-primary)] text-white rounded-xl p-4 flex flex-col justify-center items-center text-center [transform:rotateY(180deg)] backface-hidden border-2 border-[var(--color-primary)]">
+              <div class="absolute inset-0 bg-primary text-white rounded-xl p-4 flex flex-col justify-center items-center text-center [transform:rotateY(180deg)] backface-hidden border-2 border-primary">
                 <h3 class="text-lg font-semibold mb-2">About the Author</h3>
                 <p class="text-sm opacity-90 px-3">
                   My hobbies are cooking, watching the news and movies, and listening to music
@@ -183,14 +187,14 @@
 
           <!-- Mica -->
           <div class="group [perspective:1000px] w-full max-w-[220px] h-80">
-            <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] rounded-xl border-2 border-[var(--color-primary)] shadow-xl">
+            <div class="relative w-full h-full transition-transform duration-700 transform-3d group-hover:[transform:rotateY(180deg)] rounded-xl border-2 border-primary shadow-xl">
          
               <div class="absolute inset-0 bg-white rounded-xl overflow-hidden backface-hidden flex flex-col">
-                <div class="aspect-[3/3.8] overflow-hidden flex-grow">
+                <div class="aspect-[3/3.8] overflow-hidden grow">
                   <img src="./index_images/mica.jpg" alt="Mica Joyce Biadoy" class="w-full h-full object-cover">
                 </div>
-                <div class="p-3 text-center border-t border-[var(--color-primary)]">
-                  <h3 class="font-semibold text-sm sm:text-base text-[var(--color-primary)]">
+                <div class="p-3 text-center border-t border-primary">
+                  <h3 class="font-semibold text-sm sm:text-base text-primary">
                     Mica Joyce Biadoy
                   </h3>
                   <p class="text-gray-600 text-xs sm:text-sm mt-1">
@@ -200,7 +204,7 @@
                 </div>
               </div>
     
-              <div class="absolute inset-0 bg-[var(--color-primary)] text-white rounded-xl p-4 flex flex-col justify-center items-center text-center [transform:rotateY(180deg)] backface-hidden border-2 border-[var(--color-primary)]">
+              <div class="absolute inset-0 bg-primary text-white rounded-xl p-4 flex flex-col justify-center items-center text-center [transform:rotateY(180deg)] backface-hidden border-2 border-primary">
                 <h3 class="text-lg font-semibold mb-2">About the Author</h3>
                 <p class="text-sm opacity-90 px-3">
                   My hobbies include discovering new concepts in Information Technology and reading novels, 
@@ -212,14 +216,14 @@
 
           <!-- Latiza -->
           <div class="group [perspective:1000px] w-full max-w-[220px] h-80">
-            <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] rounded-xl border-2 border-[var(--color-primary)] shadow-xl">
+            <div class="relative w-full h-full transition-transform duration-700 transform-3d group-hover:[transform:rotateY(180deg)] rounded-xl border-2 border-[var(--color-primary)] shadow-xl">
 
               <div class="absolute inset-0 bg-white rounded-xl overflow-hidden backface-hidden flex flex-col">
-                <div class="aspect-[3/3.8] overflow-hidden flex-grow">
+                <div class="aspect-[3/3.8] overflow-hidden grow">
                   <img src="./index_images/latiza.jpg" alt="Princes Margareth Latiza" class="w-full h-full object-cover">
                 </div>
-                <div class="p-3 text-center border-t border-[var(--color-primary)]">
-                  <h3 class="font-semibold text-sm sm:text-base text-[var(--color-primary)]">
+                <div class="p-3 text-center border-t border-primary">
+                  <h3 class="font-semibold text-sm sm:text-base text-primary">
                     Princes Margareth Latiza
                   </h3>
                   <p class="text-gray-600 text-xs sm:text-sm mt-1">
@@ -229,7 +233,7 @@
                 </div>
               </div>
          
-              <div class="absolute inset-0 bg-[var(--color-primary)] text-white rounded-xl p-4 flex flex-col justify-center items-center text-center [transform:rotateY(180deg)] backface-hidden border-2 border-[var(--color-primary)]">
+              <div class="absolute inset-0 bg-primary text-white rounded-xl p-4 flex flex-col justify-center items-center text-center [transform:rotateY(180deg)] backface-hidden border-2 border-[var(--color-primary)]">
                 <h3 class="text-lg font-semibold mb-2">About the Author</h3>
                 <p class="text-sm opacity-90 px-3">
                   My hobbies are watching movies, eating, singing, and sleeping.
@@ -243,11 +247,11 @@
             <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] rounded-xl border-2 border-[var(--color-primary)] shadow-xl">
         
               <div class="absolute inset-0 bg-white rounded-xl overflow-hidden backface-hidden flex flex-col">
-                <div class="aspect-[3/3.8] overflow-hidden flex-grow">
+                <div class="aspect-[3/3.8] overflow-hidden grow">
                   <img src="./index_images/erica.jpg" alt="Ma. Erica Vidal" class="w-full h-full object-cover">
                 </div>
-                <div class="p-3 text-center border-t border-[var(--color-primary)]">
-                  <h3 class="font-semibold text-sm sm:text-base text-[var(--color-primary)]">
+                <div class="p-3 text-center border-t border-primary">
+                  <h3 class="font-semibold text-sm sm:text-base text-primary">
                     Ma. Erica Vidal
                   </h3>
                   <p class="text-gray-600 text-xs sm:text-sm mt-1">
@@ -257,7 +261,7 @@
                 </div>
               </div>
         
-              <div class="absolute inset-0 bg-[var(--color-primary)] text-white rounded-xl p-4 flex flex-col justify-center items-center text-center [transform:rotateY(180deg)] backface-hidden border-2 border-[var(--color-primary)]">
+              <div class="absolute inset-0 bg-primary text-white rounded-xl p-4 flex flex-col justify-center items-center text-center [transform:rotateY(180deg)] backface-hidden border-2 border-[var(--color-primary)]">
                 <h3 class="text-lg font-semibold mb-2">About the Author</h3>
                 <p class="text-sm opacity-90 px-3">
                   I enjoy drawing and watching movies, especially adventure and fantasy film. 
@@ -272,11 +276,11 @@
             <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] rounded-xl border-2 border-[var(--color-primary)] shadow-xl">
           
               <div class="absolute inset-0 bg-white rounded-xl overflow-hidden backface-hidden flex flex-col">
-                <div class="aspect-[3/3.8] overflow-hidden flex-grow">
+                <div class="aspect-[3/3.8] overflow-hidden grow">
                   <img src="./index_images/Christine a.jpg" alt="Christine De Padua" class="w-full h-full object-cover">
                 </div>
-                <div class="p-3 text-center border-t border-[var(--color-primary)]">
-                  <h3 class="font-semibold text-sm sm:text-base text-[var(--color-primary)]">
+                <div class="p-3 text-center border-t border-primary">
+                  <h3 class="font-semibold text-sm sm:text-base text-primary">
                     Christine De Padua
                   </h3>
                   <p class="text-gray-600 text-xs sm:text-sm mt-1">
@@ -286,7 +290,7 @@
                 </div>
               </div>
             
-              <div class="absolute inset-0 bg-[var(--color-primary)] text-white rounded-xl p-4 flex flex-col justify-center items-center text-center [transform:rotateY(180deg)] backface-hidden border-2 border-[var(--color-primary)]">
+              <div class="absolute inset-0 bg-primary text-white rounded-xl p-4 flex flex-col justify-center items-center text-center [transform:rotateY(180deg)] backface-hidden border-2 border-primary">
                 <h3 class="text-lg font-semibold mb-2">About the Author</h3>
                 <p class="text-sm opacity-90 px-3">
                   I love spending my free time watching movies, enjoying good food, and getting lost in a good book.

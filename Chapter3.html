@@ -6,42 +6,84 @@
     <title>Chapter-3 Agile Software Development</title>
     <link rel="stylesheet" href="./src/output.css">
     <link rel="icon" href="index_images/image.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<!-- nav & chapter -->
 <body >
-    <header  class="logo-container  logo-gradient sticky top-0  z-10 m-0">
-    <h1 class="logo text-shadow-xl" >CHAPTER 3:<br>
-         AGILE SOFTWARE DEVELOPMENT</h1><span id="objectives"></span>
-        <nav class=" border-t-2 border-amber-800 ">
-            <ul class="inline-grid grid-cols-5  font-normal text-md  ">
-                <li><a class="lists" href="index.html">Home </a></li>
-                <li><a class="lists " href="Chapter1.html"> Chapter1  </a></li>
-                <li><a class="lists " href="Chapter2.html"> Chapter2 </a></li>
-                <li><a class="lists " href="Chapter8.html"> Chapter8 </a></li>
-               <li><a class="lists " href="Chapter14.html"> Chapter14 </a></li>
+    <!-- header -->
+    <header class="headerhead">
+        <article class="arthead">
+            <div class="flex items-center mb-2 md:mb-0 gap-3">
+        
+            <div class="headerlogo">
+                C3
+            </div>
+
+            <h1 class="headh1">
+                Chapter 3: Agile Software Development
+            </h1>
+            </div>
+
+            <nav class="relative">
+            <ul class="rightnav">
+
+                <!-- Home Link -->
+                <li>
+                <a href="index.html"
+                    class="linktoch">
+                    Home
+                </a>
+                </li>
+
+                <!-- Links to Other Chapters -->
+                <li>
+                <a href="chapter1.html"
+                    class="linktoch">
+                    Chapter 1
+                </a>
+                </li>
+                <li>
+                <a href="chapter2.html"
+                    class="linktoch">
+                    Chapter 2
+                </a>
+                </li>
+                <li>
+                <a href="chapter8.html"
+                    class="linktoch">
+                    Chapter 8
+                </a>
+                </li>
+                <li>
+                <a href="chapter14.html"
+                    class="linktoch">
+                    Chapter 14
+                </a>
+                </li>
             </ul>
-        </nav>
-    </header >
+            </nav>
+        </article>
+    </header>
          
     <!-- right side-->
+    
     <main >
-     <div class="content-boxes content">
-                  <h2 class="title"><img src="Chapter3-Images/icons8-content-48.png">CONTENTS:</h2>
+     <div class="content-container">
+                  <h2 class="title "><img src="Chapter3-Images/icons8-content-48.png">CONTENTS:</h2>
              <ol>
                 <div class=" content-btn ">
-                <li><a href="#3.1"><span class="content-num">3.1</span> Agile methods</a></li>
+                <li><a href="#3.1"><span class="content-num">3.1</span> Agile Methods</a></li>
                 </div>
                 <div class="content-btn"> 
-                <li ><a href="#3.2"><span class="content-num">3.2</span> Plan-driven and Agile Dev</a></li>
+                <li ><a href="#3.2"><span class="content-num">3.2</span> Plan-Driven and Agile Development</a></li>
                 </div>
                 <div class="content-btn">
-                <li ><a href="#3.3"><span class="content-num">3.3</span> Extreme programming</a></li>
+                <li ><a href="#3.3"><span class="content-num ">3.3</span> Extreme Programming</a></li>
                 </div>
                 <div class="content-btn">
-                <li><a href="#3.4"><span class="content-num">3.4</span> Agile project management</a></li>
+                <li><a href="#3.4"></a><span class="content-num">3.4</span> Agile Project Management</a></li>
                 </div>
                 <div  class="content-btn">
-                <li><a href="#3.5"><span class="content-num">3.5</span> Scaling agile methods</a></li>
+                <li><a href="#3.5"><span class="content-num">3.5</span> Scaling Agile Methods</a></li>
                 </div>
              </ol>
             </div>
@@ -49,20 +91,20 @@
             <!-- content-boxes -->
       <section >
         <article>
-          <div  class="content-boxes xl:h-110 xl:w-200 pb-5 hover:scale-102 "> 
-            <h2 class="title " ><img src="Chapter3-Images/icons8-pain-point-50 (2).png">OBJECTIVES:</h2>
+          <div  class="per-boxes xl:h-110 xl:w-200 pb-5 hover:scale-102 "> 
+            <h2 class="title "><img src="Chapter3-Images/icons8-pain-point-50 (2).png">OBJECTIVES:</h2>
             <p class="text-[20px] text-[var(--color-accent)]  mx-5 mt-2" id="#1.1"> The objective of this chapter is to introduce you to agile software
              development methods. When you have read the chapter, you will:</p><br>
              <ol >
-                <li class=" text-[var(--color-accent)] mx-5 tracking-wider"><span class="listnum hidden sm:block ">1</span> Learn the purpose and principles of agile development.</li><br>
-                <li class=" text-[var(--color-accent)]  mx-5 tracking-wider"> <span class="listnum hidden sm:block">2</span> Understand key practices in Extreme Programming.</li><br>
-                <li class=" text-[var(--color-accent)]  mx-5 tracking-wider"> <span class="listnum hidden sm:block">3</span> Explore the Scrum approach to project management.</li><br>
-                <li class=" text-[var(--color-accent)]  mx-5 tracking-wider" > <span class="listnum hidden sm:block">4</span> Recognize challenges in scaling agile methods for large systems.</li><br>
+                <li class=" text-[var(--color-accent)] mx-5 tracking-wider animate-pulse"><span class="listnum hidden sm:block ">1</span> Learn the purpose and principles of agile development.</li><br>
+                <li class=" text-[var(--color-accent)]  mx-5 tracking-wider animate-pulse"> <span class="listnum hidden sm:block">2</span> Understand key practices in Extreme Programming.</li><br>
+                <li class=" text-[var(--color-accent)]  mx-5 tracking-wider animate-pulse"> <span class="listnum hidden sm:block">3</span> Explore the Scrum approach to project management.</li><br>
+                <li class=" text-[var(--color-accent)]  mx-5 tracking-wider animate-pulse" > <span class="listnum hidden sm:block">4</span> Recognize challenges in scaling agile methods for large systems.</li><br>
              </ol>
             </div>
             
-            <div class="content-boxes xl:h-250 xl:w-200 pb-5 hover:scale-102">  
-                    <h2 class="title"><img src="Chapter3-Images/icons8-flip-chart-50.png" >INTRODUCTION</h2>
+            <div class="per-boxes xl:h-250 xl:w-200 pb-5 hover:scale-102 ">  
+                    <h2 class="title "><img src="Chapter3-Images/icons8-flip-chart-50.png" >INTRODUCTION</h2>
                   <p class="text-[var(--color-accent)] mx-5 ">     Businesses today face a fast-changing, global environment that demands rapid software
                      development to seize opportunities and stay competitive. 
                      Because requirements often change unpredictably, traditional plan-driven models like the waterfall approach are 
@@ -101,14 +143,14 @@
                     using informal communications rather than formal meetings with written documents.<br><br></p>
             </div>
 
-            <div class="content-boxes xl:h-400 xl:w-200 pb-5 hover:scale-102">
+            <div class=" per-boxes xl:h-400 xl:w-200 pb-5 hover:scale-102 ">
                 <h2  class="title ">3.1 AGILE METHODS</h2>
                 <p class="text-[var(--color-accent)] mx-5 mt-2"> In the 1980s and early 1990s, software engineering
-                    emphasized plan-driven, heavyweight methods involving detailed planning, documentation,<br>quality assurance, 
+                    emphasized plan-driven, heavyweight methods involving detailed planning, documentation,quality assurance, 
                     and formal design tools, which suited large, long-lived,
                 safety-critical systems like aerospace and government projects.<br> <br>
                 These projects required coordination among large, distributed teams and justified the overhead of rigorous
-                processes.<br>
+                processes.
                 However, when applied to <b>smaller business systems</b>, the bureaucracy became excessive, with more effort
                 spent on planning and documentation than coding and testing. <br><br>
                 This inefficiency, coupled with the need to adapt to rapidly changing requirements, led to the rise of agile
@@ -116,7 +158,7 @@
                 feedback, and minimal documentation, making them more effective for dynamic application development.<br><br>
                 
                 The philosophy behind agile methods is reflected in the agile manifesto that was
-                agreed on by many of the leading developers of these methods.<br>
+                agreed on by many of the leading developers of these methods.
                 </p>
 
                 <p class="text-[var(--color-accent)] mx-5 "> This manifesto states:<br><br>
@@ -164,7 +206,7 @@
                 </ol>
             </div>
 
-            <div class="content-boxes xl:h-520 xl:w-200 pb-5 hover:scale-102">
+            <div class="per-boxes xl:h-520 xl:w-200 pb-5 hover:scale-102">
                 <p class="title ">FIGURE 3.1 THE PRINCIPLES OF AGILE METHODS</p>
                   <div >
                      <img src="Chapter3-Images/Screenshot 2025-09-06 151814.png" class=" box-image object-contain " alt="img" >
@@ -180,7 +222,7 @@
                 routinely used for critical systems engineering.<br><br>
             
                 In practice, the principles underlying agile methods are sometimes difficult to
-                realize:</p>
+                realize:<br><br></p>
 
                     <ol class="text-[var(--color-accent)] mx-5">
                 <li>Although the idea of customer involvement in the development process is an
@@ -238,7 +280,7 @@
 
             </div >
 
-            <div class="content-boxes xl:h-110 xl:w-200 pb-5 hover:scale-102" >
+            <div class="per-boxes xl:h-110 xl:w-200 pb-5 hover:scale-102" >
                  <h2  class="title" > 3.2 PLAN-DRIVEN AND AGILE DEVELOPMENT</h2>
                           <span  ></span>
 
@@ -259,7 +301,7 @@
                 </p>
             </div>
 
-            <div class="content-boxes xl:h-530 xl:w-200 pb-5 hover:scale-102">
+            <div class="per-boxes xl:h-540 xl:w-200 pb-5 hover:scale-102">
                  <p  class="title"> FIGURE 3.2 PLAN-DRIVEN AND AGILE SPECIFICATION</p>
                 <div>
                 <img src="Chapter3-Images/Screenshot 2025-09-06 155356.png" class="box-image object-contain" alt="img" >
@@ -329,7 +371,7 @@
                 
             </div>
 
-            <div class="content-boxes xl:h-60 xl:w-200 pb-5 hover:scale-102">
+            <div class="per-boxes xl:h-60 xl:w-200 pb-5 hover:scale-102">
                 <div class="text-center">
                 <h2  class="title" >3.3 EXTREME PROGRAMMING</h2>
                 </div>
@@ -341,7 +383,7 @@
                 oped by different programmers, integrated and tested in a day.</p>
             </div>
 
-            <div class="content-boxes xl:h-320 xl:w-200 pb-5 hover:scale-102">
+            <div class="per-boxes xl:h-320 xl:w-200 pb-5 hover:scale-102">
                 <p  class="title  "> FIGURE 3.3 THE EXTREME PROGRAMMING CYCLE</p>
                 <div>
                     <img src="Chapter3-Images/Screenshot 2025-09-06 160931.png" class="box-image object-contain" alt="img" >
@@ -385,7 +427,7 @@
                 </p>
             </div>
 
-            <div class="content-boxes xl:h-260 xl:w-200 pb-5 hover:scale-102">
+            <div class="per-boxes xl:h-260 xl:w-200 pb-5 hover:scale-102">
                 <p  class="title   "> FIGURE 3.4 EXTREME PROGRAMMING PRACTICES</p>
                 <div class="box-imgcontainer h-140">
                 <img src="Chapter3-Images/Screenshot 2025-09-06 161606.png" class="box-image object-contain mb-5" alt="img">
@@ -409,7 +451,7 @@
                 should have priority over new functionality.</p>
             </div>
             
-            <div class="content-boxes xl:h-330 xl:w-200 pb-5 hover:scale-102">
+            <div class="per-boxes xl:h-330 xl:w-200 pb-5 hover:scale-102">
                 <p class="title  "> FIGURE 3.5 A ‘PRESCRIBING MEDICATION’STORY.</p>
                 <div class="box-imgcontainer p-5 h-40">
                 <img src="Chapter3-Images/Screenshot 2025-09-06 162026.png" class="box-image object-contain " alt="img">
@@ -441,7 +483,7 @@
                 </p>
             </div> 
 
-            <div class="content-boxes xl:h-350 xl:w-200 pb-5 hover:scale-102">
+            <div class="per-boxes xl:h-350 xl:w-200 pb-5 hover:scale-102">
                 <p class="title "> FIGURE 3.6 EXAMPLE OF TASK CARDS FOR PRESCRIBING MEDICATION.</p>
                 <div class="box-imgcontainer p-5 h-40">
                 <img src="Chapter3-Images/Screenshot 2025-09-06 162557.png" class="box-image object-contain " alt="img">
@@ -479,7 +521,7 @@
                 releases, test-first development, and continuous integration.<br><br></p>
             </div>
 
-            <div class="content-boxes xl:h-300 xl:w-200 pb-5 hover:scale-102">
+            <div class="per-boxes xl:h-300 xl:w-200 pb-5 hover:scale-102">
                     <h2  class="title " > 3.3.1 TESTING IN XP</h2>
             
 
@@ -530,7 +572,7 @@
                 that the prescribed dose of a drug does not fall outside known safe limits.<br><br></p>
             </div>
 
-            <div class="content-boxes xl:h-270 xl:w-200 pb-5 hover:scale-105">
+            <div class="per-boxes xl:h-270 xl:w-200 pb-5 hover:scale-102">
                 <p  class="title "> FIGURE 3.7 TEST CASE DESCRIPTION FOR DOSE CHECKING</p>
                 <div >
                     <img src="Chapter3-Images/Screenshot 2025-09-06 163344.png"  class="box-image object-contain" alt="img" >
@@ -563,7 +605,7 @@
                 be delivered in the system release.</p>
             </div>
 
-            <div class="content-boxes xl:h-160 xl:w-200 pb-5 hover:scale-102">
+            <div class="per-boxes xl:h-160 xl:w-200 pb-5 hover:scale-102">
                 <h2  class="title" > 3.3.2 PAIR PROGRAMMING </h2>
 
                 <p class="text-[var(--color-accent)] m-5">The use of pair programming has a number of advantages:</p>
@@ -589,7 +631,7 @@
                 </ol>
             </div>
 
-            <div class="content-boxes xl:h-130 xl:w-200  hover:scale-105 ">
+            <div class="per-boxes xl:h-130 xl:w-200  hover:scale-102 ">
                <h2  class="title "> FIGURE 3.8 THE SCRUM PROCESS</h2>
                     <img src="Chapter3-Images/Screenshot 2025-09-06 164203.png" class="box-image object-contain " alt="img" >
                     
@@ -598,7 +640,7 @@
                             
             </div>           
 
-            <div class="content-boxes xl:h-110 xl:w-200 pb-5 hover:scale-102" >
+            <div class="per-boxes xl:h-110 xl:w-200 pb-5 hover:scale-102" >
 
                 <p class="title mb-5" > 3.4 AGILE PROJECT MANAGEMENT</p>
             
@@ -629,7 +671,7 @@
                             
             </div>                                            
                 
-            <div class="content-boxes xl:h-120 xl:w-200 pb-5 hover:scale-105">
+            <div class="per-boxes xl:h-120 xl:w-200 pb-5 hover:scale-102 ">
                
                 <h2  class="title mb-10"> 3.5 SCALING AGILE METHODS</h2>
             
@@ -650,7 +692,7 @@
                 </p>
             </div>
 
-            <div class="content-boxes xl:h-220 xl:w-200 pb-5 hover:scale-102">
+            <div class="per-boxes xl:h-220 xl:w-200 pb-5 hover:scale-102">
                 <p class="title title mb-5"> Large software system development is different from small system development in a number of ways:</p>
 
         <ol class="text-[var(--color-accent)] m-5">
@@ -688,16 +730,89 @@
    </main>
 
    
-   <footer>
-    <div>
-        <section>
-            <article class="footer">
-                <p>Created by: Princes Margareth Latiza</p>
-                <p>BSIT 3A</p>
-            </article>
-        </section>
+  <footer class="relative overflow-hidden bg-text/100 text-bg border-t border-primary">
+    <!-- Top Accent Line -->
+    <div class="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-secondary via-accent to-accent"></div>
+
+    <div class="max-w-7xl mx-auto px-6 py-12 sm:px-10 lg:px-16">
+        <!-- Navigation Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-10 pb-8 border-b border-bg">
+            <!-- Key Points (Wider Column) -->
+            <div class="lg:col-span-2">
+                <h2 class="footh2">
+                    <i class="fas fa-key text-secondary"></i> Key Points
+                </h2>
+                <div class="gap-x-6 gap-y-3 text-bg text-xs sm:text-base leading-relaxed">
+                    <p>1. Agile methods emphasize fast, incremental development with frequent releases, minimal process overhead, high-quality code, and active customer involvement throughout the process.</p>
+                    <p>2. Choosing between an agile or plan-driven approach depends on the software type, the team's skills, and the company's culture.</p>
+                    <p>3. Extreme Programming (XP) is an agile method that promotes frequent software releases, continuous improvement, and active customer involvement in the development process.</p>
+                    <p>4. A key strength of Extreme Programming is creating automated tests before developing each feature, ensuring all tests pass when new increments are added to the system.</p>
+                    <p>5. Scrum is an agile project management framework that organizes development into fixed time periods called sprints, where prioritized tasks from the backlog are completed to produce system increments.</p>
+                    <p>6. Scaling agile methods for large systems is challenging because such systems require initial design, documentation, and coordination among multiple teams, making continuous integration difficult.</p>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h2 class="footh2">
+                    <i class="fas fa-graduation-cap text-secondary"></i> Quick Links
+                </h2>
+                <ul class="space-y-2">
+                    <li><a href="#3.1" class="group text-md foothref">
+                        <i class="fas fa-angle-right footicon"></i>3.1 Agile Methods
+                    </a></li>
+                    <li><a href="#3.2" class="group text-md foothref">
+                        <i class="fas fa-angle-right footicon"></i>3.2 Plan Driven and Development
+                    </a></li>
+                    <li><a href="#3.3" class="group foothref">
+                        <i class="fas fa-angle-right footicon"></i>3.3 Extreme Programming
+                    </a></li>
+                    <li><a href="#3.4" class="group foothref">
+                        <i class="fas fa-angle-right footicon"></i>3.4 Agile Project Management
+                    </a></li>
+                    <li><a href="#3.5" class="group foothref">
+                        <i class="fas fa-angle-right footicon"></i>3.5 Scaling Agile Project
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="flex justify-baseline lg:flex-row justify-between items-center gap-6">
+            <!-- Left: Logo & Info -->
+            <div class="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left">
+                <div class="w-10 h-10 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center text-sm sm:text-base font-bold text-white shadow-lg shadow-amber-500/40">SE</div>
+                <div>
+                    <h4 class="text-bg text-sm sm:text-base font-semibold">Software Engineering</h4>
+                    <p class="text-bg text-xs sm:text-sm">BSIT/BA-3A</p>
+                </div>
+            </div>
+
+            <!-- Center: Back to Top Button -->
+            <a href="#top" class="bg-white/20 border border-white/40 px-4 py-2 sm:px-6 sm:py-2.5 rounded-md text-bg text-sm sm:text-base font-semibold hover:bg-primary hover:translate-y-[-2px] transition-all duration-300 whitespace-nowrap">
+                ↑ Back to Top
+            </a>
+            
+            <!-- Right: Creator & Social -->
+            <div class="  text-center lg:text-right">
+                <p class="text-bg text-sm sm:text-base">Created by: <span class="text-secondary font-semibold">Latiza, Princes Margareth A.</span></p>
+                
+                <!-- Social Media Icons -->
+                <div class="flex items-center justify-center lg:justify-end gap-3 mt-2">
+                    <a href="https://github.com/PrincesMargarethLatiza" target="_blank" rel="noopener noreferrer" class="footicons">
+                        <i class="fab fa-github text-sm"></i>
+                    </a>
+                    <a href="https://www.facebook.com/princes.margareth.latiza" target="_blank" rel="noopener noreferrer" class="footicons">
+                        <i class="fab fa-facebook-f text-sm"></i>
+                    </a>
+                    <a href="https://www.instagram.com/quirriaa/" target="_blank" rel="noopener noreferrer" class="footicons">
+                        <i class="fab fa-instagram text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-   </footer>
+</footer>
     
 </body>
 </html>

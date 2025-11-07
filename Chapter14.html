@@ -6,38 +6,69 @@
     <title>Chapter 14: Security Engineering</title>
     <link rel="stylesheet" href="./src/output.css">
     <link rel="icon" type="image/png" href="./index_images/image.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><!-- icons link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><!-- icons link -->
 
 </head>
 
-<body class=" min-h-screen flex flex-col">
+<body class=" min-h-screen flex flex-col ">
     <!-- Fixed Header -->
-    <header class="sticky top-0 z-50 bg-linear-to-r from-amber-50 via-white to-amber-50 backdrop-blur-sm shadow-lg">    
-        <div class="container mx-auto px-4 py-4">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="flex items-center space-x-2 mb-4 md:mb-0">
-                    <h1 class="text-2xl md:text-3xl font-bold bg-linear-to-r from-accent via-amber-700 to-accent bg-clip-text text-transparent">Software Engineering</h1>
-                </div>
-                <nav class="nav-container mt-3">
-                    <a href="index.html" class="chap-link">Home</a>
-                    <a href="Chapter1.html" class="chap-link">Chapter 1</a>
-                    <a href="Chapter2.html" class="chap-link">Chapter 2</a>
-                    <a href="Chapter3.html" class="chap-link">Chapter 3</a>
-                    <a href="Chapter8.html" class="chap-link">Chapter 8</a>
-                </nav>
+    <header class="headerhead">
+        <article class="arthead">
+            <div class="flex items-center mb-2 md:mb-0 gap-3">
+        
+            <div class="headerlogo">
+                C14
             </div>
-        </div>
+
+            <h1 class="headh1">
+                Chapter 14: Security Engineering
+            </h1>
+            </div>
+
+            <nav class="relative">
+            <ul class="rightnav">
+                <li>
+                <a href="index.html"
+                    class="linktoch">
+                    Home
+                </a>
+                </li>
+                <li>
+                <a href="chapter1.html"
+                    class="linktoch">
+                    Chapter 1
+                </a>
+                </li>
+                <li>
+                <a href="chapter2.html"
+                    class="linktoch">
+                    Chapter 2
+                </a>
+                </li>
+                <li>
+                <a href="chapter3.html"
+                    class="linktoch">
+                    Chapter 3
+                </a>
+                </li>
+                <li>
+                <a href="chapter8.html"
+                    class="linktoch">
+                    Chapter 8
+                </a>
+                </li>
+
+            </ul>
+            </nav>
+        </article>
     </header>
 
     <!-- Sidebar Navigation -->
     <div class="flex flex-1">
         <aside class="sticky top-16 h-[calc(100vh-4rem)] overflow-y-auto w-72 bg-linear-to-b from-amber-50 to-white border-r border-amber-100 p-6 hidden lg:block no-print" aria-label="Chapter navigation">
             <div class="mb-6">
-                <div class="inline-block px-3 py-1 bg-amber-900 text-white text-xs font-semibold rounded-full mb-2">
-                    Chapter 14
-                </div>
                 <h2 class="text-2xl font-bold font-heading text-amber-900 leading-tight">
-                    Security Engineering
+                    Contents
                 </h2>
             </div>
 
@@ -60,7 +91,7 @@
                 </a>
             </div>
 
-            <div class="mt-8 pt-6 tr-2">
+            <div class="mt-8 pt-6 border-t border-amber-200">
                 <p class="text-xs text-amber-800 font-medium">Created by:</p>
                 <p class="text-sm text-amber-900 font-semibold">Christine P. De Padua</p>
             </div>
@@ -72,14 +103,11 @@
                 <article class="p-6 md:p-8">
                     
                     <!-- Hero Section -->
-                    <div class="bg-linear-to-r from-amber-900 via-amber-800 to-amber-900 rounded-xl shadow-xl p-8 md:p-15 mb-12 text-white">
-                        <div class="inline-block px-4 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs md:text-md font-semibold mb-4">
-                            Chapter 14
-                        </div>
-                        <h1 class="text-lg md:text-2xl font-bold font-heading mb-4 leading-tight">
+                    <div class="moving-card rounded-xl shadow-xl p-8 md:p-15 mb-12 text-white">
+                        <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white text-lg md:text-2xl font-bold font-heading mb-4 leading-tight">
                             Security Engineering
                         </h1>
-                        <p class="text-[12px] md:text-[20px] text-amber-100 mb-6 leading-relaxed">
+                        <p class=" text-[12px] md:text-[20px] text-amber-100 mb-6 leading-relaxed">
                             Learn how to develop and maintain software systems that can resist malicious attacks and protect critical data in an interconnected world.
                         </p>
                         <div class="flex flex-wrap gap-3">
@@ -94,7 +122,8 @@
                             </span>
                         </div>
                     </div>
-                    <section id="introduction" class="mb-12 scroll-mt-24 animate-fade-in">
+                    
+                    <section id="introduction" class="mb-12  scroll-mt-27 md:scroll-mt-24">
                         <h2 class="chap-h2">Introduction</h2>
                         <div class="text">
                             <p>
@@ -191,7 +220,7 @@
                         </div>
                     </section>
 
-                    <section id="section-14-1" class="mb-12 scroll-mt-24 animate-fade-in ">
+                    <section id="section-14-1" class="mb-12 scroll-mt-27 md:scroll-mt-24">
                         <h2 class="chap-h2">14.1 Security risk management</h2>
                         <div class="text">
                             <p >
@@ -298,7 +327,7 @@
                         </div>    
                     </section>
 
-                    <section id="section-14-2" class="mb-12 scroll-mt-24 animate-fade-in">
+                    <section id="section-14-2" class="mb-12 scroll-mt-27 md:scroll-mt-24">
                         <h2 class="chap-h2">14.2 Design for security</h2>
                         <div class="text">  
                             <p>
@@ -403,7 +432,7 @@
                                 <img src="Chapter14-Images/Figure 14.6.png" alt="Figure 14.6: Security design guidelines" class="image"/>
                             </div>
 
-                            <table class="min-w-full border-2 border-amber-700 bg-amber-50 rounded-md overflow-hidden shadow-md">
+                            <table class="min-w-full border-2 border-amber-700 overflow-hidden">
                                 <thead class="bg-amber-900">
                                     <tr>
                                     <th class="px-4 py-3 font-heading text-white text-sm uppercase tracking-wide w-1/4">
@@ -414,7 +443,7 @@
                                     </tr>
                                 </thead>
 
-                                <tbody class="text-amber-900 bg-amber-50 text-xs lg:text-[15px]">
+                                <tbody class="text-amber-900 text-xs lg:text-[15px]">
                                     <tr class="tr-2">
                                     <td class="td-num">1. Base security decisions on an explicit security policy</td>
                                     <td class="td-text">
@@ -529,7 +558,7 @@
                         </div>    
                     </section>
 
-                    <section id="section-14-3" class="mb-12 scroll-mt-24 animate-fade-in">
+                    <section id="section-14-3" class="mb-12 scroll-mt-27 md:scroll-mt-24">
                         <h2 class="chap-h2">14.3 System survivability</h2>
                         <div class="text">
                             <p>
@@ -647,76 +676,94 @@
             </div>
 
             <!-- Footer -->
-            <footer class="bg-accent text-gray-300 py-12 border-t-4 border-secondary">
-                <div class="container mx-auto px-6 lg:px-12 max-w-6xl">
-                    <div class="mb-8">
-                        <h3 class="text-2xl font-semibold text-white mb-6">Key Points</h3>
-                    </div>
+            <footer  class="relative overflow-hidden bg-text/100 text-bg border-t border-primary">
+            <!-- Top Accent Line -->
+             <div class="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-secondary via-accent to-accent"></div>
 
-                    <!-- Key Points List -->
-                    <div class="space-y-4 mb-10">
-                        <div class="flex">
-                            <span class="foot-num">1.</span>
-                            <p class="foot-text">
-                                Security engineering focuses on how to develop and maintain software systems that can resist malicious attacks intended to damage a computer-based system or its data.
-                            </p>
-                        </div>
+            <div class="max-w-7xl mx-auto px-6 py-12 sm:px-10 lg:px-16">
+                <!-- Navigation Section -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-10 pb-8 border-b border-bg">
 
-                        <div class="flex">
-                            <span class="foot-num">2.</span>
-                            <p class="foot-text">
-                                Security threats can be threats to the confidentiality, integrity, or availability of a system or its data.
-                            </p>
-                        </div>
-
-                        <div class="flex">
-                            <span class="foot-num">3.</span>
-                            <p class="foot-text">
-                                Security risk management involves assessing the losses that might ensue from attacks on a system, and deriving security requirements that are aimed at eliminating or reducing these losses.
-                            </p>
-                        </div>
-
-                        <div class="flex">
-                            <span class="foot-num">4.</span>
-                            <p class="foot-text">
-                                Design for security involves designing a secure system architecture, following good practice for secure systems design, and including functionality to minimize the possibility of introducing vulnerabilities when the system is deployed.
-                            </p>
-                        </div>
-
-                        <div class="flex">
-                            <span class="foot-num">5.</span>
-                            <p class="foot-text">
-                                Key issues when designing a secure systems architecture include organizing the system structure to protect key assets and distributing the system assets to minimize the losses from a successful attack.
-                            </p>
-                        </div>
-
-                        <div class="flex">
-                            <span class="foot-num">6.</span>
-                            <p class="foot-text">
-                                Security design guidelines sensitize system designers to security issues that they may not have considered. They provide a basis for creating security review checklists.
-                            </p>
-                        </div>
-
-                        <div class="flex">
-                            <span class="foot-num">7.</span>
-                            <p class="foot-text">
-                                To support secure deployment you should provide a way of displaying and analyzing system configurations, localize configuration settings so that important configurations are not forgotten, minimize default privileges assigned to system users, and provide ways to repair security vulnerabilities.
-                            </p>
-                        </div>
-
-                        <div class="flex">
-                            <span class="foot-num">8.</span>
-                            <p class="foot-text">
-                                System survivability reflects the ability of a system to continue to deliver essential business or mission-critical services to legitimate users while it is under attack, or after part of the system has been damaged.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Footer Bottom -->
-                    <div class="border-t border-gray-100 pt-6 mt-8">
-                        <p class="text-center text-gray-400 text-sm">Software Engineering - BSIT/BA-3A</p>
+                <!-- Key Points (Wider Column) -->
+                <div class="lg:col-span-2">
+                    <h2 class="footh2">
+                    <i class="fas fa-key text-secondary"></i> Key Points
+                    </h2>
+                    <div class=" gap-x-6 gap-y-3 text-bg text-xs sm:text-base leading-relaxed">
+                    <p><p class="text-secondary inline">1.</p> Security engineering focuses on how to develop and maintain software systems that can resist malicious attacks intended to damage a computer-based system or its data.</p>
+                    
+                    <p><p class="text-secondary inline">2.</p> Security threats can be threats to the confidentiality, integrity, or availability of a system or its data.</p>
+                    
+                    <p><p class="text-secondary inline">3   .</p> Security risk management involves assessing the losses that might ensue from attacks on a system, and deriving security requirements that are aimed at eliminating or reducing these losses.</p>
+                    
+                    <p><p class="text-secondary inline">4.</p> Design for security involves designing a secure system architecture, following good practice for secure systems design, and including functionality to minimize the possibility of introducing vulnerabilities when the system is deployed.</p>
+                    
+                    <p><p class="text-secondary inline">5.</p> Key issues when designing a secure systems architecture include organizing the system structure to protect key assets and distributing the system assets to minimize the losses from a successful attack.</p>
+                    
+                    <p><p class="text-secondary inline">6.</p> Security design guidelines sensitize system designers to security issues that they may not have considered. They provide a basis for creating security review checklists.</p>
+                    
+                    <p><p class="text-secondary inline">7.</p> To support secure deployment you should provide a way of displaying and analyzing system configurations, localize configuration settings so that important configurations are not forgotten, minimize default privileges assigned to system users, and provide ways to repair security vulnerabilities.</p>
+                    
+                    <p><p class="text-secondary inline">8.</p> System survivability reflects the ability of a system to continue to deliver essential business or mission-critical services to legitimate users while it is under attack, or after part of the system has been damaged.</p>
                     </div>
                 </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footh2">
+                    <i class="fas fa-graduation-cap text-secondary"></i> Quick Links
+                    </h4>
+                    <ul class="space-y-2">
+                    <li><a href="#introduction"  class="group text-md foothref">
+                            <i class="fas fa-angle-right footicon"></i> Introduction
+                    </a></li>
+                    <li><a href="#section-14-1"  class="group text-md foothref">
+                            <i class="fas fa-angle-right footicon"></i>14.1 Security Risk Management
+                    </a></li>
+                    <li><a href="#section-14-2"  class="group text-md foothref">
+                            <i class="fas fa-angle-right footicon"></i>14.2 Design for Security
+                    </a></li>
+                    <li><a href="#section-14-3"  class="group text-md foothref">
+                            <i class="fas fa-angle-right footicon"></i>14.3 System Survivability
+                    </a></li>
+                    </ul>
+                </div>
+                </div>
+
+                <!-- Bottom Section -->
+                <div class="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left gap-2">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center text-sm sm:text-base font-bold text-white shadow-lg shadow-amber-500/40">SE</div>
+                    <div>
+                    <h4 class="text-bg text-sm sm:text-base font-semibold">Software Engineering</h4>
+                    <p class="text-bg text-xs sm:text-sm">BSIT/BA-3A</p>
+                    </div>
+                    <a href="#top" class="bg-white/20 border border-white/40 px-4 py-2 rounded-md text-white font-semibold hover:bg-amber-700 hover:translate-y-[-2px] transition-all duration-300">
+                            ↑ Back to Top
+                    </a>
+                </div>
+                
+                <div class="text-gray-400 text-sm sm:text-base">
+                    <p class="text-bg">Created by: <span class="text-secondary font-semibold">De Padua, Christine P.</span></p>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="flex items-center justify-center sm:justify-end gap-3 mt-2 mb-2">
+                    <a href="https://github.com/ChristinePDP" target="_blank" rel="noopener noreferrer" 
+                        class="footicons">
+                        <i class="fab fa-github text-sm"></i>
+                    </a>
+                    <a href="https://www.facebook.com/christine.purilan" target="_blank" rel="noopener noreferrer" 
+                        class="footicons">
+                        <i class="fab fa-facebook-f text-sm"></i>
+                    </a>
+                    <a href="https://www.instagram.com/chrixtinnnne?igsh=aGYxdXFyOTY4bnh1" target="_blank" rel="noopener noreferrer" 
+                        class="footicons">
+                        <i class="fab fa-instagram text-sm"></i>
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </div>
             </footer>
 
         </main>

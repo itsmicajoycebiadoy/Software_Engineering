@@ -23,8 +23,9 @@ body {
 }
 
  /*Index.html*/
+
 .foot-card {
-  @apply bg-white rounded-2xl overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-xl border border-amber-200 hover:border-secondary;
+  @apply bg-white rounded-2xl overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-xl border border-amber-200 hover:border-[var(--color-secondary)];
 }
 
 .main-card{
@@ -39,13 +40,52 @@ body {
   @apply text-lg sm:text-xl font-semibold text-primary group-hover:text-secondary;
 }
 
+/*Header*/
+.headerhead{
+  @apply sticky top-0 left-0 w-full bg-primary text-bg shadow-lg z-50;
+}
+
+.arthead{
+  @apply max-w-7xl mx-auto px-4 sm:px-6 py-3 flex flex-col md:flex-row items-center justify-between
+}
+
+.rightnav{
+  @apply flex flex-row flex-wrap md:flex-row md:items-center gap-2 sm:gap-3 text-sm sm:text-base font-semibold;
+}
+
+.linktoch{
+  @apply block px-1 py-1 text-bg  hover:text-secondary hover:scale-110 transition-transform transition-colors duration-300;
+}
+
+.headerlogo{
+  @apply w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-bg text-primary font-bold rounded-full shadow-md;
+}
+
+.headh1{
+  @apply text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-bg;
+}
+
+/*footer*/
+
+.footh2{
+  @apply text-bg text-lg sm:text-xl font-semibold mb-4 flex items-center gap-2;
+}
+
+.foothref{
+  @apply  text-bg no-underline  transition-all duration-300 flex items-center gap-2 py-0.5 hover:text-secondary hover:pl-2;
+}
+
+.footicon{
+  @apply  text-[10px] opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0;
+}
+
+.footicons{
+  @apply w-8 h-8 flex items-center justify-center rounded-full bg-bg hover:bg-secondary text-text hover:bg-bg transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-amber-500/50;
+}
+
 /* chapter 14 */
 .chap-h2{
   @apply text-xl md:text-2xl lg:text-3xl font-bold text-amber-50 mb-6 bg-linear-to-r from-primary to-amber-700 rounded-2xl shadow-lg p-2 text-center;
-}
-
-.chap-link {
-  @apply text-primary hover:text-yellow-500 font-semibold text-xs transition px-1 sm:px-3 whitespace-nowrap ;
 }
 
 .nav-container {
@@ -81,7 +121,7 @@ body {
 }
 
 .tr-2 {
-  @apply border-t border-amber-200;
+  @apply  border border-amber-200;
 }
 
 .td-num {
@@ -91,11 +131,32 @@ body {
 .td-text {
   @apply px-4 py-3  text-justify;
 }
+ 
 
-.foot-num {
-  @apply text-amber-600 font-semibold mr-3 text-sm;
+@keyframes typing {
+  0% { width: 0ch; visibility: hidden; }
+  100% { width: 20ch; visibility: visible; }
 }
 
-.foot-text {
-  @apply text-sm leading-relaxed;
+@keyframes blink {
+  50% { border-color: transparent; }
+  100% { border-color: #d97706; } /* Replace with your accent color */
 }
+
+.animate-typing {
+  @apply overflow-hidden whitespace-nowrap border-r-4 border-secondary;
+  animation: typing 5s steps(20, end) 1 normal both, blink 0.5s step-end infinite;
+}
+
+@keyframes bgmove {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100%; }
+}
+
+.moving-card {
+  @apply relative rounded-2xl shadow-2xl p-8 md:p-10 overflow-hidden bg-accent
+          bg-[linear-gradient(to_bottom,#d97706_1px,transparent_1px),linear-gradient(to_right,#d97706_1px,transparent_1px)]
+          bg-[length:30px_30px] bg-[position:0_0] opacity-90;
+  animation: bgmove 40s linear infinite;
+}
+

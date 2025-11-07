@@ -259,7 +259,7 @@ body {
 
 @keyframes blink {
   50% { border-color: transparent; }
-  100% { border-color: #d97706; } /* Replace with your accent color */
+  100% { border-color: #d97706; }
 }
 
 .animate-typing {

@@ -337,7 +337,6 @@ body {
   @apply text-amber-500 font-semibold;
 }
 
-/* Social Icons */
 .footer-div7 {
   @apply flex items-center justify-center lg:justify-end gap-3 mt-2;
 }

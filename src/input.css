@@ -131,10 +131,6 @@ body {
   @apply bg-amber-800 ml-3  text-[var(--color-bg)] rounded-md  p-3 ;
 }
 
-.title-num {
-  @apply bg-amber-700 text-[var(--color-bg)] p-3 rounded-2xl;
-}
-
 .listnum {
   @apply  inline-grid w-7 text-center  text-[var(--color-bg)] bg-[var(--color-secondary)] rounded-full ;
 }

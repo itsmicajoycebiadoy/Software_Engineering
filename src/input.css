@@ -19,7 +19,7 @@
 
 body {
   font-family: var(--font-family-base);
-  @apply text-shadow-text bg-bg leading-relaxed;
+  @apply text-text bg-bg leading-relaxed;
 }
 
  /*Index.html*/
@@ -161,7 +161,7 @@ body {
 
 /* chapter 14 */
 .chap-h2{
-  @apply text-2xl md:text-3xl font-bold text-amber-50 mb-4 bg-amber-900 rounded-2xl p-1 text-center;
+  @apply text-2xl md:text-3xl font-bold text-amber-50 mb-4 bg-amber-900 rounded-lg p-1 text-center;
 }
 
 .chap-link {
@@ -173,15 +173,23 @@ body {
 }
 
 .text {
-  @apply mb-4 text-gray-800;
+  @apply space-y-4;
+}
+
+.text-bg-ol {
+  @apply bg-amber-50 border-l-4 border-primary p-4 rounded-r-lg shadow-sm text-sm md:text-[16px] ;  
+}
+
+.text-bg-ul {
+  @apply bg-amber-50 p-4 rounded-md shadow-lg text-sm md:text-[16px];
 }
 
 .nav-a-hover {
-  @apply block py-3 px-4 text-amber-900 hover:font-semibold hover:bg-white  hover:text-amber-900 rounded-lg transition-all duration-200 border-l-4 border-transparent hover:border-amber-900 hover:shadow-xl;
-}
+  @apply  flex items-center px-3 py-2 text-amber-900 hover:font-bold hover:bg-white hover:shadow-sm rounded-lg;
+} 
 
 .image {
-  @apply rounded-lg shadow-md max-w-full h-auto;
+  @apply rounded-lg shadow-md h-80 hover:scale-105 transition-transform duration-500 hover:shadow-2xl hover:brightness-90 hover:animate-pulse;
 }
 
 .div-img {
@@ -192,10 +200,16 @@ body {
   @apply text-xl font-bold mb-4;
 }
 
+.tr-2 {
+  @apply  border border-amber-200;
+}
+
 .td-num {
-  @apply px-4 py-3 font-semibold border-b border-amber-200 text-amber-700;
+  @apply px-4 py-3 font-semibold text-amber-800;
 }
 
 .td-text {
-  @apply px-4 py-3 border-b border-amber-200 text-justify;
+  @apply px-4 py-3  text-justify;
 }
+ 
+

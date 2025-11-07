@@ -40,6 +40,10 @@ body {
   @apply text-lg sm:text-xl font-semibold text-primary group-hover:text-secondary;
 }
 
+.indexfoot1{
+  @apply relative w-full h-full transition-transform duration-700 rounded-xl border-2 border-primary shadow-xl
+}
+
 /*Header*/
 .headerhead{
   @apply left-0 w-full bg-primary text-bg shadow-lg sticky top-0 z-50;

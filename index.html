@@ -1,167 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Software Engineering</title>
     <link rel="stylesheet" href="./src/output.css">
     <link rel="icon" type="image/png" href="./index_images/image.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
 
-  <body class="min-h-screen flex flex-col">
-    <!-- Header -->
-    <header class="bg-white shadow-sm sticky top-0 z-10">
-      <div class="container mx-auto px-4 py-4 sm:py-6">
-        <div class="flex flex-col sm:flex-row justify-between items-center">
-          <div class="flex items-center space-x-2 mb-3 sm:mb-0">
-            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-[var(--color-secondary)] rounded-lg flex items-center justify-center">
+  <body class="min-h-screen flex flex-col p-5">
+    <header class="bg-primary shadow-sm fixed top-0 left-0 w-full z-20 h-[80px] flex items-center">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center space-x-2">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-secondary rounded-lg flex items-center justify-center">
               <span class="text-white font-bold text-lg sm:text-xl">SE</span>
             </div>
-            <h1 class="text-2xl sm:text-3xl font-bold text-[var(--color-accent)]">Software Engineering</h1>
+            <h1 class="text-2xl sm:text-3xl font-bold text-bg">
+              Software Engineering
+            </h1>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-10 grow">
-      <!-- Hero Section -->
-      <section class="mb-12 text-center px-2 sm:px-6">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[var(--color-accent)] mb-6 leading-tight">
-          Software Engineering
-        </h1>
-        <p class="text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-          Welcome to our project homepage for BSIT/BA-3A. Explore each chapter to learn about key software engineering concepts, design principles, and testing methods.
-        </p>
-      </section>
+    
+    <main class="">
+      <section class="relative bg- text-primary flex items-center justify-center overflow-hidden h-[calc(100vh-80px)] mt-[80px]">
+        <div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div class="max-w-5xl mx-auto">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight font-[Nunito]">
+             Software Engineering 
+            </h1>
+            <p class="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed text-primary">
+              <i class="fas fa-graduation-cap mr-2"></i>
+              Explore each chapter to learn about key software engineering concepts, design principles, and testing methods.
+            </p>
 
-      <!-- Chapters Navigation -->
-      <section class="max-w-5xl mx-auto">
-        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-center text-[var(--color-primary)] mb-8">
-          Explore Chapters
-        </h2>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Chapter Cards -->
-          <a href="Chapter1.html"
-            class="main-card group">
-            <div class="p-5 sm:p-6">
-              <div class="flex items-center mb-4">
-                <div
-                  class="main-card-num">
-                  1
-                </div>
-                <h3
-                  class="main-card-header">
-                  Chapter 1: Introduction
-                </h3>
-              </div>
-              <p class="text-gray-600 text-sm sm:text-base">
-                Overview of software engineering principles and methodologies.
-              </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a href="#explore-chapters" 
+                class="text-bg font-semibold bg-primary px-8 py-3 rounded-lg flex items-center justify-center space-x-2 hover:bg-[#92400e] hover:text-white transition-all duration-300 w-full sm:w-auto">
+                <span>Learn more</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </a>
             </div>
-          </a>
-
-          <a href="Chapter2.html"
-            class="main-card group">
-            <div class="p-5 sm:p-6">
-              <div class="flex items-center mb-4">
-                <div
-                  class="main-card-num">
-                  2
-                </div>
-                <h3
-                  class="main-card-header">
-                  Chapter 2: Software Processes
-                </h3>
-              </div>
-              <p class="text-gray-600 text-sm sm:text-base">
-                Understanding various software development processes and lifecycle models.
-              </p>
-            </div>
-          </a>
-
-          <a href="Chapter3.html"
-            class="main-card group">
-            <div class="p-5 sm:p-6">
-              <div class="flex items-center mb-4">
-                <div
-                  class="main-card-num">
-                  3
-                </div>
-                <h3
-                  class="main-card-header">
-                  Chapter 3: Agile Software Development
-                </h3>
-              </div>
-              <p class="text-gray-600 text-sm sm:text-base">
-                Exploring agile methodologies, Scrum, and iterative development approaches.
-              </p>
-            </div>
-          </a>
-
-          <a href="Chapter8.html"
-            class="main-card group">
-            <div class="p-5 sm:p-6">
-              <div class="flex items-center mb-4">
-                <div
-                  class="main-card-num">
-                  8
-                </div>
-                <h3
-                  class="main-card-header">
-                  Chapter 8: Software Testing
-                </h3>
-              </div>
-              <p class="text-gray-600 text-sm sm:text-base">
-                Testing methodologies, strategies, and quality assurance practices.
-              </p>
-            </div>
-          </a>
-
-          <a href="Chapter14.html"
-            class="main-card group">
-            <div class="p-5 sm:p-6">
-              <div class="flex items-center mb-4">
-                <div
-                  class="main-card-num">
-                  14
-                </div>
-                <h3
-                  class="main-card-header">
-                  Chapter 14: Security Engineering
-                </h3>
-              </div>
-              <p class="text-gray-600 text-sm sm:text-base">
-                Security principles, threat modeling, and secure development practices.
-              </p>
-            </div>
-          </a>
+          </div>
         </div>
       </section>
+
+      <section id="explore-chapters" class="max-w-5xl mx-auto scroll-mt-35">
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-center text-primary mb-8">
+            <i class="fas fa-book-open mr-2"></i>Explore Chapters
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Chapter Cards -->
+              <a href="Chapter1.html" class="main-card group">
+                <div class="p-5 sm:p-6">
+                  <div class="flex items-center mb-4">
+                    <div class="main-card-num">
+                      1
+                    </div>
+                    <h3 class="main-card-header">
+                      Chapter 1: Introduction
+                    </h3>
+                  </div>
+                  <p class="text-gray-600 text-sm sm:text-base">
+                    Overview of software engineering principles and methodologies.
+                  </p>
+                </div>
+              </a>
+
+              <a href="Chapter2.html" class="main-card group">
+                <div class="p-5 sm:p-6">
+                  <div class="flex items-center mb-4">
+                    <div class="main-card-num">
+                      2
+                    </div>
+                    <h3 class="main-card-header">
+                      Chapter 2: Software Processes
+                    </h3>
+                  </div>
+                  <p class="text-gray-600 text-sm sm:text-base">
+                    Understanding various software development processes and lifecycle models.
+                  </p>
+                </div>
+              </a>
+
+              <a href="Chapter3.html" class="main-card group">
+                <div class="p-5 sm:p-6">
+                  <div class="flex items-center mb-4">
+                    <div class="main-card-num">
+                      3
+                    </div>
+                    <h3 class="main-card-header">
+                      Chapter 3: Agile Software Development
+                    </h3>
+                  </div>
+                  <p class="text-gray-600 text-sm sm:text-base">
+                    Exploring agile methodologies, Scrum, and iterative development approaches.
+                  </p>
+                </div>
+              </a>
+
+              <a href="Chapter8.html" class="main-card group">
+                <div class="p-5 sm:p-6">
+                  <div class="flex items-center mb-4">
+                    <div class="main-card-num">
+                      8
+                    </div>
+                    <h3 class="main-card-header">
+                      Chapter 8: Software Testing
+                    </h3>
+                  </div>
+                  <p class="text-gray-600 text-sm sm:text-base">
+                    Testing methodologies, strategies, and quality assurance practices.
+                  </p>
+                </div>
+              </a>
+
+              <a href="Chapter14.html" class="main-card group">
+                <div class="p-5 sm:p-6">
+                  <div class="flex items-center mb-4">
+                    <div class="main-card-num">
+                      14
+                    </div>
+                    <h3 class="main-card-header">
+                      Chapter 14: Security Engineering
+                    </h3>
+                  </div>
+                  <p class="text-gray-600 text-sm sm:text-base">
+                    Security principles, threat modeling, and secure development practices.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </section>
     </main>
 
-
     <!-- Footer -->
-    <footer class="bg-white text-[var(--color-accent)] shadow-2xl py-12 mt-16">
+    <footer class="bg-white text-accent border-t border-primary/30 py-12 mt-16">
       <div class="container mx-auto px-4 sm:px-6">
         <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-10">
-          Group 5 Members
+        <i class="fas fa-users mr-2"></i>Group 5 Members
         </h2>
 
-       
         <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-10 justify-items-center">
 
           <!-- Jerick -->
-          <div class="group [perspective:1000px] w-full max-w-[220px] h-80">
-            <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] rounded-xl border-2 border-[var(--color-primary)] shadow-xl">
-          
-              <div class="absolute inset-0 bg-white rounded-xl overflow-hidden backface-hidden flex flex-col">
-                <div class="aspect-[3/3.8] overflow-hidden flex-grow">
+          <div class="group w-full max-w-[220px] h-80" style="perspective: 1000px;">
+            <div class="relative w-full h-full transition-transform duration-700 rounded-xl border-2 border-primary shadow-xl" style="transform-style: preserve-3d; transition: transform 0.7s;" onmouseenter="this.style.transform='rotateY(180deg)'" onmouseleave="this.style.transform='rotateY(0deg)'">
+              <div class="absolute inset-0 bg-white rounded-xl overflow-hidden flex flex-col" style="backface-visibility: hidden;">
+                <div class="aspect-[3/3.8] overflow-hidden grow">
                   <img src="./index_images/guyala.jpeg" alt="Jhon Jerick Guyala" class="w-full h-full object-cover">
                 </div>
-                <div class="p-3 text-center border-t border-[var(--color-primary)]">
-                  <h3 class="font-semibold text-sm sm:text-base text-[var(--color-primary)]">
+                <div class="p-3 text-center border-t border-primary">
+                  <h3 class="font-semibold text-sm sm:text-base text-primary">
                     Jhon Jerick Guyala
                   </h3>
                   <p class="text-gray-600 text-xs sm:text-sm mt-1">
@@ -170,9 +167,8 @@
                   </p>
                 </div>
               </div>
-          
-              <div class="absolute inset-0 bg-[var(--color-primary)] text-white rounded-xl p-4 flex flex-col justify-center items-center text-center [transform:rotateY(180deg)] backface-hidden border-2 border-[var(--color-primary)]">
-                <h3 class="text-lg font-semibold mb-2">About the Author</h3>
+              <div class="absolute inset-0 bg-primary text-white rounded-xl p-4 flex flex-col justify-center items-center text-center border-2 border-primary" style="backface-visibility: hidden; transform: rotateY(180deg);">
+                <h3 class="text-lg font-semibold mb-2 fixed top-0 left-0 w-full p-4 shadow z-50">About the Author</h3>
                 <p class="text-sm opacity-90 px-3">
                   My hobbies are cooking, watching the news and movies, and listening to music
                   — they help me unwind and stay inspired in my daily life.
@@ -182,15 +178,14 @@
           </div>
 
           <!-- Mica -->
-          <div class="group [perspective:1000px] w-full max-w-[220px] h-80">
-            <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] rounded-xl border-2 border-[var(--color-primary)] shadow-xl">
-         
-              <div class="absolute inset-0 bg-white rounded-xl overflow-hidden backface-hidden flex flex-col">
-                <div class="aspect-[3/3.8] overflow-hidden flex-grow">
+          <div class="group w-full max-w-[220px] h-80" style="perspective: 1000px;">
+            <div class="relative w-full h-full transition-transform duration-700 rounded-xl border-2 border-primary shadow-xl" style="transform-style: preserve-3d; transition: transform 0.7s;" onmouseenter="this.style.transform='rotateY(180deg)'" onmouseleave="this.style.transform='rotateY(0deg)'">
+              <div class="absolute inset-0 bg-white rounded-xl overflow-hidden flex flex-col" style="backface-visibility: hidden;">
+                <div class="aspect-[3/3.8] overflow-hidden grow">
                   <img src="./index_images/mica.jpg" alt="Mica Joyce Biadoy" class="w-full h-full object-cover">
                 </div>
-                <div class="p-3 text-center border-t border-[var(--color-primary)]">
-                  <h3 class="font-semibold text-sm sm:text-base text-[var(--color-primary)]">
+                <div class="p-3 text-center border-t border-primary">
+                  <h3 class="font-semibold text-sm sm:text-base text-primary">
                     Mica Joyce Biadoy
                   </h3>
                   <p class="text-gray-600 text-xs sm:text-sm mt-1">
@@ -199,9 +194,8 @@
                   </p>
                 </div>
               </div>
-    
-              <div class="absolute inset-0 bg-[var(--color-primary)] text-white rounded-xl p-4 flex flex-col justify-center items-center text-center [transform:rotateY(180deg)] backface-hidden border-2 border-[var(--color-primary)]">
-                <h3 class="text-lg font-semibold mb-2">About the Author</h3>
+              <div class="absolute inset-0 bg-primary text-white rounded-xl p-4 flex flex-col justify-center items-center text-center border-2 border-primary" style="backface-visibility: hidden; transform: rotateY(180deg);">
+                <h3 class="text-lg font-semibold mb-2 fixed top-0 left-0 w-full p-4 shadow z-50">About the Author</h3>
                 <p class="text-sm opacity-90 px-3">
                   My hobbies include discovering new concepts in Information Technology and reading novels, 
                   which help me sharpen my analytical skills, imagination, and understanding of different perspectives.
@@ -211,15 +205,14 @@
           </div>
 
           <!-- Latiza -->
-          <div class="group [perspective:1000px] w-full max-w-[220px] h-80">
-            <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] rounded-xl border-2 border-[var(--color-primary)] shadow-xl">
-
-              <div class="absolute inset-0 bg-white rounded-xl overflow-hidden backface-hidden flex flex-col">
-                <div class="aspect-[3/3.8] overflow-hidden flex-grow">
+          <div class="group w-full max-w-[220px] h-80" style="perspective: 1000px;">
+            <div class="relative w-full h-full transition-transform duration-700 rounded-xl border-2 border-primary shadow-xl" style="transform-style: preserve-3d; transition: transform 0.7s;" onmouseenter="this.style.transform='rotateY(180deg)'" onmouseleave="this.style.transform='rotateY(0deg)'">
+              <div class="absolute inset-0 bg-white rounded-xl overflow-hidden flex flex-col" style="backface-visibility: hidden;">
+                <div class="aspect-[3/3.8] overflow-hidden grow">
                   <img src="./index_images/latiza.jpg" alt="Princes Margareth Latiza" class="w-full h-full object-cover">
                 </div>
-                <div class="p-3 text-center border-t border-[var(--color-primary)]">
-                  <h3 class="font-semibold text-sm sm:text-base text-[var(--color-primary)]">
+                <div class="p-3 text-center border-t border-primary">
+                  <h3 class="font-semibold text-sm sm:text-base text-primary">
                     Princes Margareth Latiza
                   </h3>
                   <p class="text-gray-600 text-xs sm:text-sm mt-1">
@@ -228,9 +221,8 @@
                   </p>
                 </div>
               </div>
-         
-              <div class="absolute inset-0 bg-[var(--color-primary)] text-white rounded-xl p-4 flex flex-col justify-center items-center text-center [transform:rotateY(180deg)] backface-hidden border-2 border-[var(--color-primary)]">
-                <h3 class="text-lg font-semibold mb-2">About the Author</h3>
+              <div class="absolute inset-0 bg-primary text-white rounded-xl p-4 flex flex-col justify-center items-center text-center border-2 border-primary" style="backface-visibility: hidden; transform: rotateY(180deg);">
+                <h3 class="text-lg font-semibold mb-2 fixed top-0 left-0 w-full p-4 shadow z-50">About the Author</h3>
                 <p class="text-sm opacity-90 px-3">
                   My hobbies are watching movies, eating, singing, and sleeping.
                 </p>
@@ -239,15 +231,14 @@
           </div>
 
           <!-- Erica -->
-          <div class="group [perspective:1000px] w-full max-w-[220px] h-80">
-            <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] rounded-xl border-2 border-[var(--color-primary)] shadow-xl">
-        
-              <div class="absolute inset-0 bg-white rounded-xl overflow-hidden backface-hidden flex flex-col">
-                <div class="aspect-[3/3.8] overflow-hidden flex-grow">
+          <div class="group w-full max-w-[220px] h-80" style="perspective: 1000px;">
+            <div class="relative w-full h-full transition-transform duration-700 rounded-xl border-2 border-primary shadow-xl" style="transform-style: preserve-3d; transition: transform 0.7s;" onmouseenter="this.style.transform='rotateY(180deg)'" onmouseleave="this.style.transform='rotateY(0deg)'">
+              <div class="absolute inset-0 bg-white rounded-xl overflow-hidden flex flex-col" style="backface-visibility: hidden;">
+                <div class="aspect-[3/3.8] overflow-hidden grow">
                   <img src="./index_images/erica.jpg" alt="Ma. Erica Vidal" class="w-full h-full object-cover">
                 </div>
-                <div class="p-3 text-center border-t border-[var(--color-primary)]">
-                  <h3 class="font-semibold text-sm sm:text-base text-[var(--color-primary)]">
+                <div class="p-3 text-center border-t border-primary">
+                  <h3 class="font-semibold text-sm sm:text-base text-primary">
                     Ma. Erica Vidal
                   </h3>
                   <p class="text-gray-600 text-xs sm:text-sm mt-1">
@@ -256,9 +247,8 @@
                   </p>
                 </div>
               </div>
-        
-              <div class="absolute inset-0 bg-[var(--color-primary)] text-white rounded-xl p-4 flex flex-col justify-center items-center text-center [transform:rotateY(180deg)] backface-hidden border-2 border-[var(--color-primary)]">
-                <h3 class="text-lg font-semibold mb-2">About the Author</h3>
+              <div class="absolute inset-0 bg-primary text-white rounded-xl p-4 flex flex-col justify-center items-center text-center border-2 border-primary" style="backface-visibility: hidden; transform: rotateY(180deg);">
+                <h3 class="text-lg font-semibold mb-2 fixed top-0 left-0 w-full p-4 shadow z-50">About the Author</h3>
                 <p class="text-sm opacity-90 px-3">
                   I enjoy drawing and watching movies, especially adventure and fantasy film. 
                   It's a great way for me to relax and explore new worlds.
@@ -268,15 +258,14 @@
           </div>
 
           <!-- Christine -->
-          <div class="group [perspective:1000px] w-full max-w-[220px] h-80 col-span-2 sm:col-span-2 md:col-span-1 justify-self-center">
-            <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] rounded-xl border-2 border-[var(--color-primary)] shadow-xl">
-          
-              <div class="absolute inset-0 bg-white rounded-xl overflow-hidden backface-hidden flex flex-col">
-                <div class="aspect-[3/3.8] overflow-hidden flex-grow">
+          <div class="group w-full max-w-[220px] h-80 col-span-2 sm:col-span-2 md:col-span-1 justify-self-center" style="perspective: 1000px;">
+            <div class="relative w-full h-full transition-transform duration-700 rounded-xl border-2 border-primary shadow-xl" style="transform-style: preserve-3d; transition: transform 0.7s;" onmouseenter="this.style.transform='rotateY(180deg)'" onmouseleave="this.style.transform='rotateY(0deg)'">
+              <div class="absolute inset-0 bg-white rounded-xl overflow-hidden flex flex-col" style="backface-visibility: hidden;">
+                <div class="aspect-[3/3.8] overflow-hidden grow">
                   <img src="./index_images/Christine a.jpg" alt="Christine De Padua" class="w-full h-full object-cover">
                 </div>
-                <div class="p-3 text-center border-t border-[var(--color-primary)]">
-                  <h3 class="font-semibold text-sm sm:text-base text-[var(--color-primary)]">
+                <div class="p-3 text-center border-t border-primary">
+                  <h3 class="font-semibold text-sm sm:text-base text-primary">
                     Christine De Padua
                   </h3>
                   <p class="text-gray-600 text-xs sm:text-sm mt-1">
@@ -285,9 +274,8 @@
                   </p>
                 </div>
               </div>
-            
-              <div class="absolute inset-0 bg-[var(--color-primary)] text-white rounded-xl p-4 flex flex-col justify-center items-center text-center [transform:rotateY(180deg)] backface-hidden border-2 border-[var(--color-primary)]">
-                <h3 class="text-lg font-semibold mb-2">About the Author</h3>
+              <div class="absolute inset-0 bg-primary text-white rounded-xl p-4 flex flex-col justify-center items-center text-center border-2 border-primary" style="backface-visibility: hidden; transform: rotateY(180deg);">
+                <h3 class="text-lg font-semibold mb-2 fixed top-0 left-0 w-full p-4 shadow z-50">About the Author</h3>
                 <p class="text-sm opacity-90 px-3">
                   I love spending my free time watching movies, enjoying good food, and getting lost in a good book.
                 </p>
